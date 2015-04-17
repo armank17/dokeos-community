@@ -1,0 +1,40 @@
+INSTALL
+
+On Debian Lenny
+  Base install
+    apt-get  install php5-xapian
+    (you need version 1.x of Xapian here - check xapian.org for older Deb/Ub)
+    two bugs:
+      http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=493944
+      http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=493941
+    on dokeos root:
+      mkdir searchdb
+      chmod 777 searchdb (or equivalent)
+  Useful xapian development tools
+    apt-get install xapian-doc xapian-tools
+    (See delve command)
+
+
+On Ubuntu 8.10
+
+DOKEOS 1.8.5 + XAPIAN in Ubuntu 8.10
+
+ 1. Execute  dokeos_main_corp.sql
+ 2. Go to main/admin/settings.php?category=Tools and add the search params
+   Full-text search feature
+ 3. Add specific fields in main/admin/specific_fields.php
+ 4. Add specific search field i.e. Author, Body part, Technology, Topic
+ 5. Install php5 + xapian
+    apt-get  install php5-xapian
+ 6. Install 
+    sudo apt-get install imagemagick
+    sudo apt-get install php5-imagick 
+
+ 7. On  Dokeos root
+    mkdir searchdb
+    chmod 777 searchdb
+ 8.  Useful xapian development tools
+    apt-get install xapian-doc xapian-tools
+ 9. Restart Apache
+ 10. Create a course and 2 LP for testing
+ 11. Edit the LPs created and add/edit the specific fields (i.e. Author, Body part, Technology, Topic)

@@ -1,0 +1,50 @@
+<?php /*
+for more information: see languages.txt in the lang folder. 
+*/
+$langSelectOptionForBackup = "Izberite možnosti arhiviranja";
+$langLetMeSelectItems = "Dovoli mi izbrati posamezne komponente teèaja";
+$langCreateFullBackup = "Ustvari popolno arhivsko kopijo tega teèaja";
+$langCreateBackup = "Ustvari arhivsko kopijo";
+$langBackupCreated  = "Arhivska kopija teèaja je bila ustvarjena. Prenos datoteke se bo prièel v naslednjih trenutkih. Èe se prenos datoteke ne priène samodejno, kliknite na naslednjo povezavo";
+$langSelectBackupFile = "izberi datoteko z arhivom";
+$langImportBackup = "Uvozi arhiv";
+$langImportFullBackup = "Uvozi celoten arhiv";
+$langImportFinished = "Uvoz konèan";
+$langEvents = "Dogodki";
+$langAnnouncements = "Obvestila";
+$langDocuments  = "Dokumenti";
+$langTests = "Vaje";
+$langLearnpaths = "Uène poti";
+$langCopyCourse = "Kopiranje vsebin teèaja";
+$langSelectItemsToCopy = "Izberi elemente za kopiranje";
+$langCopyFinished = "Kopiranje konèano";
+$langFullRecycle = "Popolno recikliranje";
+$langRecycleCourse = "Recikliranje vsebin teèaja";
+$langRecycleFinished = "Recikliranje konèano";
+$langRecycleWarning = "Opozorilo: z uporabo tega orodja boste odstranili nekatere dele teèaja. Odstranjenih vsebin ni mogoèe povrniti. Svetujemo vam da predhodno naredite <a href=\"create_backup.php\">rezervno kopijo</a>.";
+$langSameFilename = "Kaj naj storim z uvoženo datoteko, ki ima enako ime kot obstojeèa datoteka?";
+$langSameFilenameSkip = "Izpusti datoteko z enakim imenom";
+$langSameFilenameRename = "Preimenuj datoteko z enakim imenom (npr. datoteka.pdf postane datoteka_1.pdf)";
+$langSameFilenameOverwrite = "Prepiši obstojeèo datoteko";
+$langSelectDestinationCourse = "Izberi ciljni teèaj";
+$langFullCopy  = "Popolno kopiranje";
+$langCourseDescription = "Opis teèaja";
+$langNoResourcesToBackup = "Ne ostaja noben vsebinski element, ki bi bil vkljuèen v arhiv.";
+$langNoResourcesInBackupFile = "V arhivu ni nobenih vsebinskih elementov teèaja.";
+$langSelectResources = "Izberi elemente";
+$langNoResourcesToRecycles = "Ne ostaja noben vsebinski element, ki bi lahko bil vkljuèen v recikliranje.";
+$langIncludeQuestionPool = "Vkljuèi zalogo vprašanj";
+$langLocalFile = "lokalna datoteka";
+$langServerFile = "datoteka na strežniku";
+$langNoBackupsAvailable = "Noben arhiv ni na voljo";
+$langNoDestinationCoursesAvailable = "Noben ciljni teèaj ni na voljo";
+$langBackup = "Arhiviranje";
+$langImportBackupInfo = "Uvozi arhivsko datoteko. Daje možnost uvoza arhivske datoteke iz lokalnega pogona ali povrnitev vsebin iz arhivske datoteke predhodno shranjene na strežniku.";
+$langCreateBackupInfo = "Ustvari vsebino arhivske datoteke. Izbrati je možno posamezne elemente, ki bodo vkljuèeni v arhiv.";
+$ToolIntro = "Predstavitev orodja";
+$UploadError = "Nalaganje je bilo neuspešno. Preverite najveèjo dovoljeno dolžino datoteke in pravice za dostop do mape, kamor nalagate.";
+$DocumentsWillBeAddedToo = "Pripadajaèi dokumenti bodo tudi dodani";
+$ToExportLearnpathWithQuizYouHaveToSelectQuiz = "V primeru, da želite izvoziti uèno pot, ki vsebuje teste/vaje, morate zagotoviti, da so ustrezni testi/vaje vkljuèeni v izvoz; izberete jih iz seznama testov.";
+$ArchivesDirectoryNotWriteableContactAdmin = "Arhivska mapa, ki jo uporablja to orodje, ne omogoèa pisalnega dostopa. Prosim da se obrnete na upravitelja platforme.";
+$DestinationCourse = "Ciljni teèaj";
+?>

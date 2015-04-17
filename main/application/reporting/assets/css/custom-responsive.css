@@ -1,0 +1,19 @@
+table {
+    width:100%;
+}
+td, th, .table{
+    border:1px solid #eaeaea;
+    padding: 10px;
+}
+.table_scenario {
+	width: auto;
+}
+.table_scenario td, .table_scenario tr{
+    border:1px solid #eaeaea;
+    padding: 5px;	
+	min-width: 120px;
+	min-height: 50px;
+	border-bottom:2px solid #eaeaea;
+	border-top:2px solid #eaeaea;
+	border-right:2px solid #eaeaea;
+}

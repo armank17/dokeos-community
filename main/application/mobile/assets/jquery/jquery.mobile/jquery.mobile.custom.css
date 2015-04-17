@@ -1,0 +1,21 @@
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+#content {
+	/*width:120px;*/
+        margin: 10px 10px 10px 10px;
+	}
+	
+#icons {
+	text-align:center
+	}	
+		
+#text {
+	text-align:center
+	}
+        .text_icon{
+            font-size: 9px;
+        }        

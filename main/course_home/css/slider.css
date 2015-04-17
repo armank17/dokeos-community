@@ -1,0 +1,24 @@
+
+
+.content-slider-handle {
+  width: 58px;
+  height: 8px;
+  position: absolute;
+  top: -10px;
+  background: #478AFF;
+  border: solid 0px black;
+}
+
+#content-scroll {
+  width: 800px;
+  height: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  border: solid 0px black;
+}
+
+#content-holder {
+  width: 800px;
+  height: auto;
+}
+

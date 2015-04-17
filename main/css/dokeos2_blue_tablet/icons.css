@@ -1,0 +1,2059 @@
+/*HOME PAGE ICONS*/
+.homepage_button {
+    height: 55px;
+    width : 55px;
+}
+.homepage_create_course {
+    background: url('images/pencil.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.homepage_catalogue {
+    background: url('images/catalogue.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.homepage_trainers_manual {
+    background: url('images/course_pdf.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.homepage_video_tutorials {
+    background: url('images/video_tutor.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.homepage_trainers_training{
+    background: url('images/trainers.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+/* TOOL ICONS */
+/* tool icons are the icons of the tool which are displayed on the training homepage */
+
+
+
+/* specific tools */
+/* change the background-image if you want different tools */
+
+.UnsubscribeSessionUsers { 
+    background-image: url(images/toolaction/Unsubscribeses.png);
+}
+.tool.webex{
+    background-image: url(images/tool/home/webex_22.png);
+}
+.tool.webex.invisible{
+    background-image: url(images/tool/home/webex_22_na.png);
+}
+.tool.document {
+    background-image: url(images/tool/home/document.png);
+}
+.tool.document.invisible {
+    background-image: url(images/tool/home/document_na.png);
+}
+
+.tool.course_description{
+    background-image: url(images/tool/home/description.png);
+}
+.tool.course_description.invisible{
+    background-image: url(images/tool/home/description_na.png);
+}
+.tool.author{
+    background-image: url(images/tool/home/author.png);
+}
+.tool.author.invisible{
+    background-image: url(images/tool/home/author_na.png);
+}
+.tool.learnpath{
+    background-image: url(images/tool/home/module.png);
+}
+.tool.learnpath.invisible{
+    background-image: url(images/tool/home/module_na.png);
+}
+.tool.link{
+    background-image: url(images/tool/home/link.png);
+}
+.tool.link.invisible{
+    background-image: url(images/tool/home/link_na.png);
+}
+.tool.quiz{
+    background-image: url(images/tool/home/quiz.png);
+}
+.tool.quiz.invisible{
+    background-image: url(images/tool/home/quiz_na.png);
+}
+.tool.mediabox{
+    background-image: url(images/tool/home/mediabox.png);
+}
+.tool.mediabox.invisible{
+    background-image: url(images/tool/home/mediabox_na.png);
+}
+.tool.dropbox{
+    background-image: url(images/tool/home/dropbox.png);
+}
+.tool.dropbox.invisible{
+    background-image: url(images/tool/home/dropbox_na.png);
+}
+.toolshortcut_dropbox{
+    background-image: url(images/toolaction/dropbox_shortcut.png);
+}
+.tooladdnewnote{
+    background-image: url(images/toolaction/newnote.png);
+}
+.tooladdviewnote{
+    background-image: url(images/toolaction/preview.png);
+}
+.tooladdsearchnote{
+    background-image: url(images/toolaction/search.png);
+}
+.tool.glossary{
+    background-image: url(images/tool/home/glossary.png);
+}
+.tool.glossary.invisible{
+    background-image: url(images/tool/home/glossary_na.png);
+}
+.tool.announcement{
+    background-image: url(images/tool/home/announcement.png);
+}
+.tool.announcement.invisible{
+    background-image: url(images/tool/home/announcement_na.png);
+}
+.tool.calendar_event{
+    background-image: url(images/tool/home/calendar.png);
+}
+.tool.calendar_event.invisible{
+    background-image: url(images/tool/home/calendar_na.png);
+}
+.tool.chat{
+    background-image: url(images/tool/home/chat.png);
+}
+.tool.chat.invisible{
+    background-image: url(images/tool/home/chat_na.png);
+}
+.tool.notebook{
+    background-image: url(images/tool/home/notebook.png);
+}
+.tool.notebook.invisible{
+    background-image: url(images/tool/home/notebook_na.png);
+}
+.tool.user{
+    background-image: url(images/tool/home/user.png);
+}
+.tool.user.invisible{
+    background-image: url(images/tool/home/user_na.png);
+}
+.tool.forum{
+    background-image: url(images/tool/home/forum.png);
+}
+.tool.forum.invisible{
+    background-image: url(images/tool/home/forum_na.png);
+}
+.tool.group{
+    background-image: url(images/tool/home/group.png);
+}
+.tool.group.invisible{
+    background-image: url(images/tool/home/group_na.png);
+}
+.tool.student_publication{
+    background-image: url(images/tool/home/work.png);
+}
+.tool.student_publication.invisible{
+    background-image: url(images/tool/home/work_na.png);
+}
+.tool.wiki{
+    background-image: url(images/tool/home/wiki.png);
+}
+.tool.wiki.invisible{
+    background-image: url(images/tool/home/wiki_na.png);
+}
+.tool.survey{
+    background-image: url(images/tool/home/survey.png);
+}
+.tool.survey.invisible{
+    background-image: url(images/tool/home/survey_na.png);
+}
+.tool.mindmap{
+    background-image: url(images/tool/home/mindmap.png);
+}
+.tool.mindmap.invisible{
+    background-image: url(images/tool/home/mindmap_na.png);
+}
+.tool.blog_management, .tool.blog{
+    background-image: url(images/tool/home/blog.png);
+}
+.tool.blog_management.invisible, .tool.blog.invisible{
+    background-image: url(images/tool/home/blog_na.png);
+}
+.tool.copy_course_content{
+    background-image: url(images/tool/home/copy.png);
+}
+.tool.copy_course_content.invisible{
+    background-image: url(images/tool/home/copy_na.png);
+}
+.tool.course_maintenance{
+    background-image: url(images/tool/home/backup.png);
+}
+.tool.course_maintenance.invisible{
+    background-image: url(images/tool/home/backup_na.png);
+}
+.tool.tracking{
+    background-image: url(images/tool/home/reporting.png);
+}
+.tool.tracking.invisible{
+    background-image: url(images/tool/home/reporting_na.png);
+}
+.tool.course_setting{
+    background-image: url(images/tool/home/settings.png);
+}
+.tool.course_setting.invisible{
+    background-image: url(images/tool/home/settings_na.png);
+}
+.tool.gradebook{
+    background-image: url(images/tool/home/evaluation.png);
+}
+.tool.gradebook.invisible{
+    background-image: url(images/tool/home/evaluation_na.png);
+}
+.tool.oogie{
+    background-image: url(images/tool/home/oogie.png);
+}
+.tool.oogie.invisible{
+    background-image: url(images/tool/home/oogie_na.png);
+}
+.tool.visio_classroom{
+    background-image: url(images/tool/home/virtual.png);
+}
+.tool.visio_classroom.invisible{
+    background-image: url(images/tool/home/virtual_na.png);
+}
+.tool.visio_conference{
+    background-image: url(images/tool/home/reunion.png);
+}
+.tool.visio_conference.invisible{
+    background-image: url(images/tool/home/reunion_na.png);
+}
+.tool.WebTv {
+    background-image: url(images/tool/home/web_tv.png);
+}
+.tool.WebTv.invisible {
+    background-image: url(images/tool/home/web_tv_na.png);
+}
+.tool.SeriousGames {
+    background-image: url(images/tool/home/serious_games.png);
+}
+.tool.SeriousGames.invisible {
+    background-image: url(images/tool/home/serious_games_na.png);
+}
+.tool.Book {
+    background-image:url(images/tool/home/book.png);
+}
+.tool.Book.invisible {
+    background-image:url(images/tool/home/book_na.png);
+}
+
+.toolunknown{
+    background: url(images/tool/unknown.png) center no-repeat;
+}
+.dokeos_toolaction{
+    background: url(images/toolaction/dokeos_toolaction.png) center no-repeat;
+}
+/*icons new category PRO */
+.tool.AuthorNew {
+    background-image: url(images/tool/home/authorNew.png);
+}
+.tool.AuthorNew.invisible {
+    background-image: url(images/tool/home/authorNew_na.png);
+}
+.tool.Control, .tool.Evaluation {
+    background-image: url(images/tool/home/control.png);
+}
+.tool.Control.invisible, .tool.Evaluation.invisible {
+    background-image: url(images/tool/home/control_na.png);
+}
+.tool.Shop {
+    background-image: url(images/tool/home/shop.png);
+}
+.tool.Shop.invisible {
+    background-image: url(images/tool/home/shop_na.png);
+}
+.webtv-tool{
+    background-image:url(images/toolaction/webtv-tool.png);
+}
+
+.webtv-channel-tool{
+    background-image:url(images/toolaction/webtv-tool.png);
+}
+
+.webtv-upload-tool{
+    background-image:url(images/toolaction/up.png);
+}
+
+
+
+
+/* ACTION ICONS */
+/* action icons are the icons that are used to perform an action on an item */
+/* example: edit a document, delete a calendar event, move a file, ... */
+/* these are (in de default style) 22x22 pixels big */
+.actionplaceholdericon{
+    height: 22px;
+    width: 22px;
+    background-repeat: no-repeat;
+}
+.actionplaceholderminiicon{
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+}
+.actionplaceholderimedicon{
+    width:75px;
+    height:16px ;
+    background-repeat: no-repeat;
+}
+.actionadmin_star{
+    background-image: url(images/action/admin_star.png);
+}
+.actionreload{
+    background-image: url(images/action/reload.png);
+}
+.actionreload_na{
+    background-image: url(images/action/reload_na.png);
+}
+.actiondelete{
+    background-image: url(images/action/delete.png);
+}
+.actiondelete.invisible{
+    background-image: url(images/action/delete_na.png);
+}
+.actionmarkexercise{
+    background-image: url(images/action/exercise22.png);
+}
+.actionfootprint{
+    background-image: url(images/action/footprint.png);
+}
+.actionedit{
+    background-image: url(images/action/edit.png);
+}
+.actiondeleteaudio{
+    background-image: url(images/action/sound_mp3.png);
+}
+.actionexam_22{
+    background-image: url(images/action/exam_22.png);
+}
+.actiononline_22{
+    background-image: url(images/action/online_22.png);
+}
+.actiononline_22_na{
+    background-image: url(images/action/online_22_na.png)
+}
+.actionpresence_22{
+    background-image: url(images/action/presence_22.png);
+}
+.actionedit.invisible{
+    background-image: url(images/action/edit_na.png);
+}
+.actionlock_16{
+    background-image: url(images/action/lock16x16.png);
+}
+.actionunlock_16{
+    background-image: url(images/action/lock.png);
+}
+.actionrating_16{
+    background-image: url(images/action/rating_16.png);
+}
+.actionrating_na{
+    background-image: url(images/action/rating_na.png);
+}
+.actionsendmail_checked{
+    background-image: url(images/action/sendmail_checked.png);
+}
+.actionsendmail_16{
+    background-image: url(images/action/sendmail_16.png);
+}
+.actionmedstarts00{
+    background-image: url(images/action/starts00.png);
+}
+.actionmedstarts05{
+    background-image: url(images/action/starts05.png);
+}
+.actionmedstarts10{
+    background-image: url(images/action/starts10.png);
+}
+.actionmedstarts15{
+    background-image: url(images/action/starts15.png);
+}
+.actionmedstarts20{
+    background-image: url(images/action/starts20.png);
+}
+.actionmedstarts25{
+    background-image: url(images/action/starts25.png);
+}
+.actionmedstarts30{
+    background-image: url(images/action/starts30.png);
+}
+.actionmedstarts35{
+    background-image: url(images/action/starts35.png);
+}
+.actionmedstarts40{
+    background-image: url(images/action/starts40.png);
+}
+.actionmedstarts45{
+    background-image: url(images/action/starts45.png);
+}
+.actionmedstarts50{
+    background-image: url(images/action/starts50.png);
+}
+.actionmove, .actionnext{
+    background-image: url(images/action/next.png);
+    margin: -3px 2px;
+}
+.actionnext_navigation{
+    background-image:url(images/action/next_nav.png);
+}
+.actionprev_navigation{
+    background-image:url(images/action/prev_nav.png);
+    vertical-align: middle;
+}
+.actiongo_last{
+    background-image: url(images/action/go-last.png);
+}
+.actiongo_first{
+    background-image: url(images/action/go-first.png);
+}
+.actionmove.invisible{
+    background-image: url(images/action/next_na.png);
+}
+.actionup{
+    background-image: url(images/action/up.png);
+}
+.actionvisible{
+    background-image: url(images/action/visible.png);
+}
+.actionvisible.invisible{
+    background-image: url(images/action/invisible.png);
+}
+.actioninvisible{
+    background-image: url(images/action/invisible.png);
+}
+.actioninvisible.invisible{
+    background-image: url(images/action/invisible.png);
+}
+.actionprint{
+    background-image: url(../../img/printmgr.gif);
+}
+.toolactionlistmeeting {
+    background-image: url(images/toolaction/listmeeting.png);
+}
+.toolactioncreate {
+    background-image: url(images/toolaction/visio_meeting.png);
+}
+.actiontemplate{
+    background-image: url(images/action/maketemplate.png);
+}
+.actionaddtemplate{
+    background-image:url(images/action/addtemplate_22.png);
+}
+.actiontemplate.invisible{
+    background-image: url(images/action/maketemplate_na.png);
+}
+.actionpreview{
+    background-image: url(images/action/view.png);
+}
+.actioncertificate{
+    background-image: url(../../img/certificate.png);
+}
+.actioncertificate.invisible{
+    background-image: url(../../img/certificate_na.png);
+}
+.actioncourseadd{
+    background-image: url(images/action/module.png);
+}
+.actiondragdrop{
+    background-image: url(../../img/drag-and-drop.png);
+}
+/*action icon for session list*/
+.actionadduser{
+    background-image: url(images/action/add_user.png);
+}
+.actionaddcoursetosession{
+    background-image: url(images/action/course_add_22.png);
+}
+.actionsession{
+    background-image: url(images/action/members_22.png);
+}
+.actionexport{
+    background-image: url(images/action/excel_22.png);
+}
+.actioncourse,.actionscourse{
+    background-image: url(images/action/course_22.png);
+}
+.actioncourse.invisible{
+    background-image: url(images/action/course_22_na.png);
+}
+.actionnewfolder {
+    background-image: url(images/action/folder.png);
+}
+.actionnewfolder22 {
+    background-image: url(images/action/folder_22x22.png);
+}
+.actionnewrole22 {
+    background-image: url(images/action/new_role_22.png);
+}
+.actionnassignerole{
+    background-image: url(images/action/assignerole.png);
+}
+.actionsharedfolder {
+    background-image: url(images/action/dir_earth.png);
+}
+.actionsharedfolder {
+    background-image: url(images/action/dir_earth.png);
+}
+.actionattachment {
+    background-image: url(images/action/attachment_22x22.png);
+}
+.actionfile {
+    background-image: url(../../img/defaut.gif);
+}
+.actionunknowfile {
+    background-image: url(../../img/defaut.gif);
+}
+.actioncreatefolder{
+    background-image: url(images/action/newfolder.png);
+}
+.actionsavezip{
+    background-image: url(images/action/zip.png);
+}
+.actionsavezip_na{
+    background-image: url(images/action/zip.png);
+}
+.actionquota{
+    background-image: url(images/action/quota.png);
+}
+.forcedownload {
+    background-image: url(images/action/download.png);
+}
+.actionsdraganddrop{
+    background-image: url(images/action/draganddrop.png);
+    curso:move;
+}
+.actionpublicstatus{
+    background-image: url(images/action/open.png);
+}
+.actionprivatestatus{
+    background-image: url(images/action/orange.png);
+}
+.actionopentoworldstatus{
+    background-image: url(images/action/blue.png);
+}
+.actioncourseclosedstatus{
+    background-image: url(images/action/red.png);
+}
+.actioninfo{
+    background-image: url(images/action/info.png);
+}
+.actioninfo.invisible{
+    background-image: url(images/action/synthese_view.png);
+}
+.actioncoursehome{
+    background-image: url(images/action/home.png);
+}
+.actiontracking{
+    background-image: url(images/action/report.png);
+}
+.actionsrecurrence_22x22{
+    background-image: url("images/action/recurrence_22x22.png")
+}
+.actionsavebackup{
+    background-image: url(images/action/save.png);
+}
+.actionstatistics{
+    background-image: url(images/action/statistics.png);
+}
+.actionstatisticsdetails{
+    background: url(images/action/2rightarrow.png) 0px 0px no-repeat;
+}
+.actionslook{
+    background-image: url(images/action/lock_22.png);
+}
+.actionsedithtml{
+    background-image: url(images/action/html.png);
+}
+.actionseditsettings{
+    background-image: url(images/action/settings_22.png);
+}
+.actionsmembers{
+    background-image: url(images/action/members_22.png);
+}
+.actionsloginmanager, .actionuser_r_management{
+    background-image: url(images/action/loginmanager.png);
+}
+.actionadminpro{
+    background-image: url(images/action/adminpro.png);
+}
+.actionsgradebook{
+    background-image: url(images/action/gradebook.png);
+}
+.actionstoolswizard{
+    background-image: url(images/action/tools_wizard.png);
+}
+.actionstheme{
+    background-image: url(images/action/theme.png);
+}
+.actionstuning{
+    background-image: url(images/action/tuning.png);
+}
+.actionsview{
+    background-image: url(images/action/synthese_view.png);
+}
+.actionsloginas{
+    background-image: url(images/action/loginas.png);
+}
+.actionsloginas.invisible{
+    background-image: url(images/action/loginas_na.png);
+}
+.actionsmessagereply{
+    background-image: url(images/action/message_reply.png);
+}
+.actionsmessagedelete{
+    background-image: url(images/action/message_delete.png);
+}
+.actionsmessage{
+    background-image: url(images/action/send_mail.png);
+}
+.actioniconup{
+    background-image: url(images/action/up_22.png);
+}
+.actionicondown{
+    background-image: url(images/action/down_22.png);
+}
+.actionwrongconvertir{
+    background-image: url(images/action/wrong.png);
+}
+.actionsvalidate{
+    background-image: url(images/action/validate.png);
+}
+.actionauthorprerequisites{
+    background-image: url(images/action/prerrequisito.png)
+}
+.actionstheme_add{
+    background-image: url(images/action/theme_add.png);
+}
+.actionaccept{
+    background-image: url(images/action/validate.png);
+}
+.actionvalidate_na{
+    background-image: url(images/action/validate_na.png);
+}
+.actionsuserexpired{
+    background-image: url(../../img/expired.gif);
+}
+.actionviewmodule{
+    background-image: url(images/action/module.png);
+}
+.actionprintmodule{
+    background-image: url(../../img/print_22.png);
+}
+.actionquizview{
+    background-image: url(images/action/view.png);
+}
+.actionquestionpool{
+    background-image: url(images/action/question_pool.png);
+}
+.actionprev{
+    background-image: url(images/action/prev.png);
+    margin: -4px -23px;
+    position: absolute;
+}
+.actioncategoriequiz{
+    background-image: url(images/action/category_22.png);
+}
+.actionuploadquiz{
+    background-image: url(images/action/excel_22.png);
+}
+.actionuser{
+    background-image: url(images/action/user.png);
+}
+.actiontrainer{
+    background-image: url(images/action/trainer.png);
+}
+.actioncoach{
+    background-image: url(images/action/coach.png);
+}
+.actionunknown{
+    background-image: url(images/action/unknown.png);
+}
+.actionclean{
+    background-image: url(images/action/clean.png);
+}
+.actionaddpage,.actionnewlist{
+    background-image: url(images/action/add.png);
+}
+.actiondeleteall{
+    background-image: url(images/action/deleteall.png);
+}
+.actionlatestchanges{
+    background-image: url(images/action/latestchanges.png);
+}
+.actioncomments{
+    background-image: url(images/action/discuss.png);
+}
+.actionhistory{
+    background-image: url(images/action/history.png);
+}
+.actiongroupempty{
+    background-image: url(images/action/deleteall.png);
+}
+.actiongroupfill{
+    background-image: url(images/action/filter.png);
+}
+.actiongroupstudentview{
+    background-image: url(images/action/members_22.png);
+}
+.actiongrouptoolvisible{
+    background-image: url(images/action/visible.png);
+    cursor:pointer;
+}
+.actiongrouptoolvisible.invisible{
+    background-image: url(images/action/invisible.png);
+    cursor:pointer;
+}
+.actionstudentviewwork{
+    background-image: url(images/action/works.png);
+}
+.actionstudentstutorview{
+    background-image: url(images/action/students.png);
+}
+.actionsessionstutorview{
+    background-image: url(images/action/sessions.png);
+}
+.actionworkmove{
+    background-image: url(images/action/move.png);
+}
+.actionworkcorrect{
+    background-image: url(images/action/correct.png);
+}
+.actionfolder{
+    background-image: url(images/action/folder.png);
+    vertical-align:bottom;
+}
+.actionlock{
+    background-image: url(images/action/lock.png);
+}
+.actionunlock{
+    background-image: url(images/action/unlock.png);
+}
+.actionforum{
+    background-image: url(images/action/forum.png);
+}
+/*Action for file types in document*/
+.actiondocword{
+    background-image: url(../../img/word.gif);
+}
+.actiondocweb{
+    background-image: url(images/action/file_html.png);
+}
+.actionnewdocweb{
+    background-image: url(images/action/plus.png);
+}
+.actiondocweb_16x16{
+    background-image:url(images/action/file_html_small.png);
+}
+.actiondocimage_16x16{
+    background-image:url(images/action/file_image_small.png);
+}
+.actiondocvideo_16x16{
+    background-image:url(images/action/video_file_small.png);
+}
+.actiondocaudio_16x16{
+    background-image:url(images/action/file_sound_small.png);
+}
+.actionsmalllpfolder{
+    background-image:url(images/action/lp_folder_small.png);
+}
+.actiondoctext_16x16{
+    background-image:url(images/action/newpage.png);
+}
+.actiondocexcel{
+    background-image: url(../../img/excel.gif);
+}
+.actiondocexcel_16x16{
+    background-image: url(../../img/excel.gif);
+}
+.actiondoczip{
+    background-image: url(../../img/file_zip.gif);
+}
+.actiondoczip_16x16{
+    background-image: url(../../img/file_zip.gif);
+}
+.actiondocpdf{
+    background-image: url(../../img/file_pdf.gif);
+}
+.actiondocpdf_16x16{
+    background-image: url(../../img/file_pdf.gif);
+}
+.actiondocpowerpoint{
+    background-image: url(../../img/powerpoint.gif);
+}
+.actiondocpowerpoint_16x16{
+    background-image: url(../../img/powerpoint.gif);
+}
+.actiondocflash{
+    background-image: url(../../img/file_flash.gif);
+}
+.actiondocflash_16x16{
+    background-image:url(images/action/file_flash_small.png);
+}
+.actiondoctext{
+    background-image: url(../../img/file_txt.gif);
+}
+.actiondocimage{
+    background-image: url(images/action/file_image.png);
+}
+.actiondocaudio{
+    background-image: url(images/action/file_sound.png);
+}
+.actiondocvideo{
+    background-image: url(images/action/video_file.png);
+}
+.actiondoccode{
+    background-image: url(../../img/file_txt.gif);
+}
+.actionblog{
+    background-image: url(images/action/blog.png);
+}
+
+.actionadvanced {
+    background-image: url(images/action/newfolder.png);
+}
+
+/*Mini tool icons for the tools*/
+.actionmini_document{
+    background-image: url(images/action/folder.png);
+}
+.actionmini_forum{
+    background-image: url(images/action/forum.png);
+}
+.actionmini_dropbox {
+    background-image: url(images/action/dropbox_min.png);
+}
+.actionmini_blog_management {
+    background-image: url(images/action/blog.png);
+}
+.actionmini_course_description{
+    background-image: url(images/action/info_22.png);
+}
+.actionmini_learnpath{
+    background-image: url(images/action/scorm_22.png);
+}
+.actionmini_link{
+    background-image: url(images/action/links_22.png);
+}
+.actionmini_quiz{
+    background-image: url(images/action/quiz_22.png);
+}
+.actionmini_glossary{
+    background-image: url(images/action/glossary_22.png);
+}
+.actionmini_calendar_event{
+    background-image: url(../../img/agenda_22.png);
+}
+.actionmini_notebook{
+    background-image: url(../../img/notebook_22.png);
+}
+.actionmini_group{
+    background-image: url(images/action/members_22.png);
+}
+.actionmini_student_publication{
+    background-image: url(../../img/works_22.png);
+}
+.actionmini_wiki{
+    background-image: url(images/action/wiki_22.png);
+}
+.actionmini_announcement{
+    background-image: url(images/action/valves_22.png);
+}
+.actionmini_survey{
+    background-image: url(images/action/survey_22.png);
+}
+/*action for author tool*/
+.actionauthorsettings{
+    background-image: url(images/action/settings_22.png);
+}
+.actionstudentviewquiz{
+    background-image: url(images/action/activity.png);
+}
+.actionannouncement{
+    background-image: url(images/action/announcement.png);
+}
+.actionwikireference{
+    background-image: url(images/action/publish_survey_22.png);
+}
+.actionwikistudenticon{
+    background-image: url(images/action/preview_22.png);
+}
+.actionenroll{
+    background:url(images/action/enroll.png);
+}
+.actionstatistics_na{
+    background:url(images/action/statistics_na.png);
+}
+.actiondraganddrop{
+    background:url(images/action/drag-and-drop.png);
+}
+.actionecommercesetting{
+    background-image:url(images/action/shopcart.png);
+}
+.actionminiiconecommerce{
+    background-image:url(images/action/minishopcart.png);
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+
+/*new---*/
+.actionmindmap {
+    background-image:url(images/action/mindmap.png);
+}
+.actionmediabox{
+    background-image:url(images/action/mediabox.png);
+}
+.actionlink {
+    background-image:url(images/action/link.png);
+}
+.actionglossary {
+    background-image:url(images/action/glossary.png);
+}
+.actioneditauthoring {
+    background-image:url(images/action/actioneditauthoring.png);
+    margin-left: -3px;
+    margin-top: 5px;
+    float:left;
+}
+.actionminiiconecommerce{
+    background-image:url(images/action/minishopcart.png);
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+/* TOOL ACTION ICONS */
+/* tool action icons are the icons that are used to perform an action in the tool (not on an item) */
+/* example: upload a document, change the reporting view into the user based view, view threaded view of a forum, ... */
+/* these are (in de default style) 38x38 pixels big */
+.toolactionplaceholdericon{
+    height: 38px;
+    width: 38px;
+    background-repeat: no-repeat;
+}
+
+#modulohomeicon{
+    background: url("images/action/home.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 50px;
+    margin: 0px 0 0 9px;
+    padding-left: 1px;
+    position: absolute;
+    background-position: 0px -2px;
+}
+.toolchatsocialtalk{
+    height: 41px;
+    width: 50px;
+    background-image:url(images/social_talk.png);
+    background-repeat: no-repeat;
+
+}
+.toolactionenroll_na{
+    background:url(images/toolaction/enroll_na.png);
+    background-repeat: no-repeat;
+}
+.toolactionmaximize {
+    background-image: url(images/toolaction/maximize.png);
+}
+.toolactionminimize {
+    background-image: url(images/toolaction/minimize.png);
+}
+.toolactionview {
+    background-image: url(images/action/active.png);
+}
+.toolactionhide {
+    background-image: url(images/action/inactive.png);
+}
+.toolactionroles_management{
+    background-image: url(images/toolaction/roles_management.png);
+}
+.toolactiononline{
+    background-image:url(images/toolaction/online.png);
+}
+.toolactionskills_ranking{
+    background-image:url(images/toolaction/skills_ranking.png);
+}
+.toolactionweight_in_report{
+    background-image:url(images/toolaction/weight_in_report.png);
+}
+.toolactiondocumentcreate{
+    background-image: url(images/toolaction/newdoc.png);
+}
+.toolactiondocumentpages{
+    background-image: url(images/toolaction/copy_tool.png);
+}
+.toolactiontemplates{
+    background-image: url(images/toolaction/template.png);
+}
+.toolactioncreatefolder{
+    background-image: url(images/toolaction/newfolder.png);
+}
+.toolactionunfold{
+    background-image: url(images/toolaction/unfold32.png);
+}
+.toolactionfold{
+    background-image: url(images/toolaction/fold32.png);
+}
+.toolactionsavezip{
+    background-image:url(images/action/download.png);
+}
+.toolactionquota{
+    background-image: url(../../img/quota.png);
+}
+.toolactionnewcategory{
+    background-image:url(images/toolaction/category_32.png);
+}
+.toolactionback{
+    background-image: url(images/toolaction/back.png);
+}
+.toolactionscenarioblender{
+    background-image: url(images/toolaction/scenarioblender.png);
+}
+.toolactioniconexcel{
+    background-image: url(images/toolaction/excel.png);
+}
+.toolactionmediabox{
+    background-image: url(images/toolaction/mediabox.png);
+}
+.toolactionupload{
+    background-image: url(images/toolaction/import.png);
+}
+.toolactiongallery{
+    background-image: url(images/toolaction/gallery_one.png);
+}
+.toolactiongallery_all{
+    background-image: url(images/toolaction/gallery_all.png);
+}
+.toolactionsave{
+    background-image: url(images/toolaction/author-save.png);
+}
+.toolactionfolderup{
+    background-image: url(images/toolaction/up.png);
+}
+.toolactionsearch{
+    background-image: url(images/toolaction/search.png);
+}
+.toolactionlist{
+    background-image: url(images/toolaction/list.png);
+}
+.toolactionadd{
+    background-image: url(images/toolaction/add_file.png);
+}
+.adminmultisite {
+    background-image: url(images/toolaction/adminmultisite.png);
+}
+.managecoursesmultisite {
+    background-image: url(images/toolaction/admincourse.png);
+}
+.toolactionskills{
+    background-image: url(images/toolaction/objective.png);
+}
+.toolactionresources{
+    background-image: url(images/toolaction/public.png);
+}
+.toolactionassessment{
+    background-image: url(images/toolaction/evaluation.png);
+}
+.toolactionprerequisites{
+    background-image: url(images/toolaction/context.png);
+}
+.toolactionother{
+    background-image: url(images/toolaction/agenda.png);
+}
+.toolactionauthor{
+    background-image: url(images/toolaction/new_author.png);
+}
+.toolactionhomepage{
+    background-image: url(images/toolaction/home.png);
+}
+.toolactionformplus{
+    background-image: url(images/toolaction/quiz.png);
+}
+.toolactionscenario{
+    background-image: url(images/toolaction/scenario.png);
+}
+.toolaction32x32file_pdf{
+    background-image: url(images/toolaction/32x32file_pdf.png);
+}
+.toolactionmark_learners{
+    background-image: url(images/toolaction/mark_learners.png);
+}
+.toolactiondelete{
+    background-image: url(images/toolaction/delete_32.png);
+}
+.toolactiondelete_the_course{
+    background-image: url(images/toolaction/delete_the_course.png);
+}
+.toolactionnewlink{
+    background-image: url(images/toolaction/toolactionnewlink.png);
+}
+.toolactionlanguage {
+    background-image: url(images/toolaction/toolactionlanguage.png);
+}
+.toolactionnews {
+    background-image: url(images/toolaction/toolactionnews.png);
+}
+.toolactioneditportal{
+    background-image: url(images/toolaction/toolactioneditportal.png);   
+}
+.toolactionregistrationpage {
+    background-image: url(images/toolaction/toolactionregistrationpage.png); 
+}
+.toolactiontrafreporting {
+    background-image: url(images/toolaction/toolactiontrafreporting.png);
+}
+.toolactionautomaticemail{
+    background-image: url(images/toolaction/toolactionautomaticemail.png);
+}
+.toolactioncopy{
+    background-image: url(images/toolaction/copy.png);
+}
+.toolactionarrow{
+    background-image: url(images/toolaction/arrow.png);
+}
+.toolactionbackup{
+    background-image:url(images/toolaction/backup.png);
+}
+.toolactionemptycourse{
+    background-image:url(images/toolaction/emptycourse.png);
+}
+.toolactionslink{
+    background-image: url(images/toolaction/newlink.png);
+}
+.toolactionshome {
+    background-image: url(images/toolaction/home.png);
+}
+.toolactionblog_new {
+    background-image: url(images/toolaction/blog_new.png);
+}
+.toolactionblog-home{
+    background-image: url(images/toolaction/blog-home.png);
+}
+.toolactionexamen_32{
+    background-image:url(images/toolaction/exam_32.png);
+}
+.toolactionsmessage {
+    background-image: url(images/toolaction/message.png);
+}
+.toolactionsinvite {
+    background-image: url(images/toolaction/plume.png);
+}
+.toolactionsprofile {
+    background-image: url(images/toolaction/profile.png);
+}
+.toolactionsfriend {
+    background-image: url(images/toolaction/friends.png);
+}
+.toolactionsgroup {
+    background-image: url(images/toolaction/group.png);
+}
+.toolactionsactivity {
+    background-image: url(images/toolaction/activity.png);
+}
+.toolactionssocial {
+    background-image: url(images/toolaction/social.png);
+}
+.toolactionsweek {
+    background-image: url(images/toolaction/week.png);
+}
+.toolactionstep {
+    background-image: url(images/toolaction/step.png);
+}
+.toolscenarioactionstep {
+    background-image: url(images/tool/scenario/steptool.png);
+}
+.toolactionsscenario {
+    background-image: url(images/toolaction/empty.png);
+}
+.toolactionscorporate {
+    background-image: url(images/toolaction/professional.png);
+}
+.toolactioncreatecourse{
+    background-image: url(images/toolaction/new_course.png);
+}
+.toolactionautomaticenrollment{
+    background-image: url(images/toolaction/enrollment.png);
+}
+.toolactionexportcourse{
+    background-image: url(images/toolaction/excel_38.png);
+}
+.toolactionimportcourse{
+    background-image: url(images/toolaction/import.png);
+}
+.toolactionannounce_add{
+    background-image: url(images/toolaction/announce_add.png);
+}
+
+.toolactionaddusertocourse{
+    background-image: url(images/toolaction/add_user.png);
+}
+.toolactionprint32{
+    background-image: url(images/toolaction/print32.png);
+}
+.toolactionsendmail{
+    background-image: url(images/toolaction/send_mail.png);
+}
+.toolactionstatistics{
+    background-image: url(images/toolaction/statistics.png);
+}
+.toolactionadmincourse{
+    background-image: url(images/toolaction/access.png);
+}
+.toolactionatimesession{
+    background-image: url(images/toolaction/timesession.png);
+}
+.toolactioncatalogue{
+    background-image: url(images/toolaction/catalogue.png);
+}
+.toolactiontopic{
+    background-image: url(images/toolaction/topic.png);
+}
+.toolactionprogramme{
+    background-image: url(images/toolaction/programme.png);
+}
+.toolactioncataloguecircle{
+    background: url(images/toolaction/cataloguecircle.png) no-repeat;
+}
+.toolactiontutorview{
+    background: url(images/toolaction/tutorview.png) no-repeat;
+}
+/*tool action icons for admin homepage */
+.toolactionadminusers{
+    background-image: url(images/toolaction/adminUsersReport.png);
+}
+.toolactionadmincourses{
+    background-image: url(images/toolaction/admin_courses.png);
+}
+.toolactionadminsession{
+    background-image: url(images/toolaction/adminsession.png);
+}
+.toolactionadmincatalogue{
+    background-image: url(images/toolaction/catalogue.png);
+}
+.toolactionadminsupport{
+    background-image: url(images/toolaction/adminsupport.png);
+}
+.toolactionadminconfext{
+    background-image: url(images/toolaction/adminpro.png);
+}
+.toolactionshop{
+    background-image: url(images/toolaction/shop.png);
+}
+/*tool action icons for session list*/
+.toolactionsingle{
+    background-image: url(images/toolaction/single.png);
+}
+.toolactionmultiple{
+    background-image: url(images/toolaction/multiple.png);
+}
+.toolactionsession{
+    background-image: url(images/toolaction/session.png);
+}
+.toolactiongroupimage{
+    background-image: url(images/toolaction/groupimage.png);
+}
+.toolactiondraganddrop{
+    background-image: url(images/toolaction/drag-and-drop.png);
+}
+.toolactionadd32{
+    background-image: url(images/toolaction/add_32.png);
+}
+.toolactionaddprogramme{
+    background-image: url(images/toolaction/add_programme.png);
+}
+.toolactioninbox{
+    background-image: url(images/toolaction/inbox_message.png);
+}
+.toolactionoutbox{
+    background-image: url(images/toolaction/outbox_message.png);
+}
+.toolactionnewquiz{
+    background-image: url(images/toolaction/newquiz.png);
+}
+.toolactionquestion{
+    background-image: url(images/toolaction/questions.png);
+}
+.toolactionquestionlist {
+    background-image: url(images/toolaction/questionlist.png);
+}
+.toolactionpresencie{
+    background-image:url(images/toolaction/presence.png);
+}
+.toolactionlevel1{
+    background-image: url(images/toolaction/level1.png);
+}
+.toolactionlevel2{
+    background-image: url(images/toolaction/level2.png);
+}
+.toolactionlevel3{
+    background-image: url(images/toolaction/level3.png);
+}
+.toolactionlevel4{
+    background-image: url(images/toolaction/level4.png);
+}
+.tooladdquestion{
+    background-image: url(images/toolaction/addquestion.png);
+}
+.toolglossaryadd{
+    background-image: url(images/toolaction/glossary_add.png);
+}
+.toolcalendaraddevent{
+    background-image: url(images/toolaction/newevent.png);
+}
+.toolcalendaricalexport{
+    background-image: url(images/toolaction/icalexport.png);
+}
+.toolcalendargoogleimport{
+    background-image: url(images/toolaction/google_calendar.png);
+}
+.toolactionimport_32{
+    background-image: url(images/toolaction/import_32.png);
+}
+.tooladdnewnote{
+    background-image: url(images/toolaction/newnote.png);
+}
+.tooladdlearner{
+    background-image: url(images/toolaction/add_learner.png);
+}
+.toolwikihome{
+    background-image: url(images/toolaction/wikihome.png);
+}
+.tooladdnewpage{
+    background-image: url(images/toolaction/newpage.png);
+}
+.toolallpages{
+    background-image: url(images/toolaction/allpages.png);
+}
+.tooledithome{
+    background-image: url(images/toolaction/edit38.png);
+}
+.tooladdwikilink{
+    background-image: url(images/toolaction/wiki_link.png);
+}
+.tooldeletegroup {
+    background-image: url(images/toolaction/delete_32.png);
+}
+.toolactionsgroupadd {
+    background-image: url(images/toolaction/add_group.png);
+}
+.toolactionunknown {
+    background-image: url(images/toolaction/unknown.png);
+}
+.addsimpleuser{
+    background-image: url(images/action/add-simple-user.png);
+}
+.addmoderator{
+    background-image: url(images/action/add-moderator.png);
+}
+.toolactionassignment {
+    background-image: url(images/toolaction/assignment.png);
+}
+.toolactionassignment.invisible {
+    background-image: url(images/toolaction/assignment_na.png);
+}
+.toolactionmessages {
+    background-image: url(images/toolaction/message.png);
+}
+.toolactionmessages.invisible {
+    background-image: url(images/toolaction/message_na.png);
+}
+.toolactiondocument {
+    background-image: url(images/toolaction/documents.png);
+}
+.toolactiondocument.invisible {
+    background-image: url(images/toolaction/documents_na.png);
+}
+.toolactionforum {
+    background-image: url(images/toolaction/forum.png);
+}
+.toolactionforum.invisible {
+    background-image: url(images/toolaction/forum_na.png);
+}
+.toolactionpost{
+    background-image: url(images/toolaction/post.png);
+}
+.toolactionwiki {
+    background-image: url(images/toolaction/wikihome.png);
+}
+.toolactionwiki.invisible {
+    background-image: url(images/toolaction/wikihome_na.png);
+}
+.toolactionchat {
+    background-image: url(images/toolaction/chat.png);
+}
+.toolactionchat.invisible {
+    background-image: url(images/toolaction/chat_na.png);
+}
+.toolactionnewassignment {
+    background-image: url(images/toolaction/newassignment.png);
+}
+.toolactionnewforumcategory {
+    background-image: url(images/toolaction/forum_category_new.png);
+}
+.toolactionnewforum {
+    background-image: url(images/toolaction/forum_new.png);
+}
+.toolactionlockadd {
+    background-image: url(images/toolaction/lock_add.png);
+}
+.toolactionunlockadd {
+    background-image: url(images/toolaction/unlock_add.png);
+}
+/*Tool icons list survey*/
+
+.toolactionyesno_list {
+    background-image: url(images/tool/survey/yesno_list.png);
+}
+.toolactionmultiplechoice_list {
+    background-image: url(images/tool/survey/multiplechoice_list.png);
+}
+.toolactionmultipleanswer_list {
+    background-image: url(images/tool/survey/multipleanswer_list.png);
+}
+.toolactionopen_list {
+    background-image: url(images/tool/survey/open_list.png);
+}
+.toolactiondropdown_list {
+    background-image: url(images/tool/survey/dropdown_list.png);
+}
+.toolactionpercent_list {
+    background-image: url(images/tool/survey/percent_list.png);
+}
+.toolactionscore_list {
+    background-image: url(images/tool/survey/score_list.png);
+}
+.toolactioncomment_list {
+    background-image: url(images/tool/survey/comment_list.png);
+}
+
+/*Tool icons for shortcut*/
+
+.toolshortcut_home{
+    background-image: url(images/toolaction/atom.png);
+}
+.toolshortcut_oogie{
+    background-image: url(images/toolaction/oogie_shortcut.png);
+}
+.toolshortcut_document, .toolshortcut_documents {
+    background-image: url(images/toolaction/document_shortcut.png);
+}
+.toolshortcut_course_description{
+    background-image: url(images/toolaction/description_shortcut.png);
+}
+.toolshortcut_course_setting{
+    background-image:url(images/toolaction/setting_shortcut.png);
+}
+.toolshortcut_evaluation {
+    background-image:url(images/toolaction/evaluation_shortcut.png);
+}
+.toolshortcut_author{
+    background-image: url(images/toolaction/author_shortcut.png);
+}
+.toolshortcut_live{
+    background-image:url(images/toolaction/live_shortcut.png);
+}
+.toolshortcut_seriousgames{
+    background-image:url(images/toolaction/serious_games_shortcut.png);
+}
+.toolshortcut_shop{
+    background-image:url(images/toolaction/shop_shortcut.png);
+}
+.toolshortcut_webtv{
+    background-image:url(images/toolaction/webtv_shortcut.png);
+}
+.toolshortcut_author{
+    background-image: url(images/toolaction/author_shortcut.png);
+}
+.toolshortcut_learnpath{
+    background-image: url(images/toolaction/module_shortcut.png);
+}
+.toolshortcut_link, .toolshortcut_links {
+    background-image: url(images/toolaction/link_shortcut.png);
+}
+.toolshortcut_quiz{
+    background-image: url(images/toolaction/quiz_shortcut.png);
+}
+.toolshortcut_mediabox{
+    background-image: url(images/toolaction/mediabox_shortcut.png);
+}
+.toolshortcut_glossary{
+    background-image: url(images/toolaction/glossary_shortcut.png);
+}
+.toolshortcut_calendar_event {
+    background-image: url(images/toolaction/calendar_shortcut.png);
+}
+.toolshortcut_chat{
+    background-image: url(images/toolaction/chat_shortcut.png);
+}
+.toolshortcut_notebook{
+    background-image: url(images/toolaction/notebook_shortcut.png);
+}
+.toolshortcut_users, .toolshortcut_user{
+    background-image: url(images/toolaction/users_shortcut.png);
+}
+.toolshortcut_forums, .toolshortcut_forum{
+    background-image: url(images/toolaction/forum_shortcut.png);
+}
+.toolshortcut_groups, .toolshortcut_group {
+    background-image: url(images/toolaction/group_shortcut.png);
+}
+.toolshortcut_student_publication {
+    background-image: url(images/toolaction/work_shortcut.png);
+}
+.toolshortcut_wiki {
+    background-image: url(images/toolaction/wiki_shortcut.png);
+}
+.toolshortcut_announcement{
+    background-image: url(images/toolaction/announcement_shortcut.png);
+}
+.toolshortcut_survey, .toolshortcut_survey{
+    background-image: url(images/toolaction/survey_shortcut.png);
+}
+.toolshortcut_mindmap{
+    background-image: url(images/toolaction/mindmap_shortcut.png);
+}
+
+/*tool action icons for annoucement tool*/
+.toolactionannoucement {
+    background-image: url(images/toolaction/annoucement.png);
+}
+.toolactionCertificate {
+    background-image: url(images/toolaction/Certificate.png);
+}
+
+/*Tools actions survey*/
+.toolactionSurveyAddNew{
+    background: url('images/toolaction/survey.png') no-repeat;
+}
+.toolactionSurveySearch{
+    background: url('images/toolaction/search.png') no-repeat;
+}
+.toolactionedit_link{
+    background: url("images/action/edit_link.png") no-repeat;
+}
+.toolactionclean_group{
+    background: url("images/action/clean_group.png") no-repeat;
+}
+.toolactionpreview_22{
+    background: url("images/action/preview_22.png") no-repeat;
+}
+.toolactionpublish_survey_22{
+    background: url("images/action/publish_survey_22.png") no-repeat;
+}
+.toolactionreporting22{
+    background: url("images/action/reporting22.png") no-repeat;
+}
+.toolactionedit_32{
+    background: url("images/toolaction/edit_32.png") no-repeat;
+}
+.toolactiondelete_32{
+    background: url("images/toolaction/delete_32.png") no-repeat;
+}
+.toolactionpreview{
+    background: url("images/toolaction/preview.png") no-repeat;
+}
+.toolactionprint32{
+    background: url("images/toolaction/print32.png") no-repeat;
+}
+.toolactionpublish_survey{
+    background: url("images/toolaction/publish_survey.png") no-repeat;
+}
+/*Tool action for author tool*/
+.toolactionface2face {
+    background-image: url(images/toolaction/face2face.png);
+}
+.toolactionimagescenario {
+    background-image: url(images/toolaction/imagescenario.png);
+}
+.toolactionNextface2face {
+    background-image: url(images/toolaction/Nextface2face.png);
+}
+.toolactiondelete_scenario{
+    background-image: url(images/toolaction/delete_scenario.png);
+}
+.toolactionauthorcontent{
+    background-image: url(images/toolaction/add_32.png);
+}
+.toolactionauthorscenario{
+    background-image: url(images/toolaction/scenario.png);
+}
+.toolactionauthorpreview{
+    background-image: url(images/toolaction/preview.png);
+}
+.toolactionauthorsettings{
+    background-image: url(images/toolaction/edit38.png);
+}
+.toolactionauthorexport{
+    background-image: url(images/toolaction/up.png);
+}
+.toolactionquizscores{
+    background-image: url(images/toolaction/scores.png);
+}
+.toolsocialnewtopic{
+    background-image: url(images/toolaction/plume.png);
+}
+.toolsocialmessagelist{
+    background-image: url(images/toolaction/message.png);
+}
+.toolsettings{
+    background-image: url(images/toolaction/settings.png);
+}
+.toolsettingsnotification{
+    background-image: url(images/toolaction/message.png);
+}
+.toolsettingsuser{
+    background-image: url(images/toolaction/user_rights.png);
+}
+.toolsettingstheme{
+    background-image: url(images/toolaction/template.png);
+}
+.toolsettingsother1{
+    background-image: url(images/toolaction/other.png);
+}
+.toolsettingsother{
+    background-image: url(images/toolaction/edit38.png);
+}
+/*new---*/
+.toolactioncopycourse {
+    background-image: url(images/toolaction/copy_tool.png);
+}
+.toolactioncoursebackup {
+    background-image: url(images/toolaction/backup_tool.png);
+}
+.toolactionnew {
+    background-image: url(images/toolaction/newassignment.png);
+}
+.toolactionscorm {
+    background-image: url(images/toolaction/import_scorm.png);
+}
+.toolactionsPowerPoint {
+    background-image: url(images/toolaction/PowerPoint.png);
+}
+.toolactiongradebook {
+    background-image: url(images/toolaction/gradebook.png);
+}
+.toolactionquiz {
+    background-image: url(images/toolaction/quizzes.png);
+}
+.toolactiongroup {
+    background-image: url(images/toolaction/group.png);
+}
+.toolactionuser {
+    background-image: url(images/toolaction/user.png);
+}
+.toolactionauthorsettings {
+    background-image: url(images/toolaction/settings_new.png);
+}
+.toolactionauthorcontent{
+    background-image: url(images/toolaction/my_module.png); 
+}
+.toolactionimport {
+    background: url(images/toolaction/import.png) no-repeat;
+}
+.toolactionempty {
+    background: url(images/toolaction/toolactionempty.png) no-repeat;
+}
+.toolactionglossary {
+    background: url(images/toolaction/toolactionglossary.png) no-repeat;
+}
+.toolactionlink{
+    background: url(images/toolaction/toolactionlink.png) no-repeat;
+}
+.toolactionpayment {
+    background: url(images/toolaction/payment.png) no-repeat;
+}    
+.toolactioninvoice{
+    background: url(images/toolaction/invoice.png) no-repeat;
+}
+.toolactioncatalog{
+    background: url(images/toolaction/allpages.png) no-repeat;
+}
+.toolactionproduct {
+    background: url(images/toolaction/product.png) no-repeat;
+}
+.toolactioncategory{
+    background: url(images/toolaction/category.png) no-repeat;
+}
+.toolactionaudio{
+    background: url(images/toolaction/record_mp3.png) no-repeat;
+}
+.toolactioncalculator{
+    background:url(images/toolaction/calculator.png);
+}
+
+/* SCENARIO TOOL ACTION ICONS */
+/* scenario tool action icons are the icons that are used to perform an action in the scenario tool (not on an item) */
+/* example: Add an activity ... */
+/* these are (in de default style) 64x64 pixels big */
+.toolscenarioactionplaceholdericon{
+    height: 64px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-color:transparent;
+}
+.toolscenarioactionactivity {
+    background-image: url(images/tool/scenario/activity.png);
+}
+.toolscenarioactionsocial {
+    background-image: url(images/tool/scenario/social.png);
+}
+.toolscenarioactionweek {
+    background-image: url(images/tool/scenario/week.png);
+}
+.toolscenarioactionscenario {
+    background-image: url(images/tool/scenario/empty.png);
+}
+.toolscenarioactioncorporate {
+    background-image: url(images/tool/scenario/professional.png);
+}
+.mediaactionplaceholdericon{
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+}
+.media_create_audio_button {
+    background-image: url(images/tool/audio.png);
+    height:60px;
+}
+.media_create_video_button {
+    background-image: url(images/tool/video.png);
+    height:60px;
+}
+.media_create_podcast_button {
+    background-image: url(images/tool/podcast.png);
+    height:60px;
+}
+.media_create_screencast_button {
+    background-image: url(images/tool/screencast.png);
+    height:60px;
+}
+.media_create_animation_button {
+    background-image: url(images/tool/flash.png);
+    height:60px;
+}
+.mediaactionforum{
+    background-image: url(images/tool/forum48.png);
+    height:60px;
+}
+.mediaactionlink{
+    background-image: url(images/tool/link_48.png);
+    height:60px;
+}
+.forumstage{
+    background-image:url(images/tool/forum48.png);
+    background-repeat:no-repeat;
+    width:100px;height:100px;
+    background-position: center center;
+}
+.linkstage{
+    background-image:url(images/tool/link_48.png);
+    background-repeat:no-repeat;
+    width:100px;height:100px;
+    background-position: center center;
+}
+div.cursesubscribe input{
+    background-image:url(images/toolaction/enroll.png);
+    background-repeat:no-repeat;
+    cursor:pointer;
+    padding-left: 32px;
+    padding-top: 14px;
+    height: 32px;
+    width:  32px;
+    border:none;
+}
+
+/*
+Icons for quizzes
+*/
+.quizactionplaceholdericon{
+    height: 42px;
+    width: 42px;
+    background-repeat: no-repeat;
+}
+.quiz_multiple_choice_list {
+    background-image: url(images/action/quiz/multiple_choice.png);
+}
+.quiz_multiple_answer_list {
+    background-image: url(images/action/quiz/multiple_answer.png);
+}
+.quiz_reasoning_list {
+    background-image: url(images/action/quiz/reasoning.png);
+}
+.quiz_fillups_list {
+    background-image: url(images/action/quiz/fillups.png);
+}
+.quiz_openquestion_list {
+    background-image: url(images/action/quiz/openquestion.png);
+}
+.quiz_matching_list {
+    background-image: url(images/action/quiz/matching.png);
+}
+.quiz_hotspot_list {
+    background-image: url(images/action/quiz/hotspot.png);
+}
+.quiz_contour_list {
+    background-image: url(images/action/quiz/contour.png);
+}
+/*
+Icons for the quiz top header(question list)
+*/
+.quiztemplateplaceholdericon{
+    height: 87px;
+    width: 87px;
+    background-repeat: no-repeat;
+}
+.quiztpl_01true_false {
+    background-image: url(images/tool/quiztemplate/01true_false.png);
+}
+.quiztpl_02multiple_choice {
+    background-image: url(images/tool/quiztemplate/02multiple_choice.png);
+}
+.quiztpl_03multiple_choice_sequence {
+    background-image: url(images/tool/quiztemplate/03multiple_choice_sequence.png);
+}
+.quiztpl_04true_false_justified {
+    background-image: url(images/tool/quiztemplate/04true_false_justified.png);
+}
+.quiztpl_05none_of_the_above {
+    background-image: url(images/tool/quiztemplate/05none_of_the_above.png);
+}
+.quiztpl_06mc_image {
+    background-image: url(images/tool/quiztemplate/06mc_image.png);
+}
+.quiztpl_07mc_audio {
+    background-image: url(images/tool/quiztemplate/07mc_audio.png);
+}
+.quiztpl_08mc_screencast {
+    background-image: url(images/tool/quiztemplate/08mc_screencast.png);
+}
+.quiztpl_09mc_flash {
+    background-image: url(images/tool/quiztemplate/09mc_flash.png);
+}
+.quiztpl_10mc_video {
+    background-image: url(images/tool/quiztemplate/10mc_video.png);
+}
+.quiztpl_11ma_identify {
+    background-image: url(images/tool/quiztemplate/11ma_identify.png);
+}
+.quiztpl_12ma_remove {
+    background-image: url(images/tool/quiztemplate/12ma_remove.png);
+}
+.quiztpl_13ma_identify_image {
+    background-image: url(images/tool/quiztemplate/13ma_identify_image.png);
+}
+.quiztpl_14reasoning {
+    background-image: url(images/tool/quiztemplate/14reasoning.png);
+}
+.quiztpl_15fill_blank_text {
+    background-image: url(images/tool/quiztemplate/15fill_blank_text.png);
+}
+.quiztpl_16fill_math {
+    background-image: url(images/tool/quiztemplate/16fill_math.png);
+}
+.quiztpl_17fill_table {
+    background-image: url(images/tool/quiztemplate/17fill_table.png);
+}
+.quiztpl_18listening_comprehension {
+    background-image: url(images/tool/quiztemplate/18listening_comprehension.png);
+}
+.quiztpl_crosswords {
+    background-image: url(images/tool/quiztemplate/crosswords.png);
+}
+.quiztpl_19open_question {
+    background-image: url(images/tool/quiztemplate/19open_question.png);
+}
+.quiztpl_20bopen_justify_mc {
+    background-image: url(images/tool/quiztemplate/20bopen_justify_mc.png);
+}
+.quiztpl_20open_map {
+    background-image: url(images/tool/quiztemplate/20open_map.png);
+}
+.quiztpl_21matching {
+    background-image: url(images/tool/quiztemplate/21matching.png);
+}
+.quiztpl_22ordering {
+    background-image: url(images/tool/quiztemplate/22ordering.png);
+}
+.quiztpl_23bmatch_assemble_proof {
+    background-image: url(images/tool/quiztemplate/23bmatch_assemble_proof.png);
+}
+.quiztpl_23match_image {
+    background-image: url(images/tool/quiztemplate/23match_image.png);
+}
+.quiztpl_24hotspots {
+    background-image: url(images/tool/quiztemplate/24hotspots.png);
+}
+.quiztpl_25hotspots_organigram {
+    background-image: url(images/tool/quiztemplate/25hotspots_organigram.png);
+}
+.quiztpl_26hotspots_screen {
+    background-image: url(images/tool/quiztemplate/26hotspots_screen.png);
+}
+.quiztpl_27hotspots_table {
+    background-image: url(images/tool/quiztemplate/27hotspots_table.png);
+}
+.quiztypeplaceholdericon{
+    height: 87px;
+    width: 87px;
+    background-repeat: no-repeat;
+}
+.quiztype_multiple_choice {
+    background-image: url(images/tool/quiztemplate/01true_false.png);
+}
+.quiztype_multiple_answer {
+    background-image: url(images/tool/quiztemplate/11ma_identify.png);
+}
+.quiztype_reasoning {
+    background-image: url(images/tool/quiztemplate/14reasoning.png);
+}
+.quiztype_fill_blanks {
+    background-image: url(images/tool/quiztemplate/15fill_blank_text.png);
+}
+.quiztype_open_question {
+    background-image: url(images/tool/quiztemplate/19open_question.png);
+}
+.quiztype_matching {
+    background-image: url(images/tool/quiztemplate/23match_image.png);
+}
+.quiztype_hotspots {
+    background-image: url(images/tool/quiztemplate/24hotspots.png);
+}
+.quiztype_contour {
+    background-image: url(images/tool/quiztemplate/contour.png);
+}
+.quiztype_templates {
+    background-image: url(images/tool/quiztemplate/templates.png);
+}
+.quiz_tpl_table {
+    height:89px;
+}
+
+/*actions for the survey tool*/
+.surveytypeplaceholdericon{
+    height: 95px;
+    width: 90px;
+    background-repeat: no-repeat;
+}
+.surveytypeplaceholdericon_list{
+    height: 45px;
+    width: 45px;
+    background-repeat: no-repeat;
+}
+.toolactioyesno{
+    background: url("images/tool/survey/yesno.png") no-repeat;
+}
+.toolactionmultipleanswer{
+    background: url("images/tool/survey/multipleanswer.png") no-repeat;
+}
+.toolactionopen{
+    background: url("images/tool/survey/open.png") no-repeat;
+}
+.toolactiondropdown{
+    background: url("images/tool/survey/dropdown.png") no-repeat;
+}
+.toolactionpercent{
+    background: url("images/tool/survey/percent.png") no-repeat;
+}
+.toolactionscore{
+    background: url("images/tool/survey/score.png") no-repeat;
+}
+.toolactioncomment{
+    background: url("images/tool/survey/comment.png") no-repeat;
+}
+.toolactionmultiplechoice{
+    background: url("images/tool/survey/multiplechoice.png") no-repeat;
+}
+/*Action for the survey report*/
+.surveyreportplaceholdericon, .shortcutplaceholdericon{
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+}
+.toolactiondokeos_question{
+    background: url("images/tool/survey/dokeos_question.png") no-repeat;
+}
+.toolactionsurvey_reporting_user{
+    background: url("images/tool/survey/survey_reporting_user.png") no-repeat;
+}
+.toolactionsurvey_reporting_comparative{
+    background: url("images/tool/survey/survey_reporting_comparative.png") no-repeat;
+}
+.toolactionexcel_32{
+    background: url("images/tool/survey/excel_32.png") no-repeat;
+}
+/*Action for Mindmap*/
+.mindmapplaceholdericon{
+    height: 38px;
+    width: 38px;
+    background-repeat: no-repeat;
+}
+.toolactionmindmap{
+    background: url("images/tool/mindmap/mindmap.png") no-repeat;
+}
+.toolactiondownloadmind{
+    background: url("images/tool/mindmap/downloadmind.png") no-repeat;
+}
+.toolactionup{
+    background: url("images/tool/mindmap/up.png") no-repeat;
+}
+.toolactiondown32{
+    background: url("images/tool/mindmap/down32.png") no-repeat;
+}
+.toolactioncomments{
+    background: url("images/tool/mindmap/comments.png") no-repeat;
+}
+
+.imagehelp {
+    height: 361px;
+    width: 292px;
+    background-repeat: no-repeat;
+}
+.imagehelpuser{
+    background-image: url(images/users_help.png);
+}
+
+#GalleryContainer .imageBox {
+/*    margin-left: 4px;
+    margin-top: 10px;*/
+margin-left:10px!important;
+margin:5px;
+width:218px;
+}
+.pen{
+    background: url("images/tool/exam_64.png");
+    background-repeat:no-repeat;
+    width:49px;
+    height: 64px;
+}
+.dokeos_exam{
+    background:url("images/tool/dokeos_exam.png");
+    width:57px;
+    height:65px;
+}
+.tutorial{
+    background: url("images/tool/black_board.png");
+    width:132px;
+    height: 82px;
+}
+.close_box2 {
+     
+    background-image:url(images/close_box.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height:12px;
+    width:12px;
+    text-transform: uppercase;
+}

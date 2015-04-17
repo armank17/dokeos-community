@@ -1,0 +1,54 @@
+<?php /*
+for more information: see languages.txt in the lang folder. 
+*/
+$Announcement = "Oznamy";
+$langAnnEmpty = "Zoznam oznámení bol vy&#269;istený";
+$AnnouncementModified = "Oznam bol zmenený";
+$AnnouncementAdded = "Oznam bol pridaný";
+$AnnouncementDeleted = "Oznam bol zmazaný";
+$AnnouncementPublishedOn = "Uverejnený";
+$AddAnnouncement = "Prida&#357; oznam";
+$langContent = "Obsah";
+$AnnouncementDeleteAll = "Zmaza&#357; zoznam oznamov";
+$professorMessage = "Správa od lektora";
+$langEmailSent = "a email poslaný zaregistrovaným študentom";
+$EmailOption = "Posla&#357; tento oznam e-mailom vybratým skupinám/používate&#318;om";
+$langRegUser = "registrovaní používatelia stránky";
+$langUnvalid = "máte neplatnú alebo neexistujúcu emailovú adresu";
+$langModifAnn = "Zmeni&#357; tento oznam";
+$langModify    = "zmeni&#357;";
+$langDelete    = "zmaza&#357;";
+$langTitle     = "Názov";
+$langHelp      = "pomoc";
+$langOk        = "OK";
+$langAddIntro  = "Prida&#357; úvodný text";
+$langBackList  = "Spä&#357; na zoznam";
+$langSelMess   = "Upozornenia niektorým používate&#318;om";
+$EmailTitle  = "Predmet pre tento e-mail";
+$langUserlist  = "Zoznam skupín a používate&#318;ov";
+$langSelectedUsers  = "Vybraní užívatelia";
+$langSubmit  = "Posla&#357;";
+$langPleaseEnterMessage  = "Musíte vloži&#357; text správy.";
+$langPleaseSelectUsers  = "Musíte vybra&#357; používate&#318;ov.";
+$Teachersubject = "Správa bola poslaná Vašim študentom";
+$langMessages  = "Správy";
+$langMessageToSelectedUsers  = "Správy vybraným používate&#318;om";
+$langIntroText  = "Ak chcete správu odosla&#357;, zvo&#318;te skupinu používate&#318;ov (ozna&#269;enú s G na za&#269;iatku) alebo jedného používate&#318;a zo zoznamu v&#318;avo.";
+$langDown = "dole";
+$langMsgSent = "Správa bola poslaná vybraným študentom ";
+$langSelUser = "vybraní používatelia stránky";
+$langMessageToSelectedGroups = "Správa vybraným skupinám";
+$langSelectedGroups = "vybrané skupiny";
+$langMsg = "Správy";
+$langYes = "áno";
+$MsgText = "Správa";
+$AnnouncementDeletedAll = "Všetky oznamy boli odstránené";
+$AnnouncementMoved = "Oznam bol presunutý";
+$NoAnnouncements = "Žiadne oznamy.";
+$SelectEverybody = "Vybra&#357; všetkých";
+$SelectedUsersGroups = "vybrané skupiny používate&#318;ov";
+$LearnerMessage = "Správa od študenta";
+$TitleIsRequired = "Názov je povinný";
+$AnnounceSentByEmail = "Oznam poslaný e-mailom";
+$AnnounceSentToUserSelection = "Oznam poslaný vybraným používate&#318;om";
+?>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>"Dokeos e-Learning Suite" Documentation</title>
+	
+	<link rel="stylesheet" href="../main/css/dokeos2_tablet/default.css" type="text/css" media="screen,projection" />
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="../main/inc/lib/javascript/jquery-1.4.2.min.js" language="javascript" />
+	<script type="text/javascript" language="javascript">
+		jQuery(document).ready( function($) {
+			// Expand or collapse the help
+			$('#help-link').click(function () {
+				$('#help-content').slideToggle('fast', function() {
+					if ( $(this).hasClass('help-open') ) {
+						$('#help a').css({'backgroundImage':'url("../main/img/screen-options-right.gif")'});
+						$(this).removeClass('contextual-help-open');
+					} else {
+						$('#help a').css({'backgroundImage':'url("../main/img/screen-options-right-up.gif")'});
+						$(this).addClass('help-open');
+					}
+				});
+				return false;
+			});
+		});
+	</script></head><body>
+	<div id="header">
+		<div id="header1">
+				<div class="headerinner">
+					<div id="institution">"Dokeos e-Learning Suite" Documentation</div>
+				</div>
+		</div>
+		<div id="header2">
+			<div class="headerinner">
+				<ul id="dokeostabs">
+                                        <li class="install" id="current"><a href="../main/install/index.php">Installation</a></li>
+                                        <li class="guide_na"><a href="../../documentation/installation_guide.php" target="_blank">Installation guide</a></li>
+				</ul>
+				<div style="clear: both;" class="clear"> </div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="main">
+		<div class="actions">
+			<a href="readme.html">About Dokeos</a> 
+			<a href="installation_guide.html">Installation Guide</a>
+			<a href="license.html">GPL license</a>
+			<a href="credits.html">Credits</a>
+			<a href="dependencies.html">Dependencies</a>
+			<a href="changelog.html">Changelog</a>
+			<a href="http://www.dokeos.com">Website</a>	
+		</div>
+
+		<div id="content">
+			<h1>About "Dokeos e-Learning Suite"</h1>
+			Synthetic information
+
+			<h1>Installation</h1>
+			<a href="installation_guide.html">English installation guide</a>
+
+			<h1>License</h1>
+			<a href="license.html">GNU General Public License Version 2</a>
+			<h1>Credits</h1>
+			<p><a href="credits.html">Credits</a></p>
+			<h1>Dependencies</h1>
+			<p><a href="dependencies.html">Dependencies</a></p>
+			<h1>Changelog</h1>
+			<p><a href="changelog.html">Changelog</a></p>
+
+	<h3>Contact us</h3>
+        <p>if you are interested in our products, please contact us in our contact page, <a href="http://www.dokeos.com/contact/">click here</a></p>
+
+		</div>
+	</div>
+</body></html>

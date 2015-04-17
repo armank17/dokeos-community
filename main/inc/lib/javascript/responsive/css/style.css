@@ -1,0 +1,268 @@
+.container {
+
+}
+
+.generic_tool_header {
+    background:#ffffff;
+    -webkit-box-shadow: 0px 0px 7px #cccccc;
+    -moz-box-shadow: 0px 0px 7px #cccccc;
+    box-shadow: 0px 0px 7px #cccccc;
+
+}
+
+.header_background {
+    background-color: #737373;
+    height: 22px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    position:relative;
+}
+
+#back2home {
+    margin-top: -20px;
+    position: absolute;
+    overflow: hidden;
+    width: 220px;
+}
+
+.title-button {
+    background-color: #F4F4F4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 26px 26px 26px 26px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.icons-home {
+    background: url("/main/img/global_home_normal.png") no-repeat scroll 0 0 transparent;
+    float: left !important;
+    height: 50px;
+    margin-left: -4px;
+    margin-top: -4px;
+    position: relative;
+    width: 50px;
+}
+
+.text-home {
+    float: left !important;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding-right: 5px;
+}
+
+.bar-header {
+    margin-bottom: 5px;
+}
+
+
+
+.action {
+    background-color:#fff;
+    background:-moz-linear-gradient(center top , #eaeaea, #FFFFFF);
+    background: -webkit-gradient(linear,left top, left bottom, from(#eaeaea), to(#ffffff));
+    /* rounded corners */
+    border:1px solid #b8b8b6;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 7px #666666;
+    -moz-box-shadow: 0px 0px 7px #666666;
+    box-shadow: 0px 0px 7px #666666;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    vertical-align:middle;
+    overflow:visible;
+    clear:both;
+}
+
+.nav-exammode {
+    list-style:none;
+    margin:0px !important;
+    padding:0px !important;
+    /*height: 45px;*/
+}
+
+.nav-exammode li{
+    display: inline-block;
+    line-height: 38px;
+    margin-right: 15px;
+}
+
+.nav-exammode img {
+    float:left;
+}
+/*.nav-exammode li:hover {
+    background: url("images/background/back_current.png") repeat-x scroll left top transparent;
+    border: 1px solid #B2B2B2;
+    border-radius: 23px 23px 23px 23px;
+    margin-left:-1px !important;
+    margin-top: -2px;
+    background:#eaeaea;
+}*/
+
+.nav-exammode li a {
+    text-decoration: none;
+    margin-left:5px;
+    color:#000000;
+}
+
+a:hover {
+    color:#4d4d4d !important;
+}
+
+
+
+
+#content {
+    background-color: #ffffff;
+    background:-moz-linear-gradient(center top , #ffffff, #eaeaea);
+    background: -webkit-gradient(linear,left top, left bottom, from(#ffffff), to(#eaeaea));
+    /*filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr="#ffffff", EndColorStr="#eaeaea", GradientType=0);*/
+    background-image:-o-linear-gradient(top,  #ffffff, #eaeaea);
+    border:1px solid #b8b8b6;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 7px #666666;
+    -moz-box-shadow: 0px 0px 7px #666666;
+    box-shadow: 0px 0px 7px #666666;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*height:435px;	*/		/* read by IE6 as min-height */
+    /*padding: 10px;*/
+    vertical-align:middle;
+    width: auto;
+    zoom:1;
+    overflow: hidden;
+    min-height: 500px;
+    height: auto!important;
+    height:500px;
+}
+
+.custom-checkbox input,
+.custom-radio input {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    margin: 0px;
+    z-index: 0;
+}
+.custom-checkbox, .custom-radio {
+    position: relative;
+    clear:both;
+    height: auto;
+}
+
+.custom-checkbox label,
+.custom-radio label {
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding-right: 1em;
+    line-height: 15px;
+    padding: 8px 5px 8px 25px;
+    /*	margin: 0 0 .1em;*/
+    cursor: pointer;
+
+}
+
+.custom-checkbox label {
+    background: url(/main/img/checkbox_normal.gif) no-repeat;
+}
+
+.custom-radio input {
+    position:absolute;
+    top:11px;
+    left:0px;
+    /* start of transparency styles */
+    opacity:0;
+    -moz-opacity:0;
+    filter:alpha(opacity:0);
+    /* end of transparency styles */
+
+    z-index:3; /* bring the real upload interactivity up front */
+    border:0px;
+
+}
+
+.custom-radio label {
+    background: url(/main/img/radiobutton_normal.gif) no-repeat;
+    background-position: -11px -17px;
+    /*  position: absolute;*/
+    padding-left:35px;
+    left:0px;
+    top:0px;
+    z-index: 3!important;
+}
+
+.custom-radio label.hover,
+.custom-radio label.focus {
+    background: url(/main/img/radiobutton_hover.png) no-repeat #ddf0fe;
+    background-position: -13px -32px;
+    z-index: 3!important;
+}
+
+.custom-radio label.checked:hover {
+    background: url(/main/img/radiobutton_selected.png) no-repeat #ddf0fe;
+    background-position: -15px -31px;
+    z-index: 3!important;
+    border-top:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+}
+.custom-radio label.checked {
+    background: url(/main/img/radiobutton_selected.png) no-repeat;
+    background-position: -15px -31px;
+    z-index: 3!important;
+    border-top:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+}
+
+.custom-checkbox input {
+    position:absolute;
+    top:9px;
+    left:0;
+
+    /* start of transparency styles */
+    opacity:0;
+    -moz-opacity:0;
+    filter:alpha(opacity:0);
+    /* end of transparency styles */
+
+    z-index:3!important; /* bring the real upload interactivity up front */
+    border:0;
+}
+
+.custom-checkbox label {
+    background: url(/main/img/checkbox_normal.gif) no-repeat;
+    background-position: -15px -18px;
+    z-index:3!important;
+    padding-left:35px;
+}
+
+.custom-checkbox label.hover,
+.custom-checkbox label.focus {
+    background: url(/main/img/checkbox_hover.gif) no-repeat #ddf0fe;
+    background-position: -14px -18px;
+    z-index:3!important;
+}
+
+.custom-checkbox label.checked {
+    background: url(/main/img/checkbox_selected.gif) no-repeat;
+    background-position: -15px -33px;
+    z-index:3!important;
+}
+
+.custom-checkbox label.checkedHover,
+.custom-checkbox label.checkedFocus {
+    background: url(/main/img/checkbox_selected_hover.gif) no-repeat #ddf0fe;
+    background-position: -14px -18px;
+}
+
+ 

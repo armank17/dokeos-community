@@ -1,0 +1,34 @@
+body { 
+    background-image: none !important;
+    font-size: 12px !important;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+hr {
+	border-color: #CCC;
+}
+button {
+	font-weight:bold;
+}
+input {
+	width: auto;
+}
+.progress { 
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    clear: both;
+    margin: auto;
+    padding: 1px;
+    position: relative;
+    width: 400px;
+    visibility: hidden;
+}
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }
+.actions a, .actions .link {
+    display:inline;
+    margin-right: 6px;
+    padding-right: 15px;
+    /*vertical-align:middle;*/
+}

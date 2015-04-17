@@ -1,0 +1,273 @@
+/*
+-----------------------------------------------------------
+        custom bootstrap-responsive for dokeos
+-----------------------------------------------------------
+*/
+
+
+
+
+@media(min-width:768px) and (max-width:979px){
+
+
+
+    .custom-nav {
+        width:979px !important;
+        margin:auto;
+    }
+
+    select {
+        width:100% !important;
+    }
+
+    .content {
+        width:730px;
+        margin:auto;
+    }
+    #main {
+        width:auto !important;
+    }
+
+    #generic_tool_header {
+        background: none repeat scroll 0 0 #E3E4E8;
+        height: 47px;
+        margin: auto !important;
+        width: 730px !important;
+    }
+    
+    .input-custom {
+        width:90px !important; 
+        *width:130px !important;
+        /*border:1px solid blue !important;*/ 
+    }
+    
+    .catalogue-duration .text-right {
+        /*border:1px solid red !important;*/
+        margin-right:8px;
+    }
+    
+	.chart_div {
+        width:90% !important;
+		height: 300px;
+		float:left;
+    }
+}
+
+
+@media(max-width:767px){ 
+    #generic_tool_header {
+        background: none repeat scroll 0 0 #E3E4E8;
+        height: 47px;
+        margin: auto;
+        width: 730px !important;
+    }
+
+
+    select {
+        width:100% !important;
+    }
+    .content {
+        width:90% ;
+        margin:auto;
+    }
+    
+    #main {
+        width:auto !important;
+    }
+
+    #generic_tool_header {
+        background: none repeat scroll 0 0 #E3E4E8;
+        height: 47px;
+        margin: auto !important;
+        width: 90% !important;
+    }
+    
+    .input-custom {
+        width:90px !important; 
+        *width:210px !important;
+        /*border:1px solid blue !important;*/ 
+    }
+
+    .chart_div {
+        width:90% !important;
+		height: 300px;
+		float:left;
+    }
+    
+}
+
+
+@media(min-width:1200px){
+
+.chart_div {
+        width:90% !important;
+		height: 300px;
+		float:left;
+    }
+
+}
+
+
+@media(min-width:980px){ 
+
+.chart_div {
+        width:90% !important;
+		height: 300px;
+		float:left;
+    }
+
+}
+
+@media(max-width:600px){ 
+    #wrapper {
+        background:#ffffff !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+    #dokeos_content {
+        border:none !important;
+        border-radius:0px !important;
+        -moz-border-radius: 0px !important;
+        -webkit-border-radius: 0px !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    
+    .content {
+        width:90%;
+        margin:auto;
+    }
+    
+    #main {
+        width:auto !important;
+    }
+
+    #generic_tool_header {
+        background: none repeat scroll 0 0 #E3E4E8;
+        height: 47px;
+        margin: auto !important;
+        width: 90% !important;
+    }
+
+   .chart_div {
+        width:90% !important;
+		height: 300px;
+		float:left;
+    }
+    
+    
+}
+
+@media(max-width:767px){ 
+    
+    #wrapper {
+        background:#ffffff !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+    #dokeos_content {
+        border:none !important;
+        border-radius:0px !important;
+        -moz-border-radius: 0px !important;
+        -webkit-border-radius: 0px !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+.section.manage-catalogue .catalogue-duration .mo-slider {
+        width:80% !important;
+        /*border:1px solid blue !important;*/ 
+    }
+
+	.chart_div {
+        width:90% !important;
+		height: 300px;
+		float:left;
+    }
+    
+/*    .custom-title-header {
+        border:1px solid red !important;
+        float:left !important;
+        background:#eaeaea;
+        clear:both;
+    }*/
+}
+
+
+
+@media(max-width:480px){ 
+
+    header #logo {
+        text-align:center;
+    }
+
+    #wrapper {
+        background:#ffffff !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+    #dokeos_content {
+        border:none !important;
+        border-radius:0px !important;
+        -moz-border-radius: 0px !important;
+        -webkit-border-radius: 0px !important;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    #course_search {
+        margin-bottom: 10px;
+        /*margin-right: 5px;*/
+    }
+    
+    .content {
+        width:90%;
+        margin:auto;
+    }
+    
+    #main {
+        width:auto !important;
+    }
+
+    #generic_tool_header {
+        background: none repeat scroll 0 0 #E3E4E8;
+        height: 47px;
+        margin: auto !important;
+        width: 90% !important;
+    }
+    
+    .input-large {
+        width:115px !important;
+    }
+
+	.chart_div {
+        width:90% !important;
+		height: 300px;
+		float:left;
+    }
+     
+}
+
+/*@media (-webkit-min-device-pixel-ratio: 2),  
+             (min--moz-device-pixel-ratio: 2),  
+             (min-resolution: 320dpi) {  
+ .content {
+        width:90% !important;
+        margin:auto;
+    }
+    
+    #main {
+        width:auto !important;
+    }
+
+    #generic_tool_header {
+        background: none repeat scroll 0 0 #E3E4E8;
+        height: 47px;
+        margin: auto !important;
+        width: 90% !important;
+    }
+} */

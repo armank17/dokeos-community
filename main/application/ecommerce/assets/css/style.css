@@ -1,0 +1,56 @@
+/* 
+    Document   : style
+    Created on : 12/09/2012, 11:26:42 AM
+    Author     : johnny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.ecommerce_link{
+    cursor:pointer;
+}
+.ecommerce_bar_menu{
+    width: 100%;
+    height: 30px;
+    text-align: right;
+}
+#tabs-left {
+	position: relative;
+	padding-left: 15.5em;
+        margin-bottom: 10px;
+        width: 70.5%;
+}
+#tabs-left .ui-tabs-nav {
+	position: absolute;
+	left: 0.25em;
+	top: 0.25em;
+	bottom: 0.25em;
+	width: 15em;
+	padding: 0.2em 0 0.2em 0.2em;
+}
+#tabs-left .ui-tabs-nav li {
+	right: 1px;
+	width: 100%;
+	border-right: none;
+	border-bottom-width: 1px !important;
+	-moz-border-radius: 4px 0px 0px 4px;
+	-webkit-border-radius: 4px 0px 0px 4px;
+	border-radius: 4px 0px 0px 4px;
+	overflow: hidden;
+}
+#tabs-left .ui-tabs-nav li.ui-tabs-selected {
+	border-right: 1px solid transparent;
+}
+#tabs-left .ui-tabs-nav li a {
+	float: right;
+	width: 100%;
+	text-align: right;
+}
+#tabs-left > div {
+	height: auto;
+}
+
+.ui-widget-header {
+/*background: none repeat scroll 0 0 #CCCCCC !important;*/
+/*border: 1px solid #CCCCCC !important;*/
+}

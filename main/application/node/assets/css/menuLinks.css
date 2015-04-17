@@ -1,0 +1,36 @@
+#content-css {
+    margin-top: 20px;
+}
+
+div.label {
+    margin-right: 10px;
+}
+
+label.error {
+    color:red;
+}
+
+
+/* list menu links */
+#table_lp_list tr td.sort-handle:hover {
+  cursor: move;
+}
+
+/*.menulink-sortable-anchor {
+    height: 4px !important;
+}*/
+
+/*.ui-sortable-placeholder {
+    outline: 1px red solid !important;
+    visibility: visible !important;
+    height: 10px !important;
+    display: none;
+}*/
+
+
+
+/* getForm */
+#menulink-form label {
+    display:inline-block;
+    min-width: 80px;
+}

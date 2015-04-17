@@ -1,0 +1,22 @@
+/* 
+    Document   : style
+    Created on : 28/08/2012, 02:57:49 PM
+    Author     : johnny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+form {		
+        border:0px;
+}	 
+div.row div.label{
+        width: 10%;
+}
+div.row div.formw{
+        width: 98%;
+}
+input.error { border: 1px solid red; }
+
+.notebook_form{
+    padding-left: 15px;
+}

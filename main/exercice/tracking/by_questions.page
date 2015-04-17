@@ -1,0 +1,33 @@
+<div class="actions"><a href="../exercice.php?<?php echo api_get_cidReq();?>"><?php echo Display::return_icon('pixel.gif', get_lang('List'), array('class' => 'toolactionplaceholdericon toolactionback')). get_lang('Quiz');?></a></div>
+<div id="content_with_secondary_actions">
+ <div class="sectiontitle" style="width:98%;padding:0px;margin:10px 10px 10px">
+<table width="100%">
+	<tr>
+		<td width="200"><?php echo get_lang('NumberOfAttempts')?></td>
+		<td><?php echo $nbAttemptsInExercise ?></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="tracking_exercise_summarize_left"><?php echo get_lang('Scores')?></td>
+		<td class="tracking_exercise_summarize_right">
+			<?php echo number_format($highestScore, 0) ?>% (<?php echo get_lang('Highest') ?>)<br />
+			<?php echo number_format($avgScore, 0) ?>% (<?php echo get_lang('Average') ?>)<br />
+			<?php echo number_format($lowestScore, 0) ?>% (<?php echo get_lang('Lowest') ?>)<br />
+		</td>
+	</tr>
+
+</table>
+ </div>
+<div style="height:20px">&nbsp;</div>
+
+<?php foreach($a_questions as $o_question): ?>
+
+<?php $o_question->displayTracking($o_question->id, $nbAttemptsInExercise); ?> 
+
+<div style="height:20px"></div>
+
+<?php endforeach; ?>
+</div>
+<!--<div class="actions">&nbsp;</div>-->

@@ -1,0 +1,8 @@
+<div class="exercises_stats_choice">
+	<div class="exercises_stats_choice_link">
+		<a href="by_questions.php?exerciseId=<?php echo $exerciseId ?>&<?php echo api_get_cidreq()?>"><?php echo get_lang('TrackingByQuestions')?></a>
+	</div>
+	<div>
+		<?php echo get_lang('TrackingByQuestionsDescription')?>
+	</div>
+</div>

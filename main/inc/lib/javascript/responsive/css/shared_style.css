@@ -1,0 +1,84 @@
+body
+{
+    color: #424242;
+    font-size: 16px;
+}
+a, a:hover, a:focus, a:active
+{
+    outline: none;
+}
+h1
+{
+    font-size: 2em;
+    margin: 0 0 0.5em;
+}
+img
+{
+    display: block;
+    vertical-align: none;
+}
+header > .container
+{
+    margin-bottom: 0.5em;
+    position: relative;
+}
+header > .container .bar-header
+{
+    background: #737373;
+    border-radius: 0 0 0.5em 0.5em;
+    height: 1em;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+header > .container a
+{
+    color: #000;
+    font-weight: 400;
+    margin: 1em;
+    line-height: 3em;
+    position: relative;
+    z-index: 2;
+}
+header > .container a:hover, header > .container a:focus, header > .container a:active
+{
+    text-decoration: none;
+}
+div.content .container
+{
+    background: #1B1B1B;
+    border: 0.06em solid #2B2B2B;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.5em #666666;
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#00FFFFFF',EndColorStr='#00EAEAEA',GradientType=0);
+    margin: 0.5em auto;
+    min-height: 31.25em;
+}
+div.content .container .content-padding
+{
+    color: #999;
+    margin: 0.5em;
+    text-shadow: 0 1px 0 #000;
+}
+div.content .bar-action
+{
+    background: #EAEAEA;
+    background: linear-gradient(#EAEAEA, #FFFFFF);
+    border: 0.06em solid #B8B8B6;
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#00EAEAEA',EndColorStr='#00FFFFFF',GradientType=0);
+    min-height: 3em;
+}
+section.channel-player > div {
+    height: 0 !important;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100% !important;
+    z-index: 1;
+}
+section.channel-player > div > video, section.channel-player > div iframe, section.channel-player > div object, section.channel-player > div embed {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+            <title>FLV Dokeos Movie Player</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta name="robots" content="noindex, nofollow" />
+            <script src="../../dialog/common/fck_dialog_common.js" type="text/javascript"></script>
+            <script src="swfobject.js" type="text/javascript"></script>
+            <script src="jwplayer.min.js" type="text/javascript"></script>
+            <script src="jwDokPlayer.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                document.write( FCKTools.GetStyleHtml(GetCommonDialogCss()));
+            </script>
+            <style type="text/css">
+                body, td, input, textarea, select, label { font-family: Arial, Verdana, Geneva, helvetica, sans-serif; font-size: 11px; }
+            </style>
+	</head>
+	<body scroll="no" style="overflow: hidden">
+		<div id="divInfo">
+			<table cellspacing="1" cellpadding="1" border="0" width="100%" height="100%">	
+                                <input type="hidden" id="rbFileType" name="rbFileType" value="videofile">
+                                
+				<tr>
+                                    <td valign="top" colspan=3>
+                                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                            <tr>
+                                                <td valign="top" width="100%">
+                                                    <span fckLang="DlgJWDokPlayerURL">.MP4 Movie</span><br>
+                                                    <input style="width: 100%" type="text" id="txtURL">
+                                                </td>
+                                                <td id="tdBrowse" valign="bottom" nowrap>
+                                                    &nbsp;<input type="button" fckLang="DlgJWKokPlayerBtnBrowse" value="Browse Server" onclick="BrowseServer();" id="btnBrowse">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+				</tr>			
+				<input type="hidden" name="txtImgURL" id="txtImgURL">
+				<input type="hidden" name="txtPlaylist" id="txtPlaylist">
+				<tr>
+					<td valign="top" colspan=3>&nbsp;</td>
+				</tr>
+				<tr>
+					<td valign="top" width="50%">
+						<fieldset>
+							<legend><span fcklang="DlgJWKokPlayerMovieAttrs">Movie Attributes</span></legend>
+								<table cellspacing="0" cellpadding="0" width="100%" border="0">						
+									<input style="width: 100%" type="hidden" name="txtWMURL" id="txtWMURL">
+									<input style="width: 100%" type="hidden" name="txtRURL" id="txtRURL">
+									<tr>
+										<td valign="top" colspan=2>
+											<input type="checkbox" class="CheckBox" id="chkAutoplay">
+											<span fckLang="DlgJWKokPlayerAutoplay">Autoplay</span>
+										</td>
+									</tr>								
+									<input  type="hidden" name="chkLoop" id="chkLoop">
+									<input  type="hidden" name="chkDownload" id="chkDownload">
+									<tr>
+										<td valign="top" colspan=2>
+											<input type="checkbox" class="CheckBox" checked id="chkFullscreen">
+											<span fckLang="DlgJWKokPlayerFullscreen">Allow Fullscreen</span>
+										</td>
+									</tr>								
+									<input type="hidden" name="selDispPlaylist" id="selDispPlaylist">
+									<input type="hidden" name="txtPLDim" id="txtPLDim">
+									<input type="hidden" name="chkPLThumbs" id="chkPLThumbs">
+								</table>
+						</fieldset>
+					</td>
+					<td valign="top">&nbsp;</td>
+					<td valign="top" width="50%">
+						<fieldset>
+							<legend><span fcklang="DlgJWKokPlayerPlayerAttrs">Player Attributes</span></legend>
+								<table cellspacing="0" cellpadding="0" width="100%" border="0">
+									<tr>
+										<td valign="top"><span fckLang="DlgJWKokPlayerWidth">Movie Width (px)</span>&nbsp;</td>
+										<td valign="top"><input type="text" size="5" id="txtWidth"></td>
+									</tr>
+									<tr>
+										<td valign="top"><span fckLang="DlgJWKokPlayerHeight">Movie Height (px)</span>&nbsp;</td>
+										<td valign="top"><input type="text" size="5" id="txtHeight"></td>
+									</tr>								
+									<input type="hidden" name="txtBgColor" id="txtBgColor">
+									<input type="hidden" name="txtToolbarColor" id="txtToolbarColor">
+									<input type="hidden" name="txtToolbarTxtColor" id="txtToolbarTxtColor">
+									<input type="hidden" name="txtToolbarTxtRColor" id="txtToolbarTxtRColor">
+									<input type="hidden" name="chkShowNavigation" id="chkShowNavigation">
+									<input type="hidden" name="chkShowDigits" id="chkShowDigits">
+									<tr>
+										<td><span fckLang="DlgJWKokPlayerAlign">Align</span>&nbsp;</td>
+										<td>
+											<select name="selAlign" id="selAlign" style="width:120px;">
+												<option fckLang="DlgJWKokPlayerAlignLeft" value="left" selected>Left</option>
+												<option fckLang="DlgJWKokPlayerAlignCenter" value="center">Center</option>
+												<option fckLang="DlgJWKokPlayerAlignRight" value="right">Right</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td valign="top" colspan=2>&nbsp;</td>
+									</tr>
+								</table>
+						</fieldset>
+					</td>
+				</tr>
+		  </table>
+		</div>
+		<div id="divPreview" style="display: none">
+			<table cellSpacing="0" cellPadding="0" width="100%" height="100%">
+				<tr>
+                                    <td id="ePreviewCell" valign="top" class="flvPreviewArea"><iframe src="jwPreview.html" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;"></iframe></td>
+				</tr>
+			</table>
+		</div>
+		<div id="divUpload" style="display: none">
+			<form id="frmUpload" method="post" target="UploadWindow" enctype="multipart/form-data" action="" onsubmit="javascript: return CheckUpload();">
+				<span fckLang="DlgLnkUpload">Upload</span><br />
+				<input id="txtUploadFile" style="width: 100%" type="file" size="40" name="NewFile" /><br />
+				<br />
+				<input id="btnUpload" type="submit" value="Send it to the Server" fckLang="DlgLnkBtnUpload" />
+				<script type="text/javascript">
+					document.write( '<iframe name="UploadWindow" style="display: none" src="' + FCKTools.GetVoidUrl() + '"><\/iframe>' ) ;
+				</script>
+			</form>
+		</div>
+	</body>
+</html>

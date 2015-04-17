@@ -1,0 +1,72 @@
+/* 
+    Document   : styles.css
+    Created on : 23/08/2012, 11:40:30 AM
+    Author     : Joaquin (jmike410@gmail.com)
+    Description:
+        Styles for Module Glossary
+*/
+
+root { 
+    display: block;
+}
+
+.menu-select{
+    font-weight: bold;
+}
+
+input.error { 
+    border: 1px solid red; 
+}	
+
+/* Css - Default */
+.glossary-left{
+    margin-left: 150px;
+}
+
+.glossary-list{
+    background: url('../images/whiteboard.png') no-repeat 100px 5px;
+    text-align: center;
+    background-size: contain;
+}
+
+.glossary-instructor{
+    background: url('../images/instructor_analysis.png') no-repeat;
+    margin-left: -100px;
+    height: 283px;
+}
+
+.glossary-instructor-item{
+    background: url('../images/instructor_analysis.png') no-repeat;
+/*    margin-left: -100px;*/
+    height: 283px;
+    width: 173px;
+    position: absolute;
+    margin-top: 135px;
+}
+
+.glossary-map-90{
+    background: url('../images/imagemap90') no-repeat;
+    margin:30px 30px 0 0;
+    right:0;
+    top:0;
+    height: 90px;
+    width: 110px;
+    position: absolute;
+}
+
+.fila{
+    clear: both;
+}
+
+/*Css - Add*/
+div.label{
+    width:100% !important;
+    text-align:left !important;
+}
+div.formw{
+    width:100% !important;
+}
+
+.glossary-items{
+    height: 35px;
+}

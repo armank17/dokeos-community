@@ -1,0 +1,49 @@
+/* 
+    Document   : styles
+    Created on : Nov 8, 2013, 12:13:08 PM
+    Author     : julio
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+button:active {
+-moz-box-shadow: 0 1px #000 inset;
+-webkit-box-shadow: 0 1px #000 inset;
+box-shadow: 0 1px #000 inset;
+}
+#cms-submit {
+    margin: 5px 0px;
+    float: right;
+    background-color: #60C150;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: -2px;
+    min-height: 28px;
+    padding: 8px;
+    text-transform: none;
+    vertical-align: middle;
+    width: 105px;
+    height: 50px;
+    margin:10px 12px;
+}
+#cms-submit:hover {
+    background-color: #7CA346;
+    
+}
+.row{
+    clear: both;
+    padding-top: 8px;
+    width: 100%;
+}
+#idTitle{
+    margin-bottom: 35px !important;
+}
+

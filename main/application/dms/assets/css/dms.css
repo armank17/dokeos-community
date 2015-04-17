@@ -1,0 +1,33 @@
+/* 
+    Document   : dms
+    Created on : 23/07/2012, 12:29:59 PM
+    Author     : johnny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#dms_textarea{
+                background: none repeat scroll 0 0 #F9F9F9;
+                font-family: Consolas,Monaco,monospace;
+                font-size: 12px;
+                outline: 0 none;
+                width: 700px;
+                height: 500px;
+                border-color: #DFDFDF;
+                color: #333333;                
+}
+.dms_undertext{
+                font-size: 11px;
+                font-style: italic;
+                padding-left: 7px;    
+}
+.dms_textLinkFile{
+                color: #21759B;
+                text-decoration: none;
+                font-size: 13px;
+                line-height: 1.4em;                
+}
+#dms_button_update{
+                margin-top: 10px;
+}
+

@@ -1,0 +1,13 @@
+/* 
+    Document   : style
+    Created on : 24/08/2012, 10:35:07 AM
+    Author     : johnny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+div.row div.formw  { 
+    float:right;
+}
+input.error { border: 1px solid red;
+

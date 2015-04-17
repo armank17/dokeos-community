@@ -1,0 +1,102 @@
+#widgetconfigurationinfo {
+	background-color: #DDDDDD;
+	height:0px;
+	opacity: 0;
+	overflow: auto;
+	border: 1px solid #ccc;
+	font-size: 10px;
+	color: #666
+}
+#widgetconfigurationinfoclose{
+	cursor: pointer;
+}
+
+.widgetconfigurationitem 
+{
+	background:url(../img/button.gif) no-repeat;
+	display:block;
+	color:#dddddd;
+	font-weight:bold;
+	height:30px;
+	line-height:29px;
+	margin-bottom:14px;
+	text-decoration:none;
+	width:500px;
+}
+.widgetconfigurationitem.active
+{
+	background:url(../img/button-active.gif) no-repeat;
+	display:block;
+	color:#0066CC;
+	font-weight:bold;
+	height:30px;
+	line-height:29px;
+	margin-bottom:14px;
+	text-decoration:none;
+	width:500px;
+}
+
+.widgetconfigurationitem a {
+	color:#dddddd;
+}
+
+.widgetconfigurationitem.active a {
+	color:#0066CC;
+}
+
+.widgetconfigurationitem span.widgettitle{
+	text-indent:30px;
+	display:block;
+	background:url(../img/widget.gif) no-repeat 5px 5px;
+}
+.widgetconfigurationitem.active span.widgettitle{
+	text-indent:30px;
+	display:block;
+	background:url(../img/widget-active.gif) no-repeat 5px 5px;
+}
+.widgetconfigurationiteminfo{
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+#widgetactivateinlocationbutton{
+	background-color: #F5F5F5;
+	border-color: #DEDEDE;
+	height: 20px;
+	padding-top: 0px;
+}
+
+
+/* Widget settings */ 
+form#widget_settings{
+	
+}
+.widget_setting_subtitle {
+	border:1px solid grey; 
+	padding: 5px;
+	background-color: #DDDDDD;
+	font-weight: bold;
+	color: grey;
+}
+.widget_setting{
+	margin-bottom: 5px;
+}
+#widget_lastforumposts_posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#widget_lastforumposts_posts li{
+/*margin: 0;
+padding: 0;*/
+}
+/* overriding the definitions in default.css */
+#agenda{
+	border: 0px;
+	width: 500px;
+	height:30px;
+	line-height:29px;
+	margin: 0;
+	margin-bottom:14px;
+}

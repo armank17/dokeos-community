@@ -1,0 +1,50 @@
+<?php /*
+for more information: see languages.txt in the lang folder. 
+*/
+$langSelectOptionForBackup = "Gelieve een back-up optie selecteren.";
+$langLetMeSelectItems = "Laat me leerobjecten selecteren";
+$langCreateFullBackup = "Maak een back-up van deze cursus";
+$langCreateBackup = "Back-up creëren";
+$langBackupCreated  = "De back-up is gecreëerd. Het downloaden van dit bestand start zo meteen. Indien dit niet gebeurt, klik dan op de volgende link.";
+$langSelectBackupFile = "Selecteer een back-upbestand.";
+$langImportBackup = "Back-up importeren";
+$langImportFullBackup = "Volledige back-up importeren";
+$langImportFinished = "Import voltooid";
+$langEvents = "Evenementen";
+$langAnnouncements = "Aankondigingen";
+$langDocuments  = "Documenten";
+$langTests = "Quizzen";
+$langLearnpaths = "Modulen";
+$langCopyCourse = "Kopiëren";
+$langSelectItemsToCopy = "Selecteer leerobjecten om te kopiëren";
+$langCopyFinished = "Kopie is voltooid";
+$langFullRecycle = "Alles verwijderen";
+$langRecycleCourse = "Cursus leegmaken.";
+$langRecycleFinished = "Recycling is voltooid";
+$langRecycleWarning = "Waarschuwing: met deze functie zullen leerobjecten in uw cursus worden verwijderd. Dit kan niet ONGEDAAN worden gemaakt. We raden u aan eerst een <a href=\"create_backup.php\">back-up</a> te maken.";
+$langSameFilename = "Wat moet er gebeuren met geïmporteerde bestanden met dezelfde naam als bestaande bestanden?";
+$langSameFilenameSkip = "Zelfde bestandsnamen overslaan";
+$langSameFilenameRename = "Bestanden hernoemen (bv. bestand.pdf wordt bestand_1.pdf)";
+$langSameFilenameOverwrite = "Bestanden overschrijven";
+$langSelectDestinationCourse = "Bestemmingscursus";
+$langFullCopy  = "Volledige kopie";
+$langCourseDescription = "Cursusbeschrijving";
+$langNoResourcesToBackup = "Er zijn geen onderdelen voor back-up.";
+$langNoResourcesInBackupFile = "Er zijn geen onderdelen in dit back-upbestand";
+$langSelectResources = "Selecteer onderdelen";
+$langNoResourcesToRecycles = "Er zijn geen onderdelen om te recyclen";
+$langIncludeQuestionPool = "Alle beschikbare vragen toevoegen.";
+$langLocalFile = "lokaal bestand";
+$langServerFile = "server bestand";
+$langNoBackupsAvailable = "geen back-up beschikbaar";
+$langNoDestinationCoursesAvailable = "Geen bestemmingscursussen beschikbaar";
+$langBackup = "Back-up";
+$langImportBackupInfo = "Importeer een back-up. U kunt een back-up bestand uploaden vanuit uw lokale pc of u kunt een back-up bestand van de server gebruiken.";
+$langCreateBackupInfo = "Creëer een back-up. U kunt de leerobjecten selecteren die in het back-up bestand opgenomen moeten worden.";
+$ToolIntro = "Introductietekst";
+$UploadError = "Upload mislukt. Controleer de maximum bestandsgrootte en de maprechten.";
+$DocumentsWillBeAddedToo = "Documenten worden ook toegevoegd";
+$ToExportLearnpathWithQuizYouHaveToSelectQuiz = "Als u een cursus wenst te exporteren dat een quiz bevat, dient u ervoor te zorgen dat deze quizzen ook in de export zitten. U dient deze dus te selecteren in de lijst met quizzen.";
+$ArchivesDirectoryNotWriteableContactAdmin = "Het archieven map, dat door deze functionaliteit gebruikt wordt, is niet schrijfbaar. Gelieve contact op te nemen met uw platformbeheerder. ";
+$DestinationCourse = "Bestemmingscursus";
+?>

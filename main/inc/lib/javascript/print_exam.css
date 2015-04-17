@@ -1,0 +1,305 @@
+/* 
+    Document   : print_exam
+    Created on : 24/05/2012, 11:14:36 AM
+    Author     : josue
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+@media all
+{
+	  #main_container {
+		background-color: #FFFFFF;
+		margin: 0 auto;
+		width: 960px;
+	  }
+	  table {
+		border-bottom: 0px dashed #DEDEDE;
+		width: 100%;
+	  }
+	  table tr {
+		width: 100%;
+	  }  
+	  .sectiontitle {
+		background: -moz-linear-gradient(center top , #EAEAEA, #FFFFFF) repeat scroll 0 0 transparent;
+		border: 1px solid #1084A7;
+		border-radius: 5px 5px 5px 5px;
+		color: #1084A7;
+		display: inline-block;
+		font-size: 14px;
+		font-weight: normal;
+		margin: 10px;
+		padding: 12px 15px;
+		position: relative;
+		top: 0;
+		width: 907px;
+	  }
+	  .sectiontitle p {
+		display: block;
+		height: 25px;
+		margin: 0;
+		width: 100%;
+	  }
+	  .sectiontitle p b {
+		display: inline;
+		float: left;
+		padding-right: 5px;
+		text-align: right;
+		width: 85px;
+	  }
+	  .print_button{
+		float:right;
+	  }
+	  .media_desc {
+		background-color: #CCC;
+		border:1px solid #b8b8b6;
+		border-radius:5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 10px;
+		vertical-align:middle;
+		width: 220px;
+		height: 160px;
+		display: block;
+		text-align: center;
+		font-size: 50px;
+		color: #999999;
+	  }
+	  .quiz_content_actions {
+		background-color: #FFFFFF;
+		border:1px solid #b8b8b6;
+		border-radius:5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 10px;
+		vertical-align:middle;
+	  }
+	.custom-checkbox input,
+	.custom-radio input {
+		position: absolute;
+		left: 2px;
+		top: 2px;
+		margin: 0px;
+		z-index: 0;
+	}
+	.custom-checkbox, .custom-radio {
+    padding: 5px;
+    position: relative;
+  }
+
+	.custom-checkbox label,
+	.custom-radio label {
+		display: block;
+		position: relative;
+		z-index: 1;
+		padding-right: 1em;
+		line-height: 15px;
+		padding: 2px 5px 25px 30px;
+	/*	margin: 0 0 .1em;*/
+		cursor: pointer;
+		font-size: 13px;
+	}
+
+	.custom-checkbox label {
+		background: url(../../../img/checkbox_normal.gif) no-repeat;
+	}
+
+	.custom-radio label {
+		background: url(../../../img/radiobutton_normal.gif) no-repeat;
+		background-position: -13px -23px;
+	}
+
+	.custom-radio label.hover,
+	.custom-radio label.focus {
+		background: url(../../../img/radiobutton_hover.gif) no-repeat;
+		background-position: -11px -41px;
+	}
+
+	.custom-radio label.checked {
+		background: url(../../../img/radiobutton_selected.gif) no-repeat;
+		background-position: -13px -40px;
+	}
+
+	.custom-checkbox label {
+		background-position: -15px -25px;
+	}
+
+	.custom-checkbox label.hover,
+	.custom-checkbox label.focus {
+		background: url(../../../img/checkbox_hover.gif) no-repeat;
+		background-position: -15px -25px;
+	}
+
+	.custom-checkbox label.checked {
+		background: url(../../../img/checkbox_selected.gif) no-repeat;
+		background-position: -15px -37px;
+	}
+
+	.custom-checkbox label.checkedHover,
+	.custom-checkbox label.checkedFocus {
+		background: url(../../../img/checkbox_selected_hover.gif) no-repeat;
+		background-position: -15px -37px;
+	}
+	.print_textarea {
+		border:1px solid #b8b8b6;
+		width: 420px;
+		height: 160px;
+		display: block;
+	}
+}
+@media print
+{
+	table {
+		page-break-after: auto;
+	}
+	.break_page {
+		page-break-before:always;
+	}
+	.custom-checkbox input,
+	.custom-radio input {
+		position: absolute;
+		left: 2px;
+		top: 2px;
+		margin: 0px;
+		z-index: 0;
+	}
+	.custom-checkbox, .custom-radio {
+		position: relative;
+	}
+
+	.custom-checkbox label,
+	.custom-radio label {
+		display: block;
+		position: relative;
+		z-index: 1;
+		padding-right: 1em;
+		line-height: 15px;
+		padding: 2px 5px 25px 30px;
+	/*	margin: 0 0 .1em;*/
+		cursor: pointer;
+		font-size: 13px;
+	}
+
+	.custom-checkbox label {
+		background: url(../../img/checkbox_normal.gif) no-repeat;
+	}
+
+	.custom-radio label {
+		background: url(../../img/radiobutton_normal.gif) no-repeat;
+		background-position: -13px -23px;
+	}
+
+	.custom-radio label.hover,
+	.custom-radio label.focus {
+		background: url(../../img/radiobutton_hover.gif) no-repeat;
+		background-position: -11px -41px;
+	}
+
+	.custom-radio label.checked {
+		background: url(../../img/radiobutton_selected.gif) no-repeat;
+		background-position: -13px -40px;
+	}
+
+	.custom-checkbox label {
+		background-position: -15px -25px;
+	}
+
+	.custom-checkbox label.hover,
+	.custom-checkbox label.focus {
+		background: url(../../img/checkbox_hover.gif) no-repeat;
+		background-position: -15px -25px;
+	}
+
+	.custom-checkbox label.checked {
+		background: url(../../img/checkbox_selected.gif) no-repeat;
+		background-position: -15px -37px;
+	}
+
+	.custom-checkbox label.checkedHover,
+	.custom-checkbox label.checkedFocus {
+		background: url(../../img/checkbox_selected_hover.gif) no-repeat;
+		background-position: -15px -37px;
+	}
+    .print_button{
+      display: none;
+    }
+	#dragScriptContainer{	/* BIG DIV containing HTML needed for the entire script */
+		width:900px;
+		margin:0 auto;
+		height:auto;
+		margin-top:20px;
+		padding:3px;
+		-moz-user-select:no;
+		overflow:hidden;
+		background-color:#FFF;
+	}
+	#Qdiv {
+		float:left;
+		height:auto;
+		width:575px;
+		padding:2px;	
+	}
+	#answerDiv{	/* Big div for all the answers */
+		float:left;
+		height:100%;
+		width:280px;
+		border:1px solid #FFF;
+		padding:2px;	
+	}
+	#Qdiv_img {
+		float:left;
+		height:auto;
+		width:575px;
+		padding:2px;	
+	}
+	#answerDiv_img{	/* Big div for all the answers */
+		float:left;
+		height:100%;
+		width:225px;
+		border:1px solid #FFF;
+		padding:2px;	
+	}
+	#Qdiv div,#answerDiv div,#dragContent div{	/* General rules for small divs - i.e. specific questions and answers */
+		width:275px;
+		height:auto;
+		line-height:20px;
+		float:left;
+		margin-right:2px;
+		margin-bottom:2px;
+		text-align:center;
+	}
+	#Qdiv_img div,#answerDiv_img div,#dragContent_img div{	/* General rules for small divs - i.e. specific questions and answers */
+		width:275px;
+		height:auto;
+		line-height:20px;
+		float:left;
+		margin-right:2px;
+		margin-bottom:2px;
+		text-align:center;
+	}
+	.question {
+		border:1px solid #000;
+		cursor:pointer;
+		background-color:#FFF;
+	}
+	.drag_answer {
+		border:1px solid #000;
+		cursor:pointer;
+		background-color:#FFF;
+	}
+	.drag_answer_img {
+		border:1px solid #000;
+		cursor:pointer;
+		background-color:#FFF;
+	}
+	
+	
+}

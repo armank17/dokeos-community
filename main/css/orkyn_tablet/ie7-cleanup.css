@@ -1,0 +1,457 @@
+
+root { 
+    display: block;
+}
+#menu {
+    background-color:transparent !important;
+}
+.sectiontablet {
+    background-color:#ffffff;
+     
+}
+.courseintro-sectiontitle {
+    background-color:#ffffff;
+    
+}
+
+#courseintroduction {
+    background-color:#ffffff;
+   
+}
+
+.main_activity {
+    background-color:#ffffff !important;
+    background:url("images/background/back_ie.png");
+    background-position:top left;
+    background-repeat:repeat-x;
+}
+
+.admin_section {
+    background-color:#ffffff;
+    background:url("images/background/back_ie.png");
+    background-position:top left;
+    background-repeat:repeat-x;
+    width:440px;
+}
+
+.section {
+    background-color:#ffffff;
+    
+}
+.sectiontitle {
+    background-color:#ffffff;
+    
+}
+#content {
+    background:url("images/background/back_content_ie.png");
+    background-position:bottom left;
+    background-repeat:repeat-x;
+    background-color: #ffffff;
+    
+}
+
+.actions {
+    background:url("images/background/back_ie.png");
+    background-position:top left;
+    background-repeat:repeat-x;
+    background-color: #ffffff;
+    
+}
+
+
+/*clean up document gallery template */
+
+.gallery .section {
+    
+}
+
+/*social*/
+
+.search_group_grid_item {
+    *min-height:225px;
+    *margin-top:5px;
+}
+
+.scroll1 {
+    overflow-x:hidden;
+    
+}
+
+
+/* time login out*/
+.backlogout {
+    left: 380px;  
+    z-index:100;  
+    top: 30px;   
+    position: absolute;    
+    width: 370px;
+}
+.corner_bubble {
+    background-image:url(../../img/b_bubble.png);
+    background-repeat:no-repeat;
+    height: 40px;    
+    margin-left: -150px;    
+    margin-top: -5px;    
+    position: absolute;    
+    text-align: left;    
+    width: 40px;
+}
+.message_bubble  {
+    background-image:url(../../img/back_bubble.png);
+    background-repeat:repeat-x;
+    background-position: left bottom;
+}
+.bt_login {
+    /*background-color:#757575;*/
+    /*height:30px;*/
+    padding-top:15px;
+    padding-bottom:15px;
+    width:300px;
+}
+
+.image_timeout {
+    background-image:url("../../img/SessionTimeout.png");  
+    background-repeat:no-repeat;
+    float:left;   
+    height: 490px;  
+    margin-left:110px;    
+    width: 540px;
+}
+
+#expire_session {
+    margin-left: 330px;
+    margin-top: 174px;
+    width: 295px;
+}
+
+#expire_session #formLogin {
+    padding-bottom: 0 !important;
+    padding-left: 35px;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    width: 225px;
+    border:1px solid #000000;
+    padding-top:10px !important;
+}
+#expire_session #formLogin .label{
+    width:0px!important;
+}
+
+/* this section is module*/
+.float_l .orange {
+    width:400px !important;
+    margin-left:50px !important;
+}
+.float_l .formw{
+    width:445px;
+    padding:5px;
+    padding-left:10px;
+}
+.float_l .tagit {
+    overflow:hidden !important;
+}
+.float_l .label {
+ padding-bottom:5px;   
+}
+/*style for agenda - calendar*/
+#global_course_name {
+    margin-top:-27px;
+}
+
+#datapicker_content {
+    width:690px;
+}
+
+/* quiz question background yellow */
+.headerinner1 {
+    background-color:url("images/background/back_nav.png");
+    background-repeat:repeat-x;
+    background-position:left top;
+}
+#header3 {
+    height:60px !important;
+}
+.exercise_questions {
+    margin-left: -6px;  
+    width:101% !important;
+}
+.sectscroll {
+    padding-left:10px;
+}
+.custom_quiz {
+    padding-right: 10px; 
+    border-bottom:1px solid #eaeaea !important;
+    border-top:1px solid #eaeaea !important;
+}
+
+.content-quiz-result-actions {
+    width:937px !important;
+}
+
+/* button IE7 */
+button.next {
+    padding-left:20px !important;
+    padding-right:20px !important;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+/*#generic_tool_header #back2home img {
+    margin-left: -10px;
+    margin-top: -5px;
+}*/
+
+/*.quiz_content_list{
+    margin-left:20px !important;
+}
+*/
+
+.sectiontablet {
+    padding-bottom:20px !important;
+}
+
+/* button section in admin configuration*/
+.admin_section_content button{
+    margin-top:-55px !important;
+}
+.admin_section_content ul {
+    margin-left:40px !important;
+}
+.admin_section{
+    min-height:300px !important;
+}
+.advertising_a{
+    height:300px !important;
+}
+
+.top-ie71{
+    margin-top:-38px;
+}
+
+.top-ie72 {
+    margin-top:0px;
+}
+.ci8-b{
+    padding-top:10px;
+}
+
+.bwiki{
+    font-size:12px !important; 
+    min-width:450px !important; 
+    margin:0px !important; 
+    padding:0px !important;
+    text-align:center !important;
+}
+
+
+button.upgrade_link{
+    width: inherit !important;
+    text-align:center;
+    margin-top:10px;
+}
+
+#content #differences ul li button.search {
+    min-width: 98% !important;
+    text-align:center;
+    margin-top:-50px;
+    margin:0px !important;
+}
+.p-ie7{
+    padding: 0px !important;
+    margin: 0px!important;
+    float: none!important;
+    width: 99%!important;
+}
+
+
+select, textarea, input,
+.btnUpload, .bottom-link, button.upgrade_link, button.add, button.save, button.cancel, button.refresh, button.upload, button.search, button.login, button.plus, button.minus, button.next, button.back, button.save_session,
+#formLogin,
+.box_template_home,
+#content,
+.section,
+.sectiontablet,
+.sectiontitle,
+#welcome_ico_home,
+.actions,
+#dokeostabs li.logout a, 
+.title-button,
+#courseToggleMenu,
+#lp-top-navigation,
+.content-quiz-result-actions,
+.rounded,
+#welcome_ico,
+#quizzTitle1,
+.quiz_report_content,
+#generic_tool_header #header_background {
+    /*behavior:url("/main/inc/lib/pie/PIE.php");*/
+    position: relative;
+}
+
+.blender {
+   behavior:url("/main/inc/lib/pie/PIE.php"); 
+}
+
+#view-top-third #progress-bar {
+    height: 18px !important;
+}
+
+#player-view-middle-left {
+    height: 100% !important;
+}
+
+#player-view-middle-right {   
+    top: -170px;
+}
+
+#player-view-middle .player-actions {
+    box-shadow: none; 
+    height: 100% !important;
+    position:relative;
+    top: 20px;
+    float: left;
+}
+
+.player-actions {
+    behavior:url("/main/inc/lib/pie/PIE.php");    
+    z-index: 10000;
+}#fileToUpload{
+    margin-top:-10px !important;
+    height:25px !important;
+}
+
+.custom-radio input{
+    border:0px !important;
+    outline: none !important;
+}
+.custom-checkbox input {
+    border:0px !important;
+    outline: none !important;
+}
+#formLogin button.login{
+    margin-left:23px !important;
+    float:none !important;
+    padding:5px !important;
+}
+
+.quiz_content_actions table a {
+    width:190px;
+    margin-left:12px;
+}
+.freshbutton-blue {
+    margin-top: -22px !important;
+    margin-right:10px;
+    float:right;
+    padding-left: 10px !important;
+    padding-right:10px !important;  
+    margin-top:-5px; 
+     
+}
+
+.btnUpload {
+    padding:0px !important;
+}
+
+#stepsbreadcrumbs li {
+    float:left !important;
+}
+
+.arrow-right {
+    margin-left: -5px;
+}
+
+form#formEditCourse table{
+    width:90%;
+}
+
+form#formEditCourse table #btnImageUpload {
+   margin-top:-16px;
+}
+ table input{
+    /*vertical-align: middle;*/
+    margin-bottom:-7px;
+ }
+
+
+
+    .custom-dashed {
+    position: static !important;
+    padding-top:5px
+ }
+
+ #content {
+    margin-bottom:40px !important;
+ }
+
+#formLogin button.login {
+    margin-left:-2px !important;
+}
+
+#main {
+    margin-bottom: 40px;
+}
+
+.text-scenario-blender {
+    margin-top:10px;
+}
+
+.button-scenario-blender {
+    margin-top:10px;
+}
+
+.logout-new {
+    background-color:transparent !important;
+    border:none !important;
+}
+
+
+ul.responsive-tabs__list{
+    margin-top:30px;
+    margin-left:-45px;
+    border-bottom:1px solid #cccccc !important;
+    padding-bottom:10px;
+}
+
+
+.responsive-tabs__list__item{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:1px solid #cccccc;
+    margin-left:5px;
+    margin-right:5px;
+}
+ 
+.responsive-tabs__list__item--active {
+    background:#174595 !important;
+    color:#ffffff;
+}
+
+ul.responsive-tabs__list {
+    width:95%;
+    margin-left:20px;
+}
+
+.responsive-tabs__panel {
+    border:0px !important;
+}
+
+ 
+div.announcement, div.calendar_event, div.course_description, div.course_setting, div.document, div.dropbox, div.forum, div.learnpath, div.quiz, div.survey, div.user, div.wiki, div.author, div.Evaluation, div.SeriousGames, div.Shop, div.visio_classroom, div.WebTv {
+    display:block;
+    cursor: pointer;
+}
+
+div.main_activity {
+    padding-bottom:20px;
+}
+
+#txtInputFile0 {
+    margin-top:5px !important;
+} 
+
+
+#dragandrophandler {
+    margin-bottom:15px !important;
+}

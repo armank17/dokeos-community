@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	layout="absolute" 
+	width="505"
+	height="172"
+	backgroundGradientAlphas="[1.0, 1.0]" 
+	backgroundGradientColors="[#F4F4F4, #FCB663]"
+
+	creationComplete="init()" backgroundColor="#D6D6D6" backgroundAlpha="0.0" borderColor="#B7BABC">
+
+	<mx:Style>
+		.playStyle {icon: Embed(source="icons/media-playback-start.png"); skin: ClassReference("mx.skins.ProgrammaticSkin");}
+		.pauseStyle {icon: Embed(source="icons/media-playback-pause24.png"); skin: ClassReference("mx.skins.ProgrammaticSkin");}
+		.recordStyle {icon: Embed(source="icons/media-record.png"); skin: ClassReference("mx.skins.ProgrammaticSkin");}
+		.stopStyle {icon: Embed(source="icons/media-playback-stop.png"); skin: ClassReference("mx.skins.ProgrammaticSkin");}
+	</mx:Style>
+
+	<mx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import flash.net.NetStream;
+
+			private var myMic:Microphone;
+			private var nc:NetConnection;
+			private var ns:NetStream;
+			private var recordingState:String = "idle";
+			private var myDuration:Number = 0;
+			private var myServer:String = null;
+			private var mySoundFile:String = null;
+			private var myTimer:Timer = null;
+			private var playbackTimer:Timer = null;
+			private var timeLimit:Number = 0;
+			private var urlDokeos:String = null;
+
+			private function init():void {
+
+				// Not yet connected to the server. Disable the buttons.
+				record_btn.enabled = false;
+				stop_btn.enabled = false;
+				play_btn.enabled = false;
+
+				myServer = Application.application.parameters.myServer;
+				//mySoundFile = Application.application.parameters.mySound;
+				timeLimit = Application.application.parameters.timeLimit;
+				urlDokeos = Application.application.parameters.urlDokeos;
+				moveFile.url = urlDokeos;
+				//urlDokeos = 'http://85.214.32.22/mexico/ok.php';
+				
+				
+				/*myServer="rtmp://85.214.32.22/oflaDemo";
+				/*mySoundFile="Claudio0001";
+				timeLimit = 100;*/
+				
+				initMic("0xcccccc");
+				
+				myTimer = new Timer(1000, timeLimit);
+				myTimer.addEventListener("timer", timerHandler);
+				timeText.text = "Recording time limit: " + createCountdown(0);
+
+				record_btn.addEventListener(MouseEvent.CLICK, record_start);
+				stop_btn.addEventListener(MouseEvent.CLICK, record_stop);
+				play_btn.addEventListener(MouseEvent.CLICK, record_play);
+				
+				setupNC();
+
+				addEventListener(Event.ENTER_FRAME, showMicLevel);
+
+				myMic = Microphone.getMicrophone();
+				myMic.setSilenceLevel(0);
+				myMic.rate = 22;
+				statusText.text = "connecting";
+				
+				filename.setFocus();
+				
+
+			}
+			
+			private function setupNC():void{
+				nc = new NetConnection();
+				nc.addEventListener(NetStatusEvent.NET_STATUS, netStatus);
+				nc.connect(myServer);
+			}
+			
+			private function netStatus(event:NetStatusEvent):void {
+				switch (event.info.code){
+					case "NetConnection.Connect.Success" :
+						setStatus("Connected");
+						ns = new NetStream(nc);
+						ns.attachAudio(myMic);
+						record_btn.enabled = true;
+						stop_btn.enabled = false;
+						play_btn.enabled = false;
+						break;
+					case "NetStream.Record.Start" :
+						record_btn.enabled = false;
+						stop_btn.enabled = true;
+						setStatus("recording...");
+						break;
+					case "NetStream.Record.Stop" :
+						record_btn.enabled = false;
+						stop_btn.enabled = false;
+						setStatus("stopped recording");
+						break;
+					case "NetStream.Buffer.Full" :
+						record_btn.enabled = false;
+						setStatus("playing");
+						break;
+					case "NetStream.Play.Start" :
+						setStatus ("buffering");
+						break;
+					case "NetStream.Seek.Notify" :
+						setStatus("Seeking");
+						break;
+					case "NetStream.Play.Reset" :
+						record_btn.enabled = false;
+						setStatus("pausing");
+						break;
+					case "NetStream.Play.Stop" :
+						//setStatus("stopping");
+						break;
+					case "NetStream.Buffer.Flush" :
+						//setStatus("flushing buffer");
+						break;
+					case "NetStream.Play.Complete" :
+						setStatus("Playback complete");
+						break;
+				}
+			}
+			
+			private function record_start(event:Event):void{
+				
+				if(filename.text.length == 0)
+				{
+					setStatus("Type a filename");
+					stage.focus = filename;
+					filename.setSelection(filename.text.length,filename.text.length);
+				}
+				else
+				{
+					mySoundFile = filename.text;
+					initMic("0xff0000");
+					ns.close();
+					ns = new NetStream(nc);
+					ns.addEventListener(NetStatusEvent.NET_STATUS, netStatus);
+					ns.attachAudio(myMic);
+					ns.publish(mySoundFile, "record");
+					recordingState = "recording";
+					//setPBstatus('recording');
+					setStatus('Recording');
+					myTimer.start();
+				}
+			}
+			
+			private function record_stop(event:Event):void{
+				switch (recordingState) {
+					case "recording" :
+						ns.close();
+						myTimer.reset();
+						timeText.text = createCountdown(0);
+						ok_btn.enabled = true;
+						break;
+						setStatus("Stopped");
+					case "playing" :
+						//Alert.show("Stopping now");
+						ns.play(false);
+						ns.close();
+						playProgress.visible = false;
+						micLevel.visible = true;
+						ns = new NetStream(nc);
+						ns.attachAudio(myMic);
+						break;
+				}
+				recordingState = "idle";
+				//setPBstatus('ready');
+				initMic("0xcccccc");
+			}
+
+			private function record_play(event:Event):void{
+				switch(recordingState){
+				case "idle" :
+					play_btn.styleName = "pauseStyle";
+					play_btn.label = "pause";
+					playSound();
+					break;
+				
+				case "playing" :
+					recordingState = "paused";
+					play_btn.styleName = "playStyle";
+					play_btn.label = "play";
+					ns.togglePause();
+					break;
+				
+				case "paused" :
+					play_btn.label = "pause";
+					play_btn.styleName = "pauseStyle";
+					recordingState = "playing";
+					ns.togglePause();
+					break;
+				}
+			
+			}
+
+		private function playSound():void{
+			playProgress.visible = true;
+			micLevel.visible = false;
+
+			recordingState = "playing";
+			ns.close();
+			setStatus("buffering");
+			var myClient:Object = new Object();
+			ns = new NetStream(nc);
+			ns.addEventListener(NetStatusEvent.NET_STATUS, netStatus);
+			ns.bufferTime = 5;
+			ns.client = myClient;
+			myClient.onMetaData = function(myMeta:Object):void{
+				myDuration = myMeta["duration"];
+				
+				playbackTimer = new Timer(1000, myDuration);
+				playbackTimer.addEventListener("timer", playbackTimerHandler);
+				timeText.text = createTime(0);
+				playbackTimer.start();
+				
+			}
+			myClient.onPlayStatus = function(myPBstatus:Object):void{
+				if(myPBstatus["code"] == "NetStream.Play.Complete"){
+					setStatus("Playback complete");
+					recordingState = "idle";
+					play_btn.styleName = "playStyle";
+					ns = new NetStream(nc);
+					ns.attachAudio(myMic);
+					playProgress.value = 0;
+					playProgress.visible = false;
+					micLevel.visible = true;
+				}
+				recordingState = "idle";
+			}
+			ns.play(mySoundFile);
+		}
+
+        public function playbackTimerHandler(event:TimerEvent):void {
+        	timeText.text = createTime(ns.time);
+        	playProgress.value = (ns.time / myDuration) * 10;
+        	//timeText.text = ns.time.toString();
+   	    }
+
+		private function scanPosition():void {
+			ns.play(false);
+			//divide by 10 because the Slider values go from 0 - 10 and we want a value
+			//between 0 - 1.0
+			ns.play(mySoundFile);
+			ns.seek (playProgress.value/10 * myDuration);
+		}
+
+			private function showMicLevel(event:Event):void{
+				switch (recordingState){
+					case "recording" :
+						micLevel.setProgress(myMic.activityLevel, 100);
+						break;
+					case "idle" :
+						micLevel.setProgress(myMic.activityLevel, 100);
+						break;
+					case "playing" :
+						micLevel.setProgress(ns.time, myDuration);
+						timeText.text = createCounter(ns.time);
+						break;
+				}
+			}
+
+			private function setPBstatus(msg:String):void{
+				micLevel.label = msg;
+			}
+			
+			private function initMic(myColor:String):void{
+				micLevel.setStyle("barColor", myColor);
+			}
+
+			private function createCountdown(time:int):String{
+
+				time = timeLimit - time;
+				var myBuffer:String = "0";
+
+				var currentMins:int = Math.floor(time/60);
+				var currentSecs:int = (time - (currentMins*60));
+				var mySecs:String = ((currentMins < 10) ? myBuffer + currentMins.toString(): currentMins.toString()) 
+				+ ":" 
+				+ ((currentSecs < 10) ? myBuffer + currentSecs.toString(): currentSecs.toString());
+				
+				return mySecs;
+			}
+
+			private function createCounter(time:int):String{
+
+				var myBuffer:String = "0";
+
+				var currentMins:int = Math.floor(time/60);
+				var currentSecs:int = (time - (currentMins*60));
+				var mySecs:String = ((currentMins < 10) ? myBuffer + currentMins.toString(): currentMins.toString()) 
+				+ ":" 
+				+ ((currentSecs < 10) ? myBuffer + currentSecs.toString(): currentSecs.toString());
+				
+				return mySecs;
+			}
+
+		private function createTime(time:int):String{
+
+			//time = timeLimit - time;
+			var myBuffer:String = "0";
+
+			var currentMins:int = Math.floor(time/60);
+			var currentSecs:int = (time - (currentMins*60));
+			var mySecs:String = ((currentMins < 10) ? myBuffer + currentMins.toString(): currentMins.toString()) 
+			+ ":" 
+			+ ((currentSecs < 10) ? myBuffer + currentSecs.toString(): currentSecs.toString());
+				
+			return mySecs;
+		}
+
+	        public function timerHandler(event:TimerEvent):void {
+
+	        	if(myTimer.currentCount < timeLimit){
+	    	        timeText.text = createCountdown(myTimer.currentCount);
+	        	} else {
+	        		myTimer.reset();
+	        		record_stop(null);
+	        	}
+
+	   	    }
+
+		private function setStatus(msg:String):void{
+			statusText.text = msg;
+		}
+		
+		private function audioRedirect():void
+   		{
+     		if (ExternalInterface.available) 
+     		{
+       			ExternalInterface.call("audioRedirect");
+     		} 
+     		else
+     		{
+       			setStatus("Error sending data!");
+     		}
+   		}
+   		
+   		private function proccessFile():void
+   		{
+			record_btn.enabled = false;
+			stop_btn.enabled = false;
+			play_btn.enabled = false;
+			ok_btn.enabled = false;
+   			var minuteTimer:Timer = new Timer(1000, 5);
+			mySoundFile = filename.text;
+   			moveFile.send();
+   			setStatus("Data Sent!");
+   			minuteTimer.start();
+   			audioRedirect();
+   		}
+
+		]]>
+	</mx:Script>
+
+	<mx:HTTPService id="moveFile" url="{Application.application.parameters.urlDokeos}" useProxy="false" method="POST" >
+	<mx:request xmlns="">
+		<file>{filename.text}</file>
+   	</mx:request>
+   	</mx:HTTPService>
+
+	<mx:Text id="statusText" text="" width="485" height="25" y="144" x="10" textAlign="center" color="#FF0000" visible="false"/>
+
+	<mx:Text id="timeText" text="00:00" width="323" height="29" y="121" x="91" textAlign="center" fontSize="20" fontWeight="bold"/>
+	<mx:ProgressBar x="10" y="97" mode="manual" id="micLevel" label="" labelPlacement="bottom" width="485" themeColor="#ff0000" fontSize="10" fontWeight="normal"/>
+
+
+	<mx:ControlBar height="52" horizontalAlign="center" textAlign="center" width="485" y="45" x="10" cornerRadius="4">
+		<mx:Button 
+			label="Record" 
+			id="record_btn"
+			width="108" 
+			color="#FFFFFF"
+			icon="@Embed(source='icons/media-record24.png')"
+			enabled="false"  cornerRadius="8" borderColor="#F09946" themeColor="#FFFFFF" fillAlphas="[1.0, 1.0]" fillColors="[#F09946, #F09946]" fontSize="14" height="38"/>
+		<mx:Button 
+			label="Stop" 
+			id="stop_btn" 
+			width="108" 
+			height="38"
+			color="#FFFFFF"
+			icon="@Embed(source='icons/media-playback-stop24.png')"			
+		 fontSize="14" cornerRadius="8" borderColor="#F09946" fillAlphas="[1.0, 1.0]" fillColors="[#F09946, #F09946]" themeColor="#FFFFFF"/>
+		<mx:Button 
+			label="Play" 
+			id="play_btn" 
+			width="108" 
+			borderColor="#F09946" 
+			color="#FFFFFF"
+			icon="@Embed(source='icons/media-playback-start24.png')"	
+		 height="38" fontSize="14" cornerRadius="8" fillAlphas="[1.0, 1.0]" fillColors="[#F09946, #F09946]" themeColor="#FFFFFF"/>
+		<!-- mx:LinkButton icon="@Embed(source='icons/button_accept.gif')" label="Save" width="90" fontFamily="Arial" id="ok_btn" enabled="false" click="proccessFile()"  themeColor="#FFFFFF" color="#FFFFFF" fontSize="19" / -->
+
+		<mx:Button 
+			label="Save" 
+			width="108" 
+			click="proccessFile()" 
+			enabled="false" 
+			id="ok_btn" 
+			height="38" 
+			fontSize="14" 
+			borderColor="#F09946" 
+			fillAlphas="[1.0, 1.0]" 
+			fillColors="[#F09946, #F09946]" 
+			cornerRadius="8" 
+			themeColor="#FFFFFF" 
+			color="#FFFFFF"
+			icon="@Embed(source='icons/media-save24.png')"
+			/>
+		
+	</mx:ControlBar>
+	<mx:HSlider change="scanPosition()" id="playProgress" showTrackHighlight="true" width="485" x="10" y="127" visible="false" enabled="true"/>
+   	<mx:Text id="versionText" text="v2011.5.2.03" width="320" height="15" y="148" x="173" textAlign="right" fontSize="8" color="#B7BABC" visible="false"/>
+   	<mx:TextInput x="161" y="15" width="243" id="filename"/>
+   	<mx:Label x="101" y="17" text="Filename:" height="20"/>
+   
+   
+</mx:Application>

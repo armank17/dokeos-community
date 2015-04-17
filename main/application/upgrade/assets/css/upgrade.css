@@ -1,0 +1,12 @@
+.progress { 
+    /*border: 1px solid #DDDDDD;*/
+    border-radius: 3px 3px 3px 3px;
+    clear: both;
+    margin: auto;
+    padding: 1px;
+    position: relative;
+    margin-top: 5px;
+    visibility: hidden;
+}
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }

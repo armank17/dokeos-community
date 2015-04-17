@@ -1,0 +1,134 @@
+/*
+-----------------------------------------------------------
+        custom bootstrap-responsive for dokeos
+-----------------------------------------------------------
+*/
+
+
+
+
+
+@media(min-width:768px) and (max-width:979px){
+
+    .quizHead-right {
+        /*margin-right: 220px !important;*/
+    }
+
+
+    .nav-exammode li {
+        /*border:5px solid red;*/
+        /*        display: inline-block;
+                height: 36px;
+                line-height: 38px;
+                padding: 5px;
+                width: 25% !important;*/
+    }
+    
+    .text-home {
+        overflow:hidden;
+    }
+
+}
+
+
+@media(max-width:767px){ 
+    .quizHead-right {
+        /*margin-right: 120px !important;*/
+        position:inherit !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /*border:1px solid red;*/
+        width:100% !important;
+        text-align: center !important;
+        
+    }
+
+    .text-home{
+
+    }
+#back2home {
+        width:90% !important;
+    }
+
+    .nav-exammode li {
+        /*border:5px solid blue;*/
+        /*        display: inline-block;
+                height: 36px;
+                line-height: 38px;
+                padding: 5px;
+                width: 25% !important;*/
+    }
+
+
+}
+
+
+@media(min-width:1200px){
+    .quizHead-right {
+        /*margin-right: 180px !important;*/
+    }
+
+
+    .nav-exammode li {
+        /*        border:5px solid pink;
+                display: inline-block;
+                height: 36px;
+                line-height: 38px;
+                padding: 5px;
+                width: 25% !important;*/
+    }
+
+
+}
+
+
+@media(min-width:980px){ 
+    .quizHead-right{
+        /*margin-right: 220px !important;*/
+
+    }
+
+
+
+    .nav-exammode li {
+        /*border:5px solid green;*/
+        /*        display: inline-block;
+                height: 36px;
+                line-height: 38px;
+                padding: 5px;
+                width: 15% !important;*/
+    }
+
+}
+
+
+
+@media(max-width:480px){ 
+    .quizHead-right {
+
+        /*margin-right: 35px !important;*/
+
+    }
+
+    #back2home {
+        width:82% !important;
+    }
+
+    .nav-exammode li {
+        /*border:5px solid orange;*/
+        /*        display: inline-block;
+                height: 36px;
+                line-height: 38px;
+                padding: 5px;
+                width: 35% !important;*/
+    }
+    .text-home {
+        overflow:hidden;
+        /*width: 230px;*/
+        width:60%;
+    }
+    #back2home {
+/*        background:none;
+        border:none;*/
+    }
+}

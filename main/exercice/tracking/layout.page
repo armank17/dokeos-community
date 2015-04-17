@@ -1,0 +1,6 @@
+<?php
+Display :: display_tool_header($nameTools, "Exercise");
+
+include($template);
+
+Display :: display_footer();

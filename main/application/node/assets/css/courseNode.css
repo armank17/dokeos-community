@@ -1,0 +1,18 @@
+root { 
+    display: block;
+}
+.notDisplay{
+    display:none;
+}
+#content{ /* pages should be background white color #14589*/
+    background: -moz-linear-gradient(center top , #FFFFFF, #FFFFFF) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear,left top, left bottom, from(#ffffff), to(#FFFFFF))!important;
+    background: -ms-linear-gradient(top, #FFFFFF, #FFFFFF)!important;
+    background: -o-linear-gradient(top, #FFFFFF, #FFFFFF)!important;
+}
+label.error {
+    color:red;
+    left: 9px;
+    position: absolute;
+    top: 55px;
+}

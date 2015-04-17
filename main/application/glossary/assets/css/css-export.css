@@ -1,0 +1,48 @@
+/* 
+    Document   : css-export
+    Created on : 27/08/2012, 01:00:12 PM
+    Author     : Joaquin
+    Description:
+        Styles for Module Glossary (Import y Export).
+*/
+
+/*Css - Add*/
+.fila{
+    clear: both;
+}
+
+.menu-select{
+    font-weight: bold;
+}
+
+div.label{
+    /*width:100% !important;*/
+    margin-right: 20px !important;
+    text-align: right;
+}
+
+div.formw{
+    width: 60% !important;
+}
+
+button.save{
+    margin-left: 20% !important;
+
+}
+
+.glossary-instructor{
+    background: url('../images/instructor_analysis.png') 85% 0 no-repeat;
+/*    margin-left: -100px;*/
+    height: 283px;
+    background-size: contain;
+    text-align: right;
+}
+
+.glossary-instructor-import{
+    background: url('../images/instructor_analysis.png') 95% 0 no-repeat;
+/*    margin-left: -100px;*/
+    height: 283px;
+    background-size: contain;
+    text-align: right;
+    margin-top: -180px;
+}

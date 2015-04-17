@@ -1,0 +1,121 @@
+/* REQUIRED for core functionality */
+
+.responsive-tabs__heading { display: none;}
+.responsive-tabs__list__item { display: inline; cursor:pointer;}
+
+
+@media (max-width: 767px) {
+    .responsive-tabs__list { display: none;}
+    .responsive-tabs__heading { font-size: 1em; margin: 1em 0 0 0; line-height: 1em;display: block; cursor: pointer; }
+    .responsive-tabs__panel--closed-accordion-only { display: none;}
+}
+
+@media (min-width: 768px) {
+    .responsive-tabs__panel--closed-accordion-only { padding:0px; display: block !important;}
+
+
+/* END - Required for core functionality */
+
+
+/* OPTIONAL - Basic Skin */
+
+.responsive-tabs-wrapper { 
+    clear: both;
+    zoom: 1; 
+}
+.responsive-tabs-wrapper:before,
+.responsive-tabs-wrapper:after {
+    content: "";
+    display: table;
+} 
+.responsive-tabs-wrapper:after {
+    clear: both;
+}
+
+.responsive-tabs__heading:focus,
+.responsive-tabs__list__item:focus { outline: 1px solid #ccc;  }
+
+.responsive-tabs__heading--active:focus,
+.responsive-tabs__list__item--active:focus { outline: none !important;}
+
+.responsive-tabs__list { font-size: 1em; margin: 1em 0 0 0; padding: 1%;border-bottom: 0px solid #ddd; padding-bottom:11px; line-height: 1em;}
+.responsive-tabs__list__item { 
+    background: #eee; 
+    padding: 1% 4%;  
+    margin-right: 1em; 
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius:10px 10px 0 0;
+    border: 0px solid #FF0000;
+    color:#000; 
+    margin-top:-7px;
+}
+.responsive-tabs__list__item:hover {background: #efefef }
+.responsive-tabs__list__item--active, 
+.responsive-tabs__list__item--active:hover {  background: #737373; color:#ffffff;}
+
+.responsive-tabs__panel { 
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-top:-6px;
+    /*    -webkit-box-shadow: 0px 0px 7px #cccccc;
+        -moz-box-shadow: 0px 0px 7px #cccccc;
+        box-shadow: 0px 0px 7px #cccccc;*/
+}
+}
+@media (max-width: 767px) {
+    .responsive-tabs__heading { 
+        /*        padding: 0.7em; 
+                border-radius: 5px; 
+                border: 1px solid #ccc; 
+                box-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+                background: #ddd;
+                position: relative;*/
+        background: none repeat scroll 0 0 #EFEFEF;
+        border: 1px solid #CCCCCC;
+        font-size: 17px;
+        padding: 15px;
+        position: relative;
+        
+         border-radius:10px 10px 0 0 !important;
+        -moz-border-radius: 10px 10px 0 0 !important;
+        -webkit-border-radius: 10px 10px 0 0!important;
+    }
+
+    .responsive-tabs__heading:after {
+        content:"";
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 40%;
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #000;
+    }
+    .responsive-tabs__heading:hover,
+    .responsive-tabs__heading--active:hover { background-color: #2a2a2a;color:#ffffff;}
+    .responsive-tabs__heading--active { 
+        /*background: #666666;*/
+        color:#FFF;
+        border-radius:10px 10px 0 0 !important;
+        -moz-border-radius: 10px 10px 0 0 !important;
+        -webkit-border-radius: 10px 10px 0 0 !important;
+        background:url(/main/img/background/back-menu.png) repeat-x #2a2a2a;
+        border:0px;
+    }
+    .responsive-tabs__heading--active:after {
+        border-bottom: 10px solid #FFF;
+        border-top:0;
+    }
+}
+
+#loaderDiv
+{     
+    position: relative;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;   
+}
+/* END - Optional - Basic Skin */

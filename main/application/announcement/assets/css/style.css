@@ -1,0 +1,11 @@
+form {		
+        border:0px;
+}	 
+div.row div.label{
+        width: 10%;
+}
+div.row div.formw{
+        width: 98%;
+        padding-left: 15px;
+}
+input.error { border: 1px solid red; }

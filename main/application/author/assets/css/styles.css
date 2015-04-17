@@ -1,0 +1,292 @@
+button:active {
+-moz-box-shadow: 0 1px #000 inset;
+-webkit-box-shadow: 0 1px #000 inset;
+box-shadow: 0 1px #000 inset;
+}
+#content-upload {
+    width: 100%;
+    background-color: #FFF;
+}
+#lp-top-navigation {
+    background: none repeat scroll 0 0 #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 30px 30px 30px 30px;
+    padding: 8px 0 0 20px;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    height: 37px;
+    z-index: 1000;
+}
+
+#lp-top-navigation .cols {
+    float:left;    
+}
+
+#item-title {
+    width: 325px;
+}
+
+#lp-top-navigation #progress-bar {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 25px;
+    overflow: hidden;
+    width: 100px;
+    z-index: 3;
+    margin: 2px 10px 2px 2px;
+}
+
+#lp-top-navigation #percent {
+    background: url("../img/bg_progress_bar.gif") repeat-x scroll 0 0 transparent;
+    height: 25px;
+    background-size: 2px;
+}
+
+#arrows {
+    width: 270px;
+    height: 35px;
+    position: relative;
+    margin-left: 2px;
+    z-index: 10000;
+}
+
+#arrows img {
+    vertical-align: auto;
+}
+
+#back2home {
+    width: auto !important;
+}
+
+#back2home div {
+    width: auto !important;
+    overflow: hidden;
+}
+
+#txt-item-title {
+    width: 310px;
+    height: 18px !important;    
+}
+
+#courseMenuButton {
+    margin: 0px !important;
+}
+
+#main {
+    position: relative;
+    width:1024px;
+}
+
+#authoring-submit {
+    position: absolute;
+    right: 15px;
+    top: 62px;
+}
+
+#courseToggleMenu {
+    left: auto;
+    min-height: 65px;
+    padding: 10px 10px 5px;
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 350px !important;
+    z-index: 10000;
+    background-color: #5A5A5A;
+    display:none;
+}
+
+#courseToggleMenu li a {
+    font-size: 14px;
+}
+
+#courseToggleMenu li a.current{
+    background: none;    
+    font-weight: bold;
+}
+
+#courseToggleMenu li a:hover {
+    background: none;
+    color: #009EE3;
+}
+
+.jspPane {
+    position: relative;
+}
+
+.course_menu_button {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.invisible {
+    visibility: hidden;
+    top: -100px;
+    position: absolute;
+    z-index: -100;
+}
+
+.visible {
+    visibility: visible;
+}
+
+#courseToggleMenu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#courseToggleMenu .ui-state-default a, #courseToggleMenu .ui-state-default ul {
+    color: #000 !important;
+}
+
+.ui-state-default .ui-icon {
+    background-image: url("../img/draganddrop.png") !important;
+    background-position: 0 0 !important;
+    height: 22px;
+    width: 22px;
+    float:left;
+    margin-right: 10px;
+    cursor: move;
+}
+
+#courseToggleMenu li {
+    padding: 5px;    
+}
+
+.current {
+    margin-right: 0px !important;
+}
+
+#courseToggleMenu .current {
+    background-color: #F38C00 !important;
+    color: #FFF !important;
+}
+#courseToggleMenu .current  a {
+    color: #FFF !important;
+}
+
+.item-actions {
+    cursor: pointer;
+}
+
+.align-right {
+    text-align: right;
+    float: right;
+}
+
+.item-notify {
+    color: #FFF;
+    text-align: center;
+}
+
+.items-menu-view {
+    color: #FFF;
+}
+
+.icon-notify {
+    color: #FFF;
+    text-align: right;
+}
+
+.menu-item-edit {
+    display: none;
+}
+
+#author-next, #author-submit {
+    background-color: #60C150;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: -2px;
+    min-height: 28px;
+    padding: 8px;
+    text-transform: none;
+    vertical-align: middle;
+    width: 190px;
+}
+
+
+
+#author-submit {
+    margin: 5px 0px;
+    float: left;
+}
+
+#author-submit:hover, #author-next:hover {
+    background-color: #7CA346;
+}
+
+.ui-icon-closethick {
+    text-indent: 0px !important;
+    width: 66px !important;
+    background: none !important;
+}
+
+.ui-dialog-titlebar-close {
+    width:60px !important;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: -12px !important;
+}
+
+.ui-dialog-titlebar-close:hover {
+    background: none !important;
+}
+.ui-state-error {
+    border-width: 2px !important;    
+}
+
+html > body #content {
+    padding-top: 10px;
+}
+
+#authoring-top {
+    overflow: hidden;
+}
+#message-box {
+    display:none;
+    margin-left: 175px;
+}
+#confirmation-message {
+    background-color: #DFF2BF;
+    color: #4F8A10;
+    display: block;
+    font-weight: bold;
+    height: 20px;
+    padding: 8px;
+    width: 95%;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+}
+
+#btn-close-sort {
+    background-image: none !important;
+    background-color: #60C150 !important;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-left: 20px;
+    margin-top: -2px;
+    min-height: 28px;
+    padding: 8px;
+    text-transform: none;
+    vertical-align: middle;
+    width: 190px;
+}
+
+#courseToggleMenu {
+    height: 400px !important;
+    top: 38px !important;
+    overflow-y: auto;
+}

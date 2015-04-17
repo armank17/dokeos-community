@@ -1,0 +1,36 @@
+<?php /*
+for more information: see languages.txt in the lang folder. 
+*/
+$TermAddNew = "Nouveau terme";
+$TermName = "Terme";
+$TermDefinition = "Définition";
+$TermDeleted = "Terme supprimé";
+$TermUpdated = "Terme mis à jour";
+$TermConfirmDelete = "Supprimer ce terme";
+$TermAddButton = "Ajouter ce terme";
+$TermUpdateButton = "Enregistrer les modifications";
+$TermEdit = "Modifier le terme";
+$TermDeleteAction = "Supprimer ce terme";
+$OrderBy = "Trier par";
+$CreationDate = "Date création";
+$UpdateDate = "Date modification";
+$PreSelectedOrder = "Prédéfini";
+$TermAdded = "Terme ajouté";
+$YouMustEnterATermName = "Veuillez entrer un terme";
+$YouMustEnterATermDefinition = "Veuillez entrer la définition du terme";
+$TableView = "Tableau";
+$GlossaryTermAlreadyExistsYouShouldEditIt = "Ce terme de glossaire existe déjà. Veuillez modifier le nom du terme.";
+$GlossaryManagement  = "Gestion du glossaire";
+$TermMoved = "Le terme a été déplacé";
+$ShowGlossaryInExtraToolsTitle = "Afficher les termes du glossaires dans les outils extra";
+$ShowGlossaryInExtraToolsComment = "Afficher les termes du glossaire dans les modules et les exercices";
+$NewTerm = "Nouvelle définition";
+$Definition = "Définition";
+$AddDefinition = "Ajouter une définition";
+$SaveDefinition = "Valider";
+$ThereAreNoDefinitionsHere = "Le glossaire est vide";
+$CSVMustLookLike = "Le fichier CSV doit ressembler à ceci";
+$MandatoryFields = "Les champs en <strong>gras</strong> sont obligatoires.";
+$ExportGlossaryTerms = "Exporter les termes du glossaire";
+$Term = "Terme";
+?>

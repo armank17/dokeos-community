@@ -1,0 +1,58 @@
+<?php /*
+for more information: see languages.txt in the lang folder. 
+*/
+$LinkMoved = "Povezava je bila prestavljena";
+$langLinkName = "Ime povezave";
+$langLinkAdd = "Dodaj povezavo";
+$langLinkAdded = "Povezava je bila dodana";
+$langLinkMod = "Spremeni povezavo";
+$langLinkModded = "Povezava je bila spremenjena";
+$langLinkDel = "Odstrani povezavo";
+$langLinkDeleted = "Povezava je bila odstranjena";
+$langLinkDelconfirm = "Ali želiš odstraniti povezavo?";
+$langAllLinksDel = "Odstrani vse povezave v tej kategoriji ";
+$CategoryName = "Ime kategorije";
+$langCategoryAdd = "Dodaj kategorijo";
+$langCategoryAdded = "Kategorija je bila dodana";
+$langCategoryModded = "Kategorija je bila spremenjena";
+$langCategoryDel = "Odstrani kategorijo";
+$langCategoryDeleted = "Kategorija in vse njene povezave so bile odstranjene";
+$langCategoryDelconfirm = "Z brisanjem kategorije se odstranijo tudi vse povezave v tej kategoriji.\\nDejansko želiš odstraniti kategorijo in vse njene povezave ?";
+$langAllCategoryDel = "Odstrani vse kategorije in povezave";
+$langGiveURL = "Podaj povezavo (URL)";
+$langGiveCategoryName = "Podaj ime kategorije";
+$langNoCategory = "Ni kategorij";
+$showall = "Prikaži vse";
+$shownone = "Skrij vse";
+$langListDeleted = "Seznam je bil odstranjen";
+$langAddLink = "Dodaj povezavo";
+$langDelList = "Odstrani seznam";
+$langModifyLink = "Uredi povezavo";
+$langCsvImport = "Uvozi CSV datoteko";
+$langCsvFileNotFound = "CSV datoteke ni mogoèe odpreti (je prazna, prevelika, ...)";
+$langCsvFileNoSeps = "CSV datoteka mora vsebovati , ali ; za loèilo med posameznimi polji";
+$langCsvFileNoURL = "CSV datoteka mora vsebovati vsaj stolpca z URL in naslovom";
+$langCsvFileLine1 = "... - vrstica 1 =";
+$langCsvLinesFailed = "vrstic je povzroèilo napako pri uvozu povezave (ni URL-ja ali ni naslova)";
+$langCsvLinesOld = "obstojeèih povezav ažuriranih (enak URL in kategorija).";
+$langCsvLinesNew = "novih povezav ustvarjenih.";
+$langCsvExplain = "Vsebina datoteke mora biti videti kot: <blockquote><pre><b>URL</b>;kategorija;<b>naslov</b>;opis; <br /><b>http://www.aaa.org/...</b>;Pomembne povezave;<b>Naziv 1</b>;Opis 1; <br /><b>http://www.bbb.net/...</b>;;<b>Ime 2</b>;\"Opis 2\"; </pre></blockquote> V primeru, da sta URL in kategorija enaka tistim pri obstojeèih povezavah, se ime in opis ažurirata z novimi vrednostmi. V vseh ostalih primerih se ustvari nova povezava.<br><br> Mastno = obvezno. Polja so lahko v poljubnem vrstnem redu, podana z velikimi ali malimi èrkami. Dodatna polja so dodana k opisu. Loèilec med polji: vejica ali podpièje. Vrednosti so lahko zajete med narekovaje, razen samih imen polj. Nekatere [b]HTML oznake[/b] lahko importirate v opisu.";
+$langLinkUpdated = "Povezava je bila ažurirana";
+$langAll_Link_Deleted = "Povezava je bila odstranjena";
+$langOnHomepage = "Na domaèi strani";
+$langShowLinkOnHomepage = "Prikaži to povezavo kot ikono na domaèi strani";
+$langCsvImport = "CSV uvoz";
+$General = "Splošno";
+$SearchFeatureDoIndexLink = "Indeksiram naziv in opis povezave ? ";
+$langSaveLink = "Shrani povezavo";
+$langSaveCategory = "Shrani kategorijo";
+$BackToLinksOverview = "Nazaj na pregled povezav";
+$AddTargetOfLinkOnHomepage = "Izberite \'cilj\', ki predstavlja povezavo na domaèi strani teèaja";
+$Url = "Url";
+$Objective = "Predmet";
+$FolderName = "Ime mape";
+$Fold = "Vpni v mapo";
+$Unfold = "Izpni iz mape";
+$ThereAreNoLinksInThisFolder = "V tej mapi ni povezave";
+$IntegrateLinkInCourse = "Vgradi povezavo v te&#269;aj";
+?>

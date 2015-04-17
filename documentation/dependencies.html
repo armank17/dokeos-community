@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>"Dokeos e-Learning Suite" - Dependencies</title>
+	
+	<link rel="stylesheet" href="../main/css/dokeos2_tablet/default.css" type="text/css" media="screen,projection" />
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="../main/inc/lib/javascript/jquery-1.4.2.min.js" language="javascript" />
+	<script type="text/javascript" language="javascript">
+		jQuery(document).ready( function($) {
+			// Expand or collapse the help
+			$('#help-link').click(function () {
+				$('#help-content').slideToggle('fast', function() {
+					if ( $(this).hasClass('help-open') ) {
+						$('#help a').css({'backgroundImage':'url("../main/img/screen-options-right.gif")'});
+						$(this).removeClass('contextual-help-open');
+					} else {
+						$('#help a').css({'backgroundImage':'url("../main/img/screen-options-right-up.gif")'});
+						$(this).addClass('help-open');
+					}
+				});
+				return false;
+			});
+		});
+	</script></head><body>
+	<div id="header">
+		<div id="header1">
+				<div class="headerinner">
+					<div id="institution">"Dokeos e-Learning Suite" Dependencies</div>
+				</div>
+		</div>
+		<div id="header2">
+			<div class="headerinner">
+				<ul id="dokeostabs">
+                                        <li class="install" id="current"><a href="../main/install/index.php">Installation</a></li>
+                                        <li class="guide_na"><a href="../../documentation/installation_guide.php" target="_blank">Installation guide</a></li>
+				</ul>
+				<div style="clear: both;" class="clear"> </div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="main">
+		<div class="actions">
+			<a href="readme.html">About Dokeos</a> 
+			<a href="installation_guide.html">Installation Guide</a>
+			<a href="license.html">GPL license</a>
+			<a href="credits.html">Credits</a>
+			<a href="dependencies.html">Dependencies</a>
+			<a href="changelog.html">Changelog</a>
+			<a href="http://www.dokeos.com">Website</a>	
+		</div>
+
+		<div id="content">
+
+			<h2>Introduction</h2>
+			<p>In the ever-evolving web environment, Dokeos has to rely on state-of-the-art third-party
+			  software in order to provide you with useful and practical features. Some of this third-party software
+			  usually come bundled with your operating system, but some don't. This means that if that software is
+			  not installed on your Dokeos server, along with Dokeos, you might not enjoy the best possible
+			  experience with your Dokeos platform. To avoid this problem, most of the sofware we used is bundled
+			  into a typical Dokeos install.</p><p>
+			  However, if such a third-party software is too big to be included, or if it doesn't make sense to
+			  includ it for whatever reason, you must make sure it is installed on your system.
+			  This is the goal of this list: to help you keep a track of what software is needed and,
+			  as much as possible, where to get the required information to install it.<br />
+			</p>
+
+			<h2>Bricks</h2>
+			<p>Dokeos relies on other open source layers. Noticeably:
+			</p><ul>
+				<li><strong>Apache</strong>, Webserver</li>
+				<li><strong>Big Blue Button</strong>, Videoconferenccing</li>
+				<li><strong>FCKeditor</strong>: Online Editor</li>
+				<li><strong>FFMPEG</strong>, Audio and video conversion</li>
+				<li><strong>Oxygen, </strong>Icons</li>
+				<li><strong>Open Clipart Library</strong>, Cliparts</li>
+				<li><strong>Openoffice</strong> to run Oogie</li>
+				<li><strong>Phil Mk Kiney, </strong>Podcasts</li>
+				<li><strong>PHP</strong>, Programming language</li>
+				<li><strong>Techtutor, </strong>Screencast tutorials</li>
+				<li><strong>Wikimedia commons</strong>, Free media</li>
+				<li><strong>Xapian</strong>, a full-text semantic search engine</li>
+				<li><strong>Xmind</strong>,Mindmapping</li>
+			</ul>
+		
+			<h2><a name="dependencies">Dependencies</a></h2>
+			<ul>
+				<li>Apache 1.3 or 2</li>
+				<li>PHP5.0.0+ with MySQL bindings and php-gd extension to allow
+				Dokeos to resize pictures. Progressive upload bar only works with
+				PHP5.2.0+. </li>
+				<li>MySQL database server 4 or 5</li>
+			</ul>
+
+
+			<h2><a name="included_dependencies">Included Dependencies</a></h2>
+			<ul>
+				<li>EZpdf</li>
+				<li>FCKEditor (previously HTMLArea) </li>
+				<li>FormValidator </li>
+				<li>iCalCreator</li>
+				<li>kSes </li>
+				<li>MIMETex </li>
+				<li>MP3Player </li>
+				<li>PCLZip </li>
+				<li>PEAR::HTML_Common </li>
+				<li>PEAR::HTML_QuickForm </li>
+				<li>PEAR::HTML_Table</li>
+				<li>PEAR::OLE</li>
+				<li>PEAR::Pager</li>
+				<li>PEAR::Spreadsheet_Excel_Writer</li>
+				<li>PECL</li>
+				<li>PHPMailer </li>
+				<li>WCAG_Rendering</li>
+				<li>xajax </li>
+				<li>jQuery</li>
+			</ul>
+
+	<h3>Contact us</h3>
+        <p>if you are interested in our products, please contact us in our contact page, <a href="http://www.dokeos.com/contact/">click here</a></p>
+
+		</div>
+	</div>
+</body></html>

@@ -1,0 +1,325 @@
+/* import custom-resposive to bootstrap*/
+@import url('custom-bootstrap-responsive.css');
+
+/*local
+.quizHead 
+{ 
+=======
+/*
+-----------------------------------------------------------
+        custom req  uest for dokeos
+-----------------------------------------------------------
+*/
+body {
+    background-image:url("/main/img/background/back_book.png");
+    background-repeat:repeat;
+}
+
+.container {
+    overflow:hidden;
+}
+
+.quizHead { 
+    /*other*/
+    color: #178CB2 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 30px;
+    padding-left: 10px;
+    text-transform: uppercase;
+
+}
+.quizHead-right {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 9px -2px #000000;
+    color: #178CB2 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 30px;
+    /*margin-right: 460px ;*/
+    padding-left: 10px;
+    padding-right: 50px;
+    position: absolute;
+    left:50%;
+    text-align: right;
+    top: 0;
+    width: 210px;
+    z-index: 100;
+}
+
+.quiz{
+    background-color: #ffffff;
+    /*border: 1px solid #B8B8B6;*/
+    /*border-radius: 8px 8px 8px 8px;*/
+    /*margin: 10px 0;*/
+    text-shadow: initial;
+}
+
+.quizPart{
+    margin: 0 !important;
+    padding: 10px;
+}
+.qtnCount
+{
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    /*    background-color:#fff;
+        background:-moz-linear-gradient(center top , #eaeaea, #FFFFFF);
+        background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#ffffff));
+        background-image:-o-linear-gradient(top,  #eaeaea, #FFFFFF);
+        filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr="#eaeaea", EndColorStr="#ffffff", GradientType=0);
+        border: 1px solid #999999;*/
+    border-bottom: 1px solid #C0C0C0;
+    /*    -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -webkit-box-shadow: 0px 0px 7px #cccccc;
+        -moz-box-shadow: 0px 0px 7px #cccccc;*/
+    /*box-shadow: 0px 0px 7px #cccccc;*/
+    display:inline-block;
+    font-weight:bold;
+    margin: 0px 10px 10px 10px;
+    padding: 5px 15px;
+    position: relative;			/* no absolute allowed here until overflow issue (parent has to be relative) */
+    top: 3px;
+}
+.qtnName
+{
+    font-size: 13px;
+    /*    margin: 0 !important;*/
+    background: none repeat scroll 0 0 #FFFDDC;
+    border: 1px solid #CCCCCC;
+    margin:0px !important;
+    padding:10px;
+    clear: both;
+    /*    margin-left: -15px;
+        margin-top: -5px !important;*/
+    overflow: auto;
+    /*padding: 15px 0 15px 12px;*/
+    /*width: 949px !important;*/
+}
+.qtnTitle
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+.answer {
+    /*border: 1px solid blue;*/
+    float: left;
+    margin-left: 0px !important;
+    width: 90%;
+}
+
+.custom-radio {
+    margin-left:0px !important;
+    width:100% !important;
+}
+
+.form-actions {
+    background:#eaeaea !important;
+    margin:0px!important;
+    padding:10px !important;
+    /*width:100% !important;*/
+    margin-left: -10px !important;
+    border:0px !important;
+    text-shadow:none !important;
+}
+
+div.content .container .content-padding {
+    margin:0px !important;
+
+}
+
+.custom-checkbox {
+    margin-left:0px !important;
+    width:100% !important;
+}
+
+
+
+.quizPart .span6 {
+    width: 100% !important;
+}
+
+.border-none input{
+    border-bottom:1px dashed #4d4d4d !important;
+    border-top:0px !important;
+    border-left:0px !important;
+    border-right:0px !important;
+    border-radius:0px;
+    box-shadow: none !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/*-----MATCHING-----*/
+.mini-layout-match {
+    background-color: #FFFFFF !important;
+    border: 1px solid #000000;
+    font-size: 12px;    
+    width: 30% !important;
+    margin: 0.5% !important;
+    padding: 0.5% !important;
+    float: left !important;
+}
+.mini-layout-droppable {
+    background-color: #DDDDDD;
+    border: 0 none;
+    width: 30% !important;
+    margin: 0.5% !important;
+    padding: 0.5% !important;
+    float: left !important;
+}
+.mini-layout-draggable {
+    background-color: #FFFFFF !important;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-size: 12px;    
+    width: 30% !important;
+    margin: 0.5% !important;
+    padding: 0.5% !important;
+    float: left !important;
+}
+
+
+
+.media-top {
+    width: 100% !important;
+    clear: both !important;
+}
+
+#dragScriptContainer {
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden;
+    padding: 3px;
+    width: 98%;
+}
+#Qdiv {
+    float: left;
+    height: auto;
+    width: 68%;
+}
+#answerDiv {
+    border: 1px solid #FFFFFF;
+    float: left;
+    height: 100%;
+    width: 31%;
+}
+#Qdiv_img {
+    float: left;
+    height: auto;
+    padding: 2px;
+    width: 575px;
+}
+#answerDiv_img {
+    border: 0 solid #FFFFFF;
+    float: left;
+    height: 100%;
+    padding: 2px;
+    width: 225px;
+}
+#Qdiv div, #answerDiv div, #dragContent div {
+    float: left;
+    min-height: 48px;
+    display:block;
+    line-height: 20px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    text-align: center;
+    width: 99%;
+}
+#Qdiv_img div, #answerDiv_img div, #dragContent_img div {
+    float: left;
+    height: 128px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    overflow: auto;
+    text-align: center;
+    width: 98%;
+}
+.question {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.drag_answer {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.drag_answer_img {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.destinationBox {
+    background-color: #DDDDDD;
+    border: 0 none;
+    min-height: 50px;
+    width: 26%;
+}
+.destinationBox_img {
+    background-color: #DDDDDD;
+    border: 0 none;
+    height: 130px;
+    width: 26%;
+}
+#dragContent div {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+#dragContent_img div {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+}
+#Qdiv .dragContentOver {
+    border: 1px solid #000000;
+}
+#answerDiv.dragContentOver {
+    border: 0 solid #FF0000;
+}
+#Qdiv_img .dragContentOver {
+    border: 1px solid #000000;
+}
+#answerDiv_img.dragContentOver {
+    border: 0 solid #FF0000;
+}
+#dragContent {
+    display: none;
+    position: absolute;
+}
+#dragContent_img {
+    display: none;
+    position: absolute;
+}
+#Qdiv.p {
+    font-size: 0.4em;
+    margin: 2px;
+}
+
+.drop-answer {
+    border:1px solid #000;
+    background-color:#fff;
+    min-height:43px;
+    width:100%;
+    padding-bottom:1px;
+}
+.questiontitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+.question-score {
+    color: #000000;
+    font-size: 22px;
+    height:200px;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+
+.question-answers{
+    padding-left:50px !important;
+}

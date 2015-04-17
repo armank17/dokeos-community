@@ -1,0 +1,8 @@
+name        = Black tablet
+description = Css style with support for tablets and mobile devices
+type        = tablet
+core   = 2.x
+engine = phptemplate
+version = "2.x"
+project = "dokeos 2.x"
+datestamp = "2209111805"

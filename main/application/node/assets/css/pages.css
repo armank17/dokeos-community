@@ -1,0 +1,26 @@
+#content-css {
+    margin-top: 20px;
+}
+
+div.label {
+    margin-right: 10px;
+}
+
+label.error {
+    color:red;
+}
+.gallery_scenario {
+    text-align: center;
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+}
+.sectiontitle {
+    margin-top: -12px;
+    width: 7em;
+}
+.section_scenario width_scenario_template_button{
+    width: 140px;
+   
+}

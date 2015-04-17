@@ -1,0 +1,270 @@
+html {
+    height: 100%;
+}
+body { 
+    background-image: none !important;
+    background-color: #FFF !important;
+    font-size: 12px !important;
+    height: auto !important;
+}
+#content-upload {
+    width: 100%;
+    overflow: hidden;
+}
+#col1 {
+    width: 45%;
+    float:left;
+    text-align: center;
+}
+#col2 {
+    width: 50%;
+    float: left;
+    margin-top: 50px;
+} 
+
+.progress { 
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    clear: both;
+    margin: auto;
+    padding: 1px;
+    position: relative;
+    width: 400px;
+    visibility: hidden;
+}
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }
+
+.error-message {
+    margin-top: 10px !important;
+}
+
+.close_message_box {
+    display: none !important;
+}
+
+#lp-layout {
+    width: 100%;
+    overflow: auto;
+    height: 585px;
+}
+
+#lp-layout .section {
+    width: 204px !important;
+    float:left !important;
+    clear: none !important
+}
+
+#resDoc {
+    margin-top: 10px;
+    width: 95%;
+}
+
+div.row div.formw {
+    margin-left: 8px;
+    width: 72%;
+}
+
+div.label {
+    width: 22%;
+}
+
+#quiz-certificate-thumb {
+    margin-left: 135px;
+}
+
+.four_buttons {
+    height: 155px;
+    overflow: hidden;
+    padding: 5px 0;
+    width: 174px;
+}
+
+.breadcrumb {
+    clear: both;
+    font-size: 13px;
+    margin-bottom: 5px !important;
+    text-align: left;
+}
+
+.progress {
+    margin-bottom: 5px !important;
+}
+
+.mediabox-list li {
+    margin: 10px;
+}
+
+.images-thumb a {
+    display: block;
+    width: 100%;
+    height: 130px;
+    overflow:hidden;
+}
+
+.video_buttons {
+    height: 202px;
+    margin: 4px !important;
+    overflow: hidden;
+    padding: 2px !important;
+    width: 244px;
+}
+
+.audio_buttons {
+    height: auto !important;
+    overflow: hidden;
+    width: 240px;
+    padding: 2px !important;
+    margin: 4px !important;
+}
+
+#preview {
+    text-align: center;
+    margin-top: 20px;
+    width: 450px;
+    clear:both;
+}
+
+.upload_form {
+    width:90%;
+}
+
+.imageBoxThumbnail {
+
+	width: 156px !important;
+
+}
+
+.imageBox, .imageBoxHighlighted {
+    float: left;
+    height: auto;
+    text-align: center;
+    width: 205px;
+}
+
+.item-block {
+    background-image:url(../img/pixel.gif);
+    background-repeat:no-repeat; 
+    height:70px;
+    background-position: center center;
+}
+
+.item-block-thumbnail {
+  
+}
+
+.item-block-image-container {
+
+	width: 140px; 
+	height:70px; 
+	overflow:hidden;
+	margin-left: 8px;
+
+}
+
+
+.item-block p {
+    font-size:12px;
+    font-face: Verdana, Arial;
+}
+
+.item-block {
+    cursor: move;
+}
+.error_message_content {
+    width: 95%;
+}
+
+#export-scorm-wrap {
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 160px;
+}
+#first-item-form {
+    position: relative;
+}
+.video-picture {
+    height: 162px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #000;
+}
+#myurl {
+    width: 300px;
+}
+#social-preview {
+    clear: both;
+    margin: auto;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 155px;
+    width: 15%;
+}
+
+#social-instructions {
+    width: 80%;
+    font-size: 12px;
+}
+
+.images-thumb {
+    width: 100%;
+    height: 130px;
+    display: block;
+}
+.images-bottom {
+    position: relative; 
+    width: 100%;
+}
+.images-title {
+    width: 140px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.images-delete {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 22px;
+    height: 22px;    
+}
+
+.mediabig_audio_button table td {
+    word-wrap: break-word;
+}
+
+div.label {
+    margin-top: 5px !important;
+}
+
+.audio-blocks li {
+   width: 210px !important;
+}
+.ui-state-error {
+    border-width: 2px !important;
+    border-color: red !important;
+}
+
+#upload-error {
+    display: none;
+}
+
+.error-message {
+    color: red !important;
+    padding: 5px;
+    border: 1px solid red !important;
+}
+
+#GalleryContainer {
+    width: 98% !important;
+    overflow-y: auto !important;   
+}
+
+#layout {
+    width: 98%;
+}
+#image-gallery #images {
+    overflow-y: auto !important;
+}

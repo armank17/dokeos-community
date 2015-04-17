@@ -1,0 +1,127 @@
+/* 
+    Document   : styles
+    Created on : 16/08/2012, 03:07:17 PM
+    Author     : Joaquin (jmike410@gmail.com)
+    Description:
+        Styles for Module Mobile
+*/
+
+root { 
+    display: block;
+}
+
+.center-button{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list-images{
+    min-height: 25%; 
+    min-width: 50%; 
+    text-align: center;
+}
+
+.list-reporting{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/reporting_256.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+
+.list-calendar{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/calendar_256.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+
+.list-folder{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/folder_128.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+.list-podcast{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/podcast_256.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+
+.list-notepad{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/notepad_128.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+
+.list-notepad{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/notepad_128.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+.list-assignments{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/assignments_72.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+.list-announcements{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/announcements_256.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+.list-announcements{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/announcements_256.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}
+.list-message{
+    min-width: 64px;
+    min-height: 64px;
+    
+    height: auto;
+    max-width: 100%;
+    background: url('../images/panel/message_256.png') no-repeat 50% 50%;
+    text-align: center;
+    background-size: contain;
+}

@@ -1,0 +1,164 @@
+
+.toogle-slide-left .arrow_right {
+    background: url("../img/arrow-right.png") no-repeat scroll 50% 50% transparent;
+}
+.toogle-slide-left .arrow_left {
+    background: url("../img/arrow-left.png") no-repeat scroll 50% 50% transparent;
+}
+
+
+.toogle-slide-right .arrow_right {
+    background: url("../img/arrow-right.png") no-repeat scroll 50% 50% transparent;
+}
+.toogle-slide-right .arrow_left {
+    background: url("../img/arrow-left.png") no-repeat scroll 50% 50% transparent;
+}
+
+.toogle-slide-left a.arrow_left {
+    height: 100%; /*48px;*/
+    opacity: 0.5;
+    /*position: fixed;*/
+    /*position:absolute !important;*/
+    /*top: 0%;*/    
+    z-index: 150;
+    /*left: 2%;*/
+    width: 20px;
+    margin-left: -5px;
+}
+
+.toogle-slide-left a.arrow_right {
+    /*height: 100%; 48px;*/
+    opacity: 0.5;
+    /*position: fixed;*/
+    /*top: 0%;*/
+    /*position:absolute !important;*/
+    width: 20px;
+    z-index: 150;
+    /*left: 2%;*/
+    /*left: 63px;*/
+}
+
+.toogle-slide-right a.arrow_left {
+    /*height: 100%; 48px;*/
+    opacity: 0.5;
+    /*position: fixed;*/
+    /*position:absolute;*/
+    /*top: 0%;*/    
+    z-index: 150;
+    /*right: 2%;*/
+    width: 20px;
+}
+
+.toogle-slide-right a.arrow_right {
+    /*height: 100%; 48px;*/
+    opacity: 0.5;
+    /*position: fixed;*/
+    /*position:absolute;*/
+    /*top: 0%;*/
+    width: 20px;
+    z-index: 150;
+    margin-left: 10px;
+    /*right: 2%;*/
+}
+
+
+.player-actions-left {
+    #    background-color:#fff;
+    #    background:-moz-linear-gradient(center top , #eaeaea, #FFFFFF);
+    #    background: -webkit-gradient(linear,left top, left bottom, from(#eaeaea), to(#ffffff));
+    #    border:1px solid #b8b8b6;
+    border-radius:0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    #    -webkit-box-shadow: 0px 0px 7px #666666;
+    #    -moz-box-shadow: 0px 0px 7px #666666;
+    #    box-shadow: 0px 0px 7px #666666;
+    padding: 10px;
+    vertical-align:middle;
+    overflow: auto;
+    clear:both;
+    min-height: 48%;
+    width: 10.3%;
+    position: absolute;
+    #    top: 88px ;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.player-actions-right {
+    /*#    background-color:#fff;*/
+/*    #    background:-moz-linear-gradient(center top , #eaeaea, #FFFFFF);
+    #    background: -webkit-gradient(linear,left top, left bottom, from(#eaeaea), to(#ffffff));
+    #    border:1px solid #b8b8b6;*/
+    border-radius:0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+/*    #    -webkit-box-shadow: 0px 0px 7px #666666;
+    #    -moz-box-shadow: 0px 0px 7px #666666;
+    #    box-shadow: 0px 0px 7px #666666;*/
+    padding: 10px;
+    vertical-align:middle;
+    overflow-x: hidden;
+    /*#    clear:both;*/
+    min-height: 48%;
+    width: 10.3%;
+    position: absolute;
+    /*#    top: 88px ;*/
+    margin: 0px;
+    padding: 0px;
+    right:0px;
+}
+
+
+#player-view-middle-right {
+    /*overflow: hidden;*/
+}
+
+
+.boxRadius{
+    background-color: #008000;
+    -webkit-box-shadow: 0px 0px 7px #cccccc;
+    -moz-box-shadow: 0px 0px 7px #cccccc;
+    box-shadow: 0px 0px 7px #cccccc;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 55px;
+    height: 52px;
+    margin-bottom: 7px;
+    margin-right: 20px;
+    overflow: hidden; 
+    width: 82px;
+
+}
+
+
+.boxRadiusThumb
+{
+    -moz-border-radius: 8px; 
+    -webkit-border-radius: 8px; 
+    border-radius: 8px;  
+    -webkit-box-shadow: 0px 0px 7px #cccccc; 
+    -moz-box-shadow: 0px 0px 7px #cccccc; 
+    box-shadow: 0px 0px 7px #cccccc; 
+    display: block; 
+    height: 50px !important; 
+    border:1px solid #B8B8B6; 
+    margin-bottom: 7px; 
+    margin-right: 20px;
+    overflow: hidden;
+    width: 80px;
+    background:#ffffff;
+
+}
+.section_highlight{
+    background: none repeat scroll 0 0 #000000;
+    border: 2px solid #000000;
+    border-radius: 9px;
+    height: 52px;
+    width: 82px !important;
+    margin-left: -1px;
+}

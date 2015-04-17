@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Contacts>
+    <Contact>
+        <LastName>Mcfly</LastName>
+        <FirstName>Marty</FirstName>
+        <UserName>marty</UserName>
+        <Password>secret</Password>
+        <Email>marty@example.net</Email>
+        <OfficialCode>12345678</OfficialCode>
+		<Lang>english</Lang>
+        <PhoneNumber>001-123-456-789</PhoneNumber>
+        <Status>user</Status>
+        <Courses>COURSE1|COURSE2|COURSE3</Courses>
+    </Contact>
+    <Contact>
+        <LastName>Brown</LastName>
+        <FirstName>Emmett</FirstName>
+        <UserName>emmett</UserName>
+        <Password>secret</Password>
+        <Email>drbrown@example.net</Email>
+        <OfficialCode />
+		<Lang />
+        <PhoneNumber />
+        <Status>teacher</Status>
+        <Courses>COURSE2</Courses>
+    </Contact>
+</Contacts>
