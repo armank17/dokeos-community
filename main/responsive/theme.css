@@ -50,18 +50,92 @@
     margin-bottom: 4px !important;
 }
 .mb0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0px !important;
+}
+.pdl0 {
+    padding-left: 0px !important;
+}
+.pdr0 {
+    padding-right: 0px !important;
+}
+pdt0 {
+    padding-top: 0px !important;
+}
+pdb0 {
+    padding-bottom: 0px !important;
+}
+.pdl5 {
+    padding-left: 5px !important;
+}
+.pdr5 {
+    padding-right: 5px !important;
+}
+pdt5 {
+    padding-top: 5px !important;
+}
+pdb5 {
+    padding-bottom: 5px !important;
+}
+.pdl10 {
+    padding-left: 10px !important;
+}
+.pdr10 {
+    padding-right: 10px !important;
+}
+pdt10 {
+    padding-top: 10px !important;
+}
+pdb10 {
+    padding-bottom: 10px !important;
+}
+.pdl15 {
+    padding-left: 15px !important;
+}
+.pdr15 {
+    padding-right: 15px !important;
+}
+pdt15 {
+    padding-top: 15px !important;
+}
+pdb15 {
+    padding-bottom: 15px !important;
+}
+.pdl20 {
+    padding-right: 20px !important;
+}
+.pdr20 {
+    padding-right: 20px !important;
+}
+pdt20 {
+    padding-top: 20px !important;
+}
+pdb20 {
+    padding-bottom: 20px !important;
 }
 .footer {
     background-color: #000000 !important;
 }
 .navbar-bgcolor {
-    background: #182d33 !important;
+    background: #A0A0A0 !important;
 }
 #navbar ul li a {
-        color: #0A9395 !important;
-        font-weight: bold !important;
+        color: #000000 !important;
 }
 header {
-    background: #E6E6E6 !important;
+    background: #EDEDED !important;
+}
+#wrap {
+    border-radius: 5px 5px 5px 5px !important;
+    -moz-border-radius: 5px 5px 5px 5px !important;
+    -webkit-border-radius: 5px 5px 5px 5px !important;
+    border: 1px solid #C5C5C5 !important;
+    padding-top: 10px !important;
+    min-height: 850px !important;
+    background-color: #FFFFFF;
+}
+main {
+    margin-bottom: 80px !important;
+}
+body {
+    background-color: #2D7E86 !important;
 }
