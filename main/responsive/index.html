@@ -89,9 +89,9 @@
                         <span class="pdl5">Customize</span>
                         <span class="caret"></span>
                     </a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Logo</a></li>
-                      <li><a href="#">Slide</a></li>
+                    <ul class="dropdown-menu" role="menu" data-toggle="modal">
+                      <li><a data-target=".logo-modal" href="#">Logo</a></li>
+                      <li><a data-target=".slide-modal" href="#">Slide</a></li>
                       <li><a href="#">Theme</a></li>
                       <li><a href="#">Home Page</a></li>
                     </ul>
@@ -131,8 +131,6 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">My Profile</a></li>
                 <li><a href="#">Messages</a></li>
-                <li class="divider"></li>
-                <li><a href="#contact">Support</a></li>
                 <li class="divider"></li>
                 <li><a href="#contact">Register</a></li>
                 <li><a href="#contact">Lost Password</a></li>
@@ -240,6 +238,50 @@
 <!--Finish dokeos content -->
 </div>
 <!-- finish page content -->
+
+<!-- Begin modals -->
+<!-- Modal Logo -->
+<div class="modal fade logo-modal" id="logo-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Customize logo</h4>
+      </div>
+      <div class="modal-body">
+          <div class="container">
+              Upload logo
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo -->
+<div class="modal fade slide-modal" id="slide-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Customize Slide</h4>
+      </div>
+      <div class="modal-body">
+          <div class="container">
+              Upload slide
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End modals -->
 </main>
       
 <!-- footer -->
