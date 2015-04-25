@@ -5,10 +5,6 @@ archive/*
 
 !home/
 home/*
-!home/default_course_document
-!home/default_platform_document
-!home/upload/users
-!home/courses/index.html
 
 # Logs and databases #
 *.log
