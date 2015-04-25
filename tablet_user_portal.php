@@ -300,25 +300,6 @@ function display_edit_course_list_links() {
 }
 
 /**
- * Trainers manual, Video tutorials and Trainers training is displayed.
- * 
- * @author Ricardo Garcia Rodriguez <master.ojitos@gmail.com>
- */
-function display_trainer_links() {
-    $user_selected_language = api_get_interface_language();
-    if (!isset($user_selected_language)) {
-        $user_selected_language = api_get_setting('platformLanguage');
-    }
-    $trainers_training_link = 'http://www.dokeos.com/en/training/';
-    if ($user_selected_language == "french") {
-        $trainers_training_link = 'http://www.dokeos.com/fr/training/';
-    }
-    echo "<a href=\"http://www.dokeos.com/en/trainer-manual/\" target=\"_blank\">" . Display::return_icon('pixel.gif', get_lang('TrainersManual'), array('class' => 'homepage_button homepage_trainers_manual', 'align' => 'middle', 'style' => 'float:left')) . '<div class="tablet_section_left_link">' . get_lang('TrainersManual') . "</div></a>";
-    echo "<a href=\"http://www.dokeos.com/en/video-tutorials/\" target=\"_blank\">" . Display::return_icon('pixel.gif', get_lang('VideoTutorials'), array('class' => 'homepage_button homepage_video_tutorials', 'align' => 'middle', 'style' => 'float:left')) . '<div class="tablet_section_left_link">' . get_lang('VideoTutorials') . "</div></a>";
-    echo "<a href=\"" . $trainers_training_link . "\" target=\"_blank\">" . Display::return_icon('pixel.gif', get_lang('TrainersTraining'), array('class' => 'homepage_button homepage_trainers_training', 'align' => 'middle', 'style' => 'float:left')) . '<div class="tablet_section_left_link">' . get_lang('TrainersTraining') . "</div></a>";
-}
-
-/**
  * Show history sessions
  *
  */
@@ -1349,7 +1330,6 @@ if ($show_menu) {
     echo "<div class=\"section overflow\">";
     echo api_display_tool_title(get_lang('MenuUser'), 'tablet_title');
     display_create_course_link();
-    display_trainer_links();
     if ($show_digest_link) {
         display_digest($toolsList, $digest, $orderKey, $courses);
     }
