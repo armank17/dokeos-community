@@ -1,0 +1,57 @@
+tests/unittests/db.conf.php
+tests/logs/*
+
+archive/*
+
+!home/
+home/*
+!home/default_course_document
+!home/default_platform_document
+!home/upload/users
+!home/courses/index.html
+
+# Logs and databases #
+*.log
+
+# IDE settings
+.idea
+*.orig
+nbproject/*
+.*.swp
+
+vendor/ezyang/htmlpurifier/docs/*
+vendor/ezyang/htmlpurifier/library/HTMLPurifier/ConfigSchema/Filter/ExtractStyleBlocks.txt
+vendor/ezyang/htmlpurifier/smoketests/*
+vendor/realityking/pchart/Sample/*
+vendor/realityking/pchart/Example*
+
+# Doctrine entities generation tests
+
+tests/doctrine_console/generated
+tests/doctrine_console/mapping
+tests/doctrine_console/Proxies
+
+# OS stuff
+.DS_Store
+
+/.htaccess
+
+# Symfony
+
+app/config/parameters*.yml
+app/cache/*
+app/logs/*
+app/*.cache
+web/assetic/*
+web/bundles/*
+web/images/*
+web/uploads/*
+web/js/*
+web/css/*
+web/sitemap*.xml
+vendor/*
+/vendor/
+src/Chamilo/ThemeBundle/Resources/public/*
+
+build
+composer.lock
