@@ -145,11 +145,7 @@ if ($is_allowed_to_edit) {
         echo '</div>';
     }
     //echo '<span class="sectiontablettitle">' . get_lang("Advanced") . '</span>';
-    if (api_get_setting('enable_pro_settings') !== "true") {
-        echo '<div class="sectiontablet main_activity">';
-        show_pro_tools();
-        echo '</div>';
-    } else {
+
         $my_list = get_tools_category(TOOL_ADVANCED);
         if (count($my_list) > 0) {
             echo '<div class="sectiontablet main_activity">';
@@ -158,7 +154,7 @@ if ($is_allowed_to_edit) {
             echo '</table>';
             echo '</div>';
         }
-    }
+
 } else {
     if (api_get_setting('enable_pro_settings') != "true") {
         $my_list = get_tools_category(TOOL_BASIC);

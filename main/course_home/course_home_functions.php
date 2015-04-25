@@ -1029,50 +1029,6 @@ function access_pro_tools($variable) {
     return api_get_setting($variable) === "true";
 }
 
-/**
- * Prints a html table with professional tools
- * 
- * @author Ricardo Garcia Rodriguez <master.ojitos@gmail.com>
- */
-function show_pro_tools() {
-    $production_tools = array(
-        array("name" => "Author", "classname" => "author", 'access' => access_pro_tools('service_ppt2lp_active')),
-        array("name" => "Control", "classname" => "Control"),
-        array("name" => "Shop", "classname" => "Shop"),
-        array("name" => "Games", "classname" => "SeriousGames", 'access' => access_pro_tools('enable_seriousgames_tool')),
-        array("name" => "WebTv", "classname" => "WebTv", 'access' => access_pro_tools('enable_webtv_tool')),
-        array("name" => "Live", "classname" => "visio_classroom", 'access' => access_pro_tools('enable_webtv_tool'))
-    );
-    $visible_icon = Display::return_icon('pixel.gif', get_lang('Deactivate'), array('class' => 'actionplaceholderminiicon toolactionview'));
-    $language_isocode = api_get_language_isocode();
-    if (!in_array($language_isocode, array('en', 'es', 'fr', 'nl'))) {
-        $language_isocode = 'en';
-    }
-    $pro_link = 'http://dokeos.com/' . $language_isocode . '/';
-    $tool_icon = Display::return_icon('pixel.gif', ':tool_name', array('class' => 'placeholdericon'));
-    echo '<table><tbody><tr valign="top">';
-    foreach ($production_tools as $i => $current_tool) {
-        echo '<td width="15.5%">            
-            <div class="thumbnail-courseh disable_pro" >
-                <a target="_blank" href="'.$pro_link.'">
-                    <div id="tool_'.$i.'" class="tool '.$current_tool['classname'].'" style="height:100px; width:100px;" title="'.$current_tool['name'].'"></div>
-                </a>
-            </div>
-            <div id="tool_'.$i.'" class="tool disable_pro">
-                <div style="overflow: hidden; margin: auto; width: 150px;" class="tool-content">
-                    <style>.tooldesc_ {text-align:left !important;}</style>
-                    <span class="make_visible_and_invisible">
-                        <img class="actionplaceholderminiicon toolactionhide" title="'.$current_tool['name'].'" alt="'.$current_tool['name'].'" src="'.api_get_path(WEB_IMG_PATH).'/pixel.gif" />
-                    </span>
-                    <div class="tooltitle">
-                        <a target="_blank" href="'.$pro_link.'">'.$current_tool['name'].'</a>
-                    </div>
-                </div>
-            </div>
-        </td>';
-    }
-    echo '</tr></tbody></table>';
-}
 
 /**
  * Fill scenario from course to session

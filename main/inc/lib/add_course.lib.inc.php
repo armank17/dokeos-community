@@ -2613,34 +2613,34 @@ function fill_Db_course($courseDbName, $courseRepository, $language,$default_doc
         
         //free
         Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_COURSE_DESCRIPTION . "','course_description/','info.png','".string2binary(api_get_setting('course_create_active_tools', 'course_description')) . "','0','squaregrey.gif','NO','_self','common','0','0')", __FILE__, __LINE__);
-        Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_LEARNPATH . "','newscorm/lp_controller.php?action=course','scorm.png','".string2binary(api_get_setting('course_create_active_tools', 'learning_path')) . "','0','squaregrey.gif','NO','_self','common','0','0')", __FILE__, __LINE__);
+        //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_LEARNPATH . "','newscorm/lp_controller.php?action=course','scorm.png','".string2binary(api_get_setting('course_create_active_tools', 'learning_path')) . "','0','squaregrey.gif','NO','_self','common','0','0')", __FILE__, __LINE__);
         Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_QUIZ . "','exercice/exercice.php','quiz.png','".string2binary(api_get_setting('course_create_active_tools', 'quiz')) . "','0','squaregrey.gif','NO','_self','free','0','0')", __FILE__, __LINE__);
         
         //pro
-        Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_AUTHOR . "','index.php?module=author&cmd=Authoring&func=initialSettings','author.png','1','0','squaregrey.gif','NO','_self','pro','0','1')", __FILE__, __LINE__);
-        Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_EVALUATION . "','index.php?module=evaluation&cmd=Index','control.png','1','0','','0','_self','pro','0','0')", __FILE__, __LINE__);
-        Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_SHOP . "','index.php?module=ecommerce&cmd=Shop','shop.png','1','0','','0','_self','pro','0','0')", __FILE__, __LINE__);
+        //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_AUTHOR . "','index.php?module=author&cmd=Authoring&func=initialSettings','author.png','1','0','squaregrey.gif','NO','_self','pro','0','1')", __FILE__, __LINE__);
+        //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_EVALUATION . "','index.php?module=evaluation&cmd=Index','control.png','1','0','','0','_self','pro','0','0')", __FILE__, __LINE__);
+        //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_SHOP . "','index.php?module=ecommerce&cmd=Shop','shop.png','1','0','','0','_self','pro','0','0')", __FILE__, __LINE__);
         
-	if (api_get_setting('enable_webex_tool') == 'true') {
-            Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL,'" . TOOL_WEBEX . "','webex/index.php','webex_32x32.png',1,'1','squaregrey.gif',0,'_self','pro',0,'0')", __FILE__, __LINE__);
-	}
+	//if (api_get_setting('enable_webex_tool') == 'true') {
+            //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL,'" . TOOL_WEBEX . "','webex/index.php','webex_32x32.png',1,'1','squaregrey.gif',0,'_self','pro',0,'0')", __FILE__, __LINE__);
+	//}
         
 	//if (api_get_setting('enable_webtv_tool') == 'true') {
-            Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL,'" . TOOL_WEBTV . "','webtv/index.php','author.png',1,'0','squaregrey.gif',0,'_self','pro',0,'0')", __FILE__, __LINE__);
+            //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL,'" . TOOL_WEBTV . "','webtv/index.php','author.png',1,'0','squaregrey.gif',0,'_self','pro',0,'0')", __FILE__, __LINE__);
 	//}
         
 	//if (api_get_setting('enable_seriousgames_tool') == 'true') {
-            Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL,'" . TOOL_SERIOUS_GAMES . "','serious_game/index.php','author.png',1,'0','squaregrey.gif',0,'_self','pro',0,'0')", __FILE__, __LINE__);
+            //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL,'" . TOOL_SERIOUS_GAMES . "','serious_game/index.php','author.png',1,'0','squaregrey.gif',0,'_self','pro',0,'0')", __FILE__, __LINE__);
 	//}
         
         //if (api_get_setting('service_visio','active') == 'true') {
             //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_VISIO_CONFERENCE . "','videoconference/virtual_meeting.php','visio_meeting.gif','1','0','squaregrey.gif','NO','_self','pro','0')", __FILE__, __LINE__);
-            Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_VISIO_CLASSROOM . "','videoconference/virtual_classroom.php','visio.gif','1','0','','0','_self','pro','0','0')", __FILE__, __LINE__);
+            //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_VISIO_CLASSROOM . "','videoconference/virtual_classroom.php','visio.gif','1','0','','0','_self','pro','0','0')", __FILE__, __LINE__);
 	//}
         
-        if (api_get_setting('search_enabled') == 'true') {
-            Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_SEARCH. "','search/','page-zoom.png','".string2binary(api_get_setting('course_create_active_tools', 'enable_search')) . "','0','search.png','NO','_self','pro','0','0')", __FILE__, __LINE__);
-        }
+        //if (api_get_setting('search_enabled') == 'true') {
+            //Database::query("INSERT INTO `" . $tbl_course_homepage . "` VALUES (NULL, '" . TOOL_SEARCH. "','search/','page-zoom.png','".string2binary(api_get_setting('course_create_active_tools', 'enable_search')) . "','0','search.png','NO','_self','pro','0','0')", __FILE__, __LINE__);
+        //}
 
 	/*
 	-----------------------------------------------------------
