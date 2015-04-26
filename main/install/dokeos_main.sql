@@ -283,18 +283,11 @@ INSERT INTO course_module VALUES
 (14,'homepage_link','link/link.php?action=addlink','npage.gif',1,1,'courseadmin'),
 (15,'course_setting','course_info/infocours.php','reference.gif',1,1,'courseadmin'),
 (16,'External','','external.gif',0,0,'external'),
-(17,'AddedLearnpath','','scormbuilder.gif',0,0,'external'),
-(18,'conference','conference/index.php?type=conference','conf.gif',0,0,'external'),
-(19,'conference','conference/index.php?type=classroom','conf.gif',0,0,'external'),
-(20,'learnpath','newscorm/lp_controller.php','scorm.gif',5,1,'basic'),
-(21,'blog','blog/blog.php','blog.gif',1,2,'basic'),
-(22,'blog_management','blog/blog_admin.php','blog_admin.gif',1,2,'courseadmin'),
-(23,'course_maintenance','course_info/maintenance.php','backup.gif',2,3,'courseadmin'),
-(24,'survey','survey/survey_list.php','survey.gif',2,1,'basic'),
-(25,'wiki','wiki/index.php','wiki.gif',2,3,'basic'),
-(26,'gradebook','gradebook/index.php','gradebook.gif',2,2,'basic'),
-(27,'glossary','glossary/index.php','glossary.gif',2,1,'basic'),
-(28,'notebook','notebook/index.php','notebook.gif',2,1,'basic');
+(17,'course_maintenance','course_info/maintenance.php','backup.gif',2,3,'courseadmin'),
+(18,'survey','survey/survey_list.php','survey.gif',2,1,'basic'),
+(19,'wiki','wiki/index.php','wiki.gif',2,3,'basic'),
+(20,'glossary','glossary/index.php','glossary.gif',2,1,'basic'),
+(21,'notebook','notebook/index.php','notebook.gif',2,1,'basic');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE course_module ENABLE KEYS */;
 
@@ -815,7 +808,6 @@ VALUES
 ('show_tutor_data', NULL, 'radio', 'Platform', 'true', 'ShowTutorDataTitle', 'ShowTutorDataComment', NULL, NULL, 1),
 ('show_teacher_data', NULL, 'radio', 'Platform', 'true', 'ShowTeacherDataTitle', 'ShowTeacherDataComment', NULL, NULL, 1),
 ('show_toolshortcuts', NULL, 'radio', 'Advanced', 'false', 'ShowToolShortcutsTitle', 'ShowToolShortcutsComment', NULL, NULL, 1),
-('allow_group_categories', NULL, 'radio', 'Advanced', 'false', 'AllowGroupCategories', 'AllowGroupCategoriesComment', NULL, NULL, 1),
 ('server_type', NULL, 'radio', 'Advanced', 'production', 'ServerStatusTitle', 'ServerStatusComment', NULL, NULL, 1),
 ('platformLanguage', NULL, 'link', 'Languages', 'english', 'PlatformLanguageTitle', 'PlatformLanguageComment', NULL, NULL, 1),
 ('showonline', 'world', 'checkbox', 'Advanced', 'true', 'ShowOnlineTitle', 'ShowOnlineComment', NULL, 'ShowOnlineWorld', 1),
@@ -841,7 +833,6 @@ VALUES
 ('course_create_active_tools', 'course_description', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'CourseDescription', 1),
 ('course_create_active_tools', 'agenda', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Agenda', 1),
 ('course_create_active_tools', 'documents', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Documents', 1),
-('course_create_active_tools', 'learning_path', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'LearningPath', 1),
 ('course_create_active_tools', 'links', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Links', 1),
 ('course_create_active_tools', 'announcements', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Announcements', 1),
 ('course_create_active_tools', 'forums', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Forums', 1),
@@ -871,10 +862,8 @@ VALUES
 ('enable_tool_introduction', NULL, 'radio', 'course', 'false', 'EnableToolIntroductionTitle', 'EnableToolIntroductionComment', NULL, NULL, 1),
 ('page_after_login', NULL, 'radio', 'Advanced', 'user_portal.php', 'PageAfterLoginTitle', 'PageAfterLoginComment', NULL, NULL, 1),
 ('time_limit_whosonline', NULL, 'textfield', 'Advanced', '90', 'TimeLimitWhosonlineTitle', 'TimeLimitWhosonlineComment', NULL, NULL, 1),
-('breadcrumbs_course_homepage', NULL, 'radio', 'Advanced', 'session_name_and_course_title', 'BreadCrumbsCourseHomepageTitle', 'BreadCrumbsCourseHomepageComment', NULL, NULL, 1),
 ('example_material_course_creation', NULL, 'radio', 'Advanced', 'true', 'ExampleMaterialCourseCreationTitle', 'ExampleMaterialCourseCreationComment', NULL, NULL, 1),
 ('account_valid_duration', NULL, 'textfield', 'Advanced', '3660', 'AccountValidDurationTitle', 'AccountValidDurationComment', NULL, NULL, 1),
-('use_session_mode', NULL, 'radio', 'Platform', 'true', 'UseSessionModeTitle', 'UseSessionModeComment', NULL, NULL, 1),
 ('allow_email_editor', NULL, 'radio', 'Tools', 'false', 'AllowEmailEditorTitle', 'AllowEmailEditorComment', NULL, NULL, 1),
 ('registered', NULL, 'textfield', NULL, 'false', NULL, NULL, NULL, NULL, 1),
 ('donotlistcampus', NULL, 'textfield', NULL, 'false', NULL, NULL, NULL, NULL, 1),
@@ -900,7 +889,6 @@ VALUES
 ('upload_extensions_replace_by', NULL, 'textfield', 'Security', 'dangerous', 'UploadExtensionsReplaceBy', 'UploadExtensionsReplaceByComment', NULL, NULL, 1),
 ('show_number_of_courses', NULL, 'radio', 'Advanced', 'false', 'ShowNumberOfCourses', 'ShowNumberOfCoursesComment', NULL, NULL, 1),
 ('show_empty_course_categories', NULL, 'radio', 'Advanced', 'true', 'ShowEmptyCourseCategories', 'ShowEmptyCourseCategoriesComment', NULL, NULL, 1),
-('show_back_link_on_top_of_tree', NULL, 'radio', 'Advanced', 'false', 'ShowBackLinkOnTopOfCourseTree', 'ShowBackLinkOnTopOfCourseTreeComment', NULL, NULL, 1),
 ('show_different_course_language', NULL, 'radio', 'Advanced', 'true', 'ShowDifferentCourseLanguage', 'ShowDifferentCourseLanguageComment', NULL, NULL, 1),
 ('split_users_upload_directory', NULL, 'radio', 'Advanced', 'false', 'SplitUsersUploadDirectory', 'SplitUsersUploadDirectoryComment', NULL, NULL, 1),
 ('hide_dltt_markup', NULL, 'radio', 'Advanced', 'true', 'HideDLTTMarkup', 'HideDLTTMarkupComment', NULL, NULL, 1),
@@ -920,12 +908,6 @@ VALUES
 ('survey_email_sender_noreply', NULL, 'radio', 'Course', 'coach', 'SurveyEmailSenderNoReply', 'SurveyEmailSenderNoReplyComment', NULL, NULL, 1),
 ('openid_authentication', NULL, 'radio', 'Security', 'false', 'OpenIdAuthentication', 'OpenIdAuthenticationComment', NULL, NULL, 1),
 ('profile', 'openid', 'checkbox', 'User', 'false', 'ProfileChangesTitle', 'ProfileChangesComment', NULL, 'OpenIDURL', 1),
-('gradebook_enable', NULL, 'radio', 'Advanced', 'true', 'GradebookActivation', 'GradebookActivationComment', NULL, NULL, 1),
-('show_tabs', 'my_gradebook', 'checkbox', 'Platform', 'true', 'ShowTabsTitle', 'ShowTabsComment', NULL, 'TabsMyGradebook', 1),
-('gradebook_score_display_coloring', 'my_display_coloring', 'checkbox', 'Advanced', 'false', 'GradebookScoreDisplayColoring', 'GradebookScoreDisplayColoringComment', NULL, 'TabsGradebookEnableColoring', 1),
-('gradebook_score_display_custom', 'my_display_custom', 'checkbox', 'Advanced', 'false', 'GradebookScoreDisplayCustom', 'GradebookScoreDisplayCustomComment', NULL, 'TabsGradebookEnableCustom', 1),
-('gradebook_score_display_colorsplit', NULL, 'textfield', 'Advanced', '50', 'GradebookScoreDisplayColorSplit', 'GradebookScoreDisplayColorSplitComment', NULL, NULL, 1),
-('gradebook_score_display_upperlimit', 'my_display_upperlimit', 'checkbox', 'Advanced', 'false', 'GradebookScoreDisplayUpperLimit', 'GradebookScoreDisplayUpperLimitComment', NULL, 'TabsGradebookEnableUpperLimit', 1),
 ('user_selected_theme', NULL, 'radio', 'Advanced', 'false', 'UserThemeSelection', 'UserThemeSelectionComment', NULL, NULL, 1),
 ('profile', 'theme', 'checkbox', 'User', 'false', 'ProfileChangesTitle', 'ProfileChangesComment', NULL, 'UserTheme', 1),
 ('allow_course_theme', NULL, 'radio', 'Advanced', 'true', 'AllowCourseThemeTitle', 'AllowCourseThemeComment', NULL, NULL, 1),
@@ -959,7 +941,6 @@ VALUES
 ('extend_rights_for_coach_on_survey', NULL, 'radio', 'Security', 'true', 'ExtendRightsForCoachOnSurveyTitle', 'ExtendRightsForCoachOnSurveyComment', NULL, NULL, 1),
 ('course_create_active_tools', 'wiki', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Wiki', 1),
 ('show_session_coach', NULL, 'radio', 'Platform', 'false', 'ShowSessionCoachTitle', 'ShowSessionCoachComment', NULL, NULL, 1),
-('course_create_active_tools', 'Advanced', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Gradebook', 1),
 ('allow_users_to_create_courses', NULL, 'radio', 'Platform', 'true', 'AllowUsersToCreateCoursesTitle', 'AllowUsersToCreateCoursesComment', NULL, NULL, 1),
 ('course_create_active_tools', 'survey', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Survey', 1),
 ('course_create_active_tools', 'glossary', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Glossary', 1),
@@ -968,16 +949,13 @@ VALUES
 ('allow_reservation', NULL, 'radio', 'Advanced', 'false', 'AllowReservationTitle', 'AllowReservationComment', NULL, NULL, 1),
 ('profile', 'apikeys', 'checkbox', 'User', 'false', 'ProfileChangesTitle', 'ProfileChangesComment', NULL, 'ApiKeys', 1),
 ('allow_message_tool', NULL, 'radio', 'Advanced', 'true', 'AllowMessageToolTitle', 'AllowMessageToolComment', NULL, NULL, 1),
-('allow_social_tool', NULL, 'radio', 'Tools', 'true', 'AllowSocialToolTitle', 'AllowSocialToolComment', NULL, NULL, 1),
 ('allow_students_to_browse_courses', NULL, 'radio', 'Platform', 'true', 'AllowStudentsToBrowseCoursesTitle', 'AllowStudentsToBrowseCoursesComment', NULL, NULL, 1),
-('show_session_data', NULL, 'radio', 'Advanced', 'false', 'ShowSessionDataTitle', 'ShowSessionDataComment', NULL, NULL, 1),
 ('allow_use_sub_language', NULL, 'radio', 'Advanced', 'false', 'AllowUseSubLanguageTitle', 'AllowUseSubLanguageComment', NULL, NULL, 1),
 ('show_glossary_in_documents', NULL, 'radio', 'Advanced', 'isautomatic', 'ShowGlossaryInDocumentsTitle', 'ShowGlossaryInDocumentsComment', NULL, NULL, 1),
 ('allow_terms_conditions', NULL, 'radio', 'Platform', 'false', 'AllowTermsAndConditionsTitle', 'AllowTermsAndConditionsComment', NULL, NULL, 1),
 ('course_create_active_tools', 'enable_search', 'checkbox', 'Tools', 'false', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Search', 1),
 ('search_prefilter_prefix', NULL, NULL, 'Search', NULL, 'SearchPrefilterPrefix', 'SearchPrefilterPrefixComment', NULL, NULL, 1),
 ('search_show_unlinked_results', NULL, 'radio', 'Search', 'true', 'SearchShowUnlinkedResultsTitle', 'SearchShowUnlinkedResultsComment', NULL, NULL, 1),
-('show_courses_descriptions_in_catalog', NULL, 'radio', 'Course', 'true', 'ShowCoursesDescriptionsInCatalogTitle', 'ShowCoursesDescriptionsInCatalogComment', NULL, NULL, 1),
 ('allow_coach_to_edit_course_session', NULL, 'radio', 'Course', 'false', 'AllowCoachsToEditInsideTrainingSessions', 'AllowCoachsToEditInsideTrainingSessionsComment', NULL, NULL, 1),
 ('show_glossary_in_extra_tools', NULL, 'radio', 'Advanced', 'false', 'ShowGlossaryInExtraToolsTitle', 'ShowGlossaryInExtraToolsComment', NULL, NULL, 1),
 ('dokeos_database_version', NULL, 'textfield', NULL, '3.3.4500', 'DokeosDatabaseVersion', NULL, NULL, NULL, 1),
@@ -985,9 +963,6 @@ VALUES
 ('go_to_course_after_login', NULL, 'radio', 'Course', 'false', 'GoToCourseAfterLoginTitle', 'GoToCourseAfterLoginComment', NULL, NULL, 1),
 ('math_mimetex', NULL, 'radio', 'Advanced', 'false', 'MathMimetexTitle', 'MathMimetexComment', NULL, NULL, 1),
 ('math_asciimathML', NULL, 'radio', 'Editor', 'false', 'MathASCIImathMLTitle', 'MathASCIImathMLComment', NULL, NULL, 1),
--- ('youtube_for_students', NULL, 'radio', 'Advanced', 'true', 'YoutubeForStudentsTitle', 'YoutubeForStudentsComment', NULL, NULL, 1),
-('block_copy_paste_for_students', NULL, 'radio', 'Editor', 'false', 'BlockCopyPasteForStudentsTitle', 'BlockCopyPasteForStudentsComment', NULL, NULL, 1),
-('more_buttons_maximized_mode', NULL, 'radio', 'Editor', 'false', 'MoreButtonsForMaximizedModeTitle', 'MoreButtonsForMaximizedModeComment', NULL, NULL, 1),
 ('students_download_folders', NULL, 'radio', 'Advanced', 'true', 'AllowStudentsDownloadFoldersTitle', 'AllowStudentsDownloadFoldersComment', NULL, NULL, 1),
 ('installation_date', NULL, 'text', 'Advanced', current_timestamp(), 'InstallationDateTitle', 'InstallationDateComment', NULL, NULL, 1),
 ('cas_activate', NULL, 'radio', 'CAS', 'false', 'CasMainActivateTitle', 'CasMainActivateComment', NULL, NULL, 1),
@@ -1014,8 +989,6 @@ VALUES
 ('captcha', NULL, 'radio', 'Advanced', 'false', 'CaptchaTitle', 'CaptchaComment', NULL, NULL, 1),
 ('number_of_announcements', NULL, 'textfield', 'Advanced', '8', 'NumberOfAnnouncementsInListTitle', 'NumberOfAnnouncementsInListComment', '0', NULL, 1),
 ('calendar_export_all', NULL, 'radio', 'Advanced', 'false', 'CalendarExportAllTitle', 'CalendarExportAllComment', '0', NULL, 1),
-('display_context_help', NULL, 'radio', 'Advanced', 'false', 'DisplayContextHelpTitle', 'DisplayContextHelpComment', '0', NULL, 1),
-('display_breadcrumbs', NULL, 'radio', 'Advanced', 'false', 'DisplayBreadcrumbsTitle', 'DisplayBreadcrumbsComment', '0', NULL, 1),
 ('groupscenariofield', 'description', 'checkbox', 'Advanced', 'false', 'GroupScenarioFieldTitle', 'GroupScenarioFieldComment', '0', 'GroupScenarioFieldDescription', 1),
 ('groupscenariofield', 'limit', 'checkbox', 'Advanced', 'true', 'GroupScenarioFieldTitle', 'GroupScenarioFieldComment', '0', 'GroupScenarioFieldLimit', 1),
 ('groupscenariofield', 'registration', 'checkbox', 'Advanced', 'true', 'GroupScenarioFieldTitle', 'GroupScenarioFieldComment', '0', 'GroupScenarioFieldRegistration', 1),
@@ -1035,14 +1008,6 @@ VALUES
 ('automatic_group_filling', NULL, 'radio', 'Advanced', 'true', 'ShowAutomaticGroupTitle', 'ShowAutomaticGroupComment', '0', NULL, 1),
 ('create_new_group', NULL, 'radio', 'Advanced', 'true', 'ShowNewGroupTitle', 'ShowNewGroupComment', '0', NULL, 1),
 ('new_group_seats', NULL, 'textfield', 'Advanced', '20', 'ShowNewGroupSeatTitle', 'ShowNewGroupSeatComment', '0', NULL, 1),
-('show_force_password_change', NULL, 'radio', 'Security', '0', 'ShowForcePasswordChangeTitle', 'ShowForcePasswordChangeTitleComment', NULL, NULL, 1),
-('force_password_change', NULL, 'textfield', 'Security', '0', 'ForcePasswordChangeTitle', 'ForcePasswordChangeComment', NULL, NULL, 1),
-('force_password_change_account_creation', NULL, 'radio', 'Security', '0', 'ForcePasswordChangeAccountCreationTitle', 'ForcePasswordChangeAccountCreationComment', NULL, NULL, 1),
-('password_rule', 'numbers', 'checkbox', 'Security', 'true', 'PasswordRuleTitle', 'PasswordRuleComment', NULL, 'PasswordRuleNumbers', 1),
-('password_rule', 'camelcase', 'checkbox', 'Security', 'true', 'PasswordRuleTitle', 'PasswordRuleComment', NULL, 'PasswordRuleCamelCase', 1),
-('password_rule', 'symbols', 'checkbox', 'Security', 'false', 'PasswordRuleTitle', 'PasswordRuleComment', NULL, 'PasswordRuleSymbol', 1),
-('password_length', NULL, 'textfield', 'Security', '6', 'PasswordLengthTitle', 'PasswordLengthComment', NULL, NULL, 1),
-('login_fail_lock', NULL, 'textfield', 'Security', '0', 'LoginFailLockTitle', 'LoginFailLockComment', NULL, NULL, 1),
 ('e_commerce', NULL, 'radio', 'Ecommerce', '0', 'EcommerceTitle', 'EcommerceComment', NULL, NULL, 1),
 ('e_commerce_catalog_type', NULL, 'radio', 'Ecommerce', '2', 'EcommerceCatalogTypeTitle', 'EcommerceCatalogTypeComment', NULL, NULL, 1),
 ('e_commerce_catalog_currency', NULL, 'radio', 'Ecommerce', '840', 'EcommerceCatalogCurrency', 'EcommerceCatalogCurrencyComment', NULL, NULL, 1),
@@ -1099,8 +1064,6 @@ VALUES
 ('show_teacher_data','false','No'),
 ('show_toolshortcuts','true','Yes'),
 ('show_toolshortcuts','false','No'),
-('allow_group_categories','true','Yes'),
-('allow_group_categories','false','No'),
 ('server_type','production','ProductionServer'),
 ('server_type','test','TestServer'),
 ('allow_name_change','true','Yes'),
@@ -1148,13 +1111,8 @@ VALUES
 ('enable_tool_introduction','false','No'),
 ('page_after_login', 'index.php', 'CampusHomepage'),
 ('page_after_login', 'user_portal.php', 'MyCourses'),
-('breadcrumbs_course_homepage', 'get_lang', 'CourseHomepage'),
-('breadcrumbs_course_homepage', 'course_code', 'CourseCode'),
-('breadcrumbs_course_homepage', 'course_title', 'CourseTitle'),
 ('example_material_course_creation', 'true', 'Yes'),
 ('example_material_course_creation', 'false', 'No'),
-('use_session_mode', 'true', 'Yes'),
-('use_session_mode', 'false', 'No'),
 ('allow_email_editor', 'true' ,'Yes'),
 ('allow_email_editor', 'false', 'No'),
 ('show_email_addresses','true','Yes'),
@@ -1169,8 +1127,6 @@ VALUES
 ('show_number_of_courses', 'false', 'No'),
 ('show_empty_course_categories', 'true', 'Yes'),
 ('show_empty_course_categories', 'false', 'No'),
-('show_back_link_on_top_of_tree', 'true', 'Yes'),
-('show_back_link_on_top_of_tree', 'false', 'No'),
 ('show_different_course_language', 'true', 'Yes'),
 ('show_different_course_language', 'false', 'No'),
 ('split_users_upload_directory', 'true', 'Yes'),
@@ -1180,14 +1136,10 @@ VALUES
 ('display_categories_on_homepage','true','Yes'),
 ('display_categories_on_homepage','false','No'),
 ('default_forum_view', 'flat', 'Flat'),
-('default_forum_view', 'threaded', 'Threaded'),
-('default_forum_view', 'nested', 'Nested'),
 ('survey_email_sender_noreply', 'coach', 'CourseCoachEmailSender'),
 ('survey_email_sender_noreply', 'noreply', 'NoReplyEmailSender'),
 ('openid_authentication','true','Yes'),
 ('openid_authentication','false','No'),
-('gradebook_enable','true','Yes'),
-('gradebook_enable','false','No'),
 ('user_selected_theme','true','Yes'),
 ('user_selected_theme','false','No'),
 ('allow_course_theme','true','Yes'),
@@ -1212,21 +1164,16 @@ VALUES
 ('show_session_coach', 'false', 'No'),
 ('allow_users_to_create_courses','true','Yes'),
 ('allow_users_to_create_courses','false','No'),
-('breadcrumbs_course_homepage', 'session_name_and_course_title', 'SessionNameAndCourseTitle'),
 ('advanced_filemanager','true','Yes'),
 ('advanced_filemanager','false','No'),
 ('allow_reservation', 'true', 'Yes'),
 ('allow_reservation', 'false', 'No'),
 ('allow_message_tool', 'true', 'Yes'),
 ('allow_message_tool', 'false', 'No'),
-('allow_social_tool', 'true', 'Yes'),
-('allow_social_tool', 'false', 'No'),
 ('allow_students_to_browse_courses','true','Yes'),
 ('allow_students_to_browse_courses','false','No'),
 ('show_email_of_teacher_or_tutor ', 'true', 'Yes'),
 ('show_email_of_teacher_or_tutor ', 'false', 'No'),
-('show_session_data ', 'true', 'Yes'),
-('show_session_data ', 'false', 'No'),
 ('allow_use_sub_language', 'true', 'Yes'),
 ('allow_use_sub_language', 'false', 'No'),
 ('show_glossary_in_documents', 'none', 'ShowGlossaryInDocumentsIsNone'),
@@ -1238,8 +1185,6 @@ VALUES
 ('search_enabled', 'false', 'No'),
 ('search_show_unlinked_results', 'true', 'SearchShowUnlinkedResults'),
 ('search_show_unlinked_results', 'false', 'SearchHideUnlinkedResults'),
-('show_courses_descriptions_in_catalog', 'true', 'Yes'),
-('show_courses_descriptions_in_catalog', 'false', 'No'),
 ('allow_coach_to_edit_course_session','true','Yes'),
 ('allow_coach_to_edit_course_session','false','No'),
 ('show_glossary_in_extra_tools', 'true', 'Yes'),
@@ -1252,12 +1197,6 @@ VALUES
 ('math_mimetex','false','No'),
 ('math_asciimathML','true','Yes'),
 ('math_asciimathML','false','No'),
-('youtube_for_students','true','Yes'),
-('youtube_for_students','false','No'),
-('block_copy_paste_for_students','true','Yes'),
-('block_copy_paste_for_students','false','No'),
-('more_buttons_maximized_mode','true','Yes'),
-('more_buttons_maximized_mode','false','No'),
 ('students_download_folders','true','Yes'),
 ('students_download_folders','false','No'),
 ('cas_activate', 'true', 'Yes'),
@@ -1288,10 +1227,6 @@ VALUES
 ('captcha','false','No'),
 ('calendar_export_all','true','Yes'),
 ('calendar_export_all','false','No'),
-('display_context_help','true','Yes'),
-('display_context_help','false','No'),
-('display_breadcrumbs','true','Yes'),
-('display_breadcrumbs','false','No'),
 ('show_quizcategory','true','Yes'),
 ('show_quizcategory','false','No'),
 ('show_emailtemplates','true','Yes'),
@@ -1302,16 +1237,11 @@ VALUES
 ('automatic_group_filling','false','No'),
 ('create_new_group','true','Yes'),
 ('create_new_group','false','No'),
-('force_password_change_account_creation','true','Yes'),
-('force_password_change_account_creation','false','No'),
-('show_force_password_change','true','Yes'),
-('show_force_password_change','false','No'),
 ('e_commerce' ,'0','None'),
 ('e_commerce' ,'2','Paypal'),
 ('e_commerce_catalog_type', 2, 'Courses'),
 ('e_commerce_catalog_currency', 840, 'USD Dollar'),
 ('e_commerce_catalog_currency', 978, 'Euro'),
-('use_default_editor','Fckeditor','FckEditorInfo'),
 ('use_default_editor','Ckeditor','CkEditorInfo'),
 ('ldap_server_type', '0', 'LDAPServerTypeDefault'),
 ('ldap_server_type', '1', 'LDAPServerTypeMSAD'),
@@ -1504,68 +1434,7 @@ CREATE TABLE IF NOT EXISTS openid_association (
   created bigint NOT NULL,
   PRIMARY KEY  (id)
 )ENGINE = MyISAM;
---
--- --------------------------------------------------------
---
--- Tables for gradebook
---
-DROP TABLE IF EXISTS gradebook_category;
-CREATE TABLE gradebook_category (
-  id int NOT NULL auto_increment,
-  name text NOT NULL,
-  description text,
-  user_id int NOT NULL,
-  course_code varchar(40) default NULL,
-  parent_id int default NULL,
-  weight smallint NOT NULL,
-  visible tinyint NOT NULL,
-  certif_min_score int DEFAULT NULL,
-  PRIMARY KEY  (id)
-)ENGINE = MyISAM;
-DROP TABLE IF EXISTS gradebook_evaluation;
-CREATE TABLE gradebook_evaluation (
-  id int unsigned NOT NULL auto_increment,
-  name text NOT NULL,
-  description text,
-  user_id int NOT NULL,
-  course_code varchar(40) default NULL,
-  category_id int default NULL,
-  date int default 0,
-  weight smallint NOT NULL,
-  max float unsigned NOT NULL,
-  visible tinyint NOT NULL,
-  type varchar(40) NOT NULL default 'evaluation',
-  PRIMARY KEY  (id)
-)ENGINE = MyISAM;
-DROP TABLE IF EXISTS gradebook_link;
-CREATE TABLE gradebook_link (
-  id int NOT NULL auto_increment,
-  type int NOT NULL,
-  ref_id int NOT NULL,
-  user_id int NOT NULL,
-  course_code varchar(40) NOT NULL,
-  category_id int NOT NULL,
-  date int default NULL,
-  weight smallint NOT NULL,
-  visible tinyint NOT NULL,
-  PRIMARY KEY  (id)
-)ENGINE = MyISAM;
-DROP TABLE IF EXISTS gradebook_result;
-CREATE TABLE gradebook_result (
-  id int NOT NULL auto_increment,
-  user_id int NOT NULL,
-  evaluation_id int NOT NULL,
-  date int NOT NULL,
-  score float unsigned default NULL,
-  PRIMARY KEY  (id)
-)ENGINE = MyISAM;
-DROP TABLE IF EXISTS gradebook_score_display;
-CREATE TABLE gradebook_score_display (
-  id int NOT NULL auto_increment,
-  score float unsigned NOT NULL,
-  display varchar(40) NOT NULL,
-  PRIMARY KEY (id)
-)ENGINE = MyISAM;
+
 DROP TABLE IF EXISTS user_field;
 CREATE TABLE user_field (
 	id	INT NOT NULL auto_increment,
@@ -1603,34 +1472,6 @@ CREATE TABLE user_field_values(
 	field_value	text,
 	tms TIMESTAMP,        
 	PRIMARY KEY(id)
-)ENGINE = MyISAM;
-
-
-ALTER TABLE gradebook_category ADD session_id int DEFAULT NULL;
-
-DROP TABLE IF EXISTS gradebook_result_log;
-CREATE TABLE gradebook_result_log (
-	id int NOT NULL auto_increment,
-	id_result int NOT NULL,
-	user_id int NOT NULL,
-	evaluation_id int NOT NULL,
-	date_log datetime default '0000-00-00 00:00:00',
-	score float unsigned default NULL,
-	PRIMARY KEY(id)
-)ENGINE = MyISAM;
-
-DROP TABLE IF EXISTS gradebook_linkeval_log;
-CREATE TABLE gradebook_linkeval_log (
-	id int NOT NULL auto_increment,
-	id_linkeval_log int NOT NULL,
-	name text,
-	description text,
-	date_log int,
-	weight smallint default NULL,
-	visible tinyint default NULL,
-	type varchar(20) NOT NULL,
-	user_id_log int NOT NULL,
-	PRIMARY KEY  (id)
 )ENGINE = MyISAM;
 
 --
@@ -2101,26 +1942,6 @@ CREATE TABLE  legal (
 )ENGINE = MyISAM;
 
 INSERT INTO user_field (field_type, field_variable, field_display_text, field_visible, field_changeable) values (1, 'legal_accept','Legal',0,0);
-
---
--- Table structure for certificate with gradebook
---
-
-CREATE TABLE gradebook_certificate(
-	id bigint unsigned not null auto_increment,
-	cat_id int unsigned not null,
-	user_id int unsigned not null,
-	score_certificate float unsigned not null default 0,
-	date_certificate datetime not null default '0000-00-00 00:00:00',
-	path_certificate text null,
-	PRIMARY KEY(id)
-)ENGINE = MyISAM;
-ALTER TABLE gradebook_certificate ADD INDEX idx_gradebook_certificate_category_id(cat_id);
-ALTER TABLE gradebook_certificate ADD INDEX idx_gradebook_certificate_user_id(user_id);
-ALTER TABLE gradebook_certificate ADD INDEX idx_gradebook_certificate_category_id_user_id(cat_id,user_id);
-ALTER TABLE gradebook_category ADD COLUMN document_id int unsigned default NULL;
-
-
 
 --
 -- Tables structure for search tool

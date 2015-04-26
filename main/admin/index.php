@@ -294,7 +294,7 @@ if (api_get_setting('show_catalogue') == 'true' && api_get_setting('use_session_
     </div>
 
     <?php
-} else if (api_get_setting('use_session_mode') == 'true' && api_get_setting('show_catalogue') != 'true') {
+} else if (true) {
     ?>
 
     <div class="admin_section section">
@@ -317,7 +317,7 @@ if (api_get_setting('show_catalogue') == 'true' && api_get_setting('use_session_
     </div>
 
     <?php
-} else if (api_is_platform_admin()) {
+} else if (false) {
     ?>
 
     <div class="admin_section section">

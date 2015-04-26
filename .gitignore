@@ -4,6 +4,8 @@ courses/*
 
 main/inc/conf*
 
+main/upload/users*
+
 home/*
 
 # Logs and databases #
