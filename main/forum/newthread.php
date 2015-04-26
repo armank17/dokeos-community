@@ -50,7 +50,6 @@ $language_file = array('forum','document');
 
 // including the global dokeos file
 require_once '../inc/global.inc.php';
-require_once '../gradebook/lib/gradebook_functions.inc.php';
 // the section (tabs)
 $this_section=SECTION_COURSES;
 

@@ -252,11 +252,6 @@ if ($no_validate === true) {
     }
     // actions
     echo '<div class="actions">';
-    if (isset($_GET['lp_id']) && $_GET['lp_id'] > 0) {
-         echo '<a href="../newscorm/lp_controller.php?' . api_get_cidreq() . '">' . Display::return_icon('pixel.gif', get_lang("Author"), array('class' => 'toolactionplaceholdericon toolactionauthor')).get_lang("Author") . '</a>';
-         echo '<a href="../newscorm/lp_controller.php?' . api_get_cidreq() . '&action=add_item&type=step">' . Display::return_icon('pixel.gif', get_lang("Content"), array('class' => 'toolactionplaceholdericon toolactionauthorcontent')).get_lang("Content") . '</a>';
-         echo '<a href="../newscorm/lp_controller.php?' . api_get_cidreq() . '&gradebook=&action=view&lp_id='.$_GET['lp_id'].'">' . Display::return_icon('pixel.gif', get_lang("ViewRight"), array('class' => 'toolactionplaceholdericon toolactionauthorpreview')).get_lang("ViewRight") . '</a>';
-    }
     if (isset($_GET['exerciseId']) && $_GET['exerciseId'] > 0) {
         echo '<a href="admin.php?'.api_get_cidreq() . '&exerciseId='.Security::remove_XSS($_GET['exerciseId']).'">'.Display::return_icon('pixel.gif', get_lang('QuizMaker'), array('class' => 'toolactionplaceholdericon toolactionback')) . get_lang('QuizMaker').'</a>';
     }

@@ -14,8 +14,6 @@ $language_file = array('exercice', 'admin');
 require_once '../inc/global.inc.php';
 
 require_once api_get_path(LIBRARY_PATH) . 'statsUtils.lib.inc.php';
-require_once ('../gradebook/lib/fe/dataform.class.php');
-require_once ('../gradebook/lib/fe/exportgradebook.php');
 require_once (api_get_path(LIBRARY_PATH).'ezpdf/class.ezpdf.php');
 require_once ('exercise_result.class.php');
 

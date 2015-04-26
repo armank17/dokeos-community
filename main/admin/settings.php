@@ -147,7 +147,6 @@ if (!empty($_GET['category']) && !in_array($_GET['category'], array('Plugins', '
 	$settings_to_ignore = array('import_calendar');
         $hidden_variables = array(
             'installation_date', 
-            'gradebook_enable', 
             'display_mini_month_calendar', 
             'display_upcoming_events', 
             'number_of_upcoming_events', 
@@ -169,7 +168,6 @@ if (!empty($_GET['category']) && !in_array($_GET['category'], array('Plugins', '
                     in_array($row['variable'], $hidden_variables) || 
                     ($row['variable'] =='search_enabled' && $_GET['category'] <> 'PRO')  || 
                     ($rowkeys['variable'] == 'course_create_active_tools' && $rowkeys['subkey'] == 'enable_search') || 
-                    ($rowkeys['variable'] == 'show_tabs' && $rowkeys['subkey'] == 'my_gradebook') || 
                     ($rowkeys['variable'] == 'show_tabs' && $rowkeys['subkey'] == 'search') ||
                     ($row['variable'] == 'enable_pro_settings')
                     || ($row['variable'] =='show_tabs')
@@ -328,7 +326,7 @@ if (!empty($_GET['category']) && !in_array($_GET['category'], array('Plugins', '
 				$result = Database::query($sql, __FILE__, __LINE__);
 				$group = array ();
 				while ($rowkeys = Database::fetch_array($result)) {
- 					if (($rowkeys['variable'] == 'course_create_active_tools' && $rowkeys['subkey'] == 'enable_search') || ($rowkeys['variable'] == 'show_tabs' && $rowkeys['subkey'] == 'my_gradebook')  || ($rowkeys['variable'] == 'show_tabs' && $rowkeys['subkey'] == 'search') || ($rowkeys['variable'] == 'course_create_active_tools' && $rowkeys['subkey'] == 'Advanced')) {
+ 					if (($rowkeys['variable'] == 'course_create_active_tools' && $rowkeys['subkey'] == 'enable_search') || ($rowkeys['variable'] == 'show_tabs' && $rowkeys['subkey'] == 'search') || ($rowkeys['variable'] == 'course_create_active_tools' && $rowkeys['subkey'] == 'Advanced')) {
                                                  continue;
                                         }
 					$element = & $form->createElement('checkbox', $rowkeys['subkey'], '', get_lang($rowkeys['subkeytext']));
@@ -531,7 +529,6 @@ $action_images['platform'] 		= array('class' => 'actionplaceholdericon actioncou
 $action_images['course'] 		= array('class' => 'actionplaceholdericon actionscourse');
 $action_images['tools'] 		= array('class' => 'actionplaceholdericon actionseditsettings');
 $action_images['user'] 			= array('class' => 'actionplaceholdericon actionsmembers');
-$action_images['gradebook']		= array('class' => 'actionplaceholdericon actionsgradebook');
 $action_images['ldap'] 			= array('class' => 'actionplaceholdericon actionsloginmanager');
 $action_images['languages']		= 'languages.png';
 $action_images['tuning'] 		= array('class' => 'actionplaceholdericon actionstuning');

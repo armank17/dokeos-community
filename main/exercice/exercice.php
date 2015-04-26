@@ -17,8 +17,6 @@ $help_content = 'exerciselist';
 // including the global library
 require_once '../inc/global.inc.php';
 
-// including additional libraries
-require_once '../gradebook/lib/be.inc.php';
 
 // setting the tabs
 $this_section = SECTION_COURSES;

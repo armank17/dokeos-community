@@ -12,8 +12,6 @@ include ('../inc/global.inc.php');
 
 // include additional libraries
 include (api_get_path(LIBRARY_PATH).'course.lib.php');
-require_once '../gradebook/lib/be/gradebookitem.class.php';
-require_once '../gradebook/lib/be/category.class.php';
 require_once('../coursecopy/classes/Course.class.php');
 
 // section for the tabs

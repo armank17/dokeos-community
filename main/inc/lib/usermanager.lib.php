@@ -1652,14 +1652,6 @@ class UserManager {
      * @return array  if there is not information return false
      */
     public function get_info_gradebook_certificate($course_code, $user_id) {
-        $tbl_grade_certificate = Database::get_main_table(TABLE_MAIN_GRADEBOOK_CERTIFICATE);
-        $tbl_grade_category = Database::get_main_table(TABLE_MAIN_GRADEBOOK_CATEGORY);
-        $sql = 'SELECT * FROM ' . $tbl_grade_certificate . ' WHERE cat_id= (SELECT id FROM ' . $tbl_grade_category . ' WHERE course_code = "' . Database::escape_string($course_code) . '" ) AND user_id="' . Database::escape_string($user_id) . '" ';
-        $rs = Database::query($sql, __FILE__, __LINE__);
-        $row = Database::fetch_array($rs);
-        if (Database::num_rows($rs) > 0)
-            return $row;
-        else
             return false;
     }
 

@@ -1247,18 +1247,7 @@ class DocumentManager {
      * @return void()
      */
     function attach_gradebook_certificate($course_id, $document_id) {
-        $tbl_category = Database :: get_main_table(TABLE_MAIN_GRADEBOOK_CATEGORY);
-        $session_id = api_get_session_id();
-        if ($session_id == 0 || is_null($session_id)) {
-            $sql_session = 'AND (session_id=' . Database::escape_string($session_id) . ' OR isnull(session_id)) ';
-        } elseif ($session_id > 0) {
-            $sql_session = 'AND session_id=' . Database::escape_string($session_id);
-        } else {
-            $sql_session = '';
-        }
-        $sql = 'UPDATE ' . $tbl_category . ' SET document_id="' . Database::escape_string($document_id) . '"
-	 	WHERE course_code="' . Database::escape_string($course_id) . '" ' . $sql_session;
-        $rs = Database::query($sql, __FILE__, __LINE__);
+
     }
 
     /**

@@ -149,14 +149,12 @@ define('TOOL_VISIO_CLASSROOM', 'visio_classroom');
 define('TOOL_SURVEY', 'survey');
 define('TOOL_WIKI', 'wiki');
 define('TOOL_GLOSSARY', 'glossary');
-define('TOOL_GRADEBOOK', 'gradebook');
 define('TOOL_NOTEBOOK', 'notebook');
 define('TOOL_OOGIE', 'oogie');
 define('TOOL_AUTHOR', 'author');
 define('TOOL_MEDIABOX', 'mediabox');
 define('TOOL_WEBEX', 'webex');
 define('TOOL_WEBTV', 'WebTv');
-define('TOOL_SERIOUS_GAMES', 'SeriousGames');
 define('TOOL_EVALUATION', 'Evaluation');
 define('TOOL_SHOP', 'Shop');
 

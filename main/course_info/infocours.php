@@ -700,7 +700,6 @@ function platform_settings_for_course($form) {
 
     // the settings that the platformadmin decided that the teacher could set them
     $hidden_global_variables = array(
-        'gradebook_enable',
         'display_mini_month_calendar',
         'display_upcoming_events',
         'number_of_upcoming_events',

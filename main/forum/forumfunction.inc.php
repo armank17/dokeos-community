@@ -2599,20 +2599,14 @@ function store_edit_post($values) {
     if (api_is_course_admin() == true) {
         $ccode = api_get_course_id();
         $sid = api_get_session_id();
-        $link_id = is_resource_in_course_gradebook($ccode, 5, $values['thread_id'], $sid);
-        $thread_qualify_gradebook = isset($values['thread_qualify_gradebook']) ? $values['thread_qualify_gradebook'] : null;
-        if ($thread_qualify_gradebook != 1) {
-            if ($link_id !== false) {
-                remove_resource_from_course_gradebook($link_id);
-            }
-        } else {
+
             if ($link_id === false && !$_GET['thread']) {
                 //$date_in_gradebook=date('Y-m-d H:i:s');
                 $date_in_gradebook = null;
                 $weigthqualify = $values['weight_calification'];
                 add_resource_to_course_gradebook($ccode, 5, $values['thread_id'], Database::escape_string($values['calification_notebook_title']), $weigthqualify, $values['numeric_calification'], null, $date_in_gradebook, 0, $sid);
             }
-        }
+
     }
     // Storing the attachments if any
     //update_added_resources('forum_post',$values['post_id']);

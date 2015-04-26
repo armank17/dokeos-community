@@ -21,10 +21,7 @@ require dirname(__FILE__) . ('/../inc/global.inc.php');
 require_once (api_get_path(LIBRARY_PATH) . 'course.lib.php');
 require_once (api_get_path(LIBRARY_PATH) . 'formvalidator/FormValidator.class.php');
 require_once (api_get_path(LIBRARY_PATH) . 'sortabletable.class.php');
-require_once '../gradebook/lib/be/gradebookitem.class.php';
-require_once '../gradebook/lib/be/category.class.php';
 require_once api_get_path(SYS_PATH) . 'main/core/model/ecommerce/EcommerceCatalog.php';
-//print_r(api_get_path(WEB_PATH) . 'main/appcore/library/jquery/jquery.alerts/jquery.alerts.js');
 
 //$htmlHeadXtra[] = '<link type="text/css" rel="stylesheet" href="'.api_get_path(WEB_PATH).'main/appcore/library/jquery/jquery.alerts/jquery.alerts.css" />';
 //$htmlHeadXtra[] = '<script  type="text/javascript" src="'.api_get_path(WEB_PATH).'main/appcore/library/jquery/jquery.alerts/jquery.alerts.js"></script>';

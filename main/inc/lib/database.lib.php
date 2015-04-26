@@ -72,15 +72,6 @@ define('TABLE_MAIN_NODE_HOMEPAGE','node_homepage');
 
 
 define('TABLE_MAIN_MENU_LINK','menu_links');
-// Gradebook
-define('TABLE_MAIN_GRADEBOOK_CATEGORY', 	'gradebook_category');
-define('TABLE_MAIN_GRADEBOOK_EVALUATION', 	'gradebook_evaluation');
-define('TABLE_MAIN_GRADEBOOK_LINKEVAL_LOG', 'gradebook_linkeval_log');
-define('TABLE_MAIN_GRADEBOOK_RESULT', 		'gradebook_result');
-define('TABLE_MAIN_GRADEBOOK_RESULT_LOG', 	'gradebook_result_log');
-define('TABLE_MAIN_GRADEBOOK_LINK', 		'gradebook_link');
-define('TABLE_MAIN_GRADEBOOK_SCORE_DISPLAY','gradebook_score_display');
-define('TABLE_MAIN_GRADEBOOK_CERTIFICATE', 	'gradebook_certificate');
 //Profiling
 define('TABLE_MAIN_USER_FIELD',			'user_field');
 define('TABLE_MAIN_USER_FIELD_OPTIONS',	'user_field_options');
@@ -896,8 +887,7 @@ class Database {
 	 * @todo move this function in a gradebook-related library
 	 */
 	public static function get_course_by_category($category_id) {
-		$info = self::fetch_array(self::query('SELECT course_code FROM '.self::get_main_table(TABLE_MAIN_GRADEBOOK_CATEGORY).' WHERE id='.$category_id, __FILE__, __LINE__), 'ASSOC');
-		return $info ? $info['course_code'] : false;
+		return false;
 	}
 
 	/**
