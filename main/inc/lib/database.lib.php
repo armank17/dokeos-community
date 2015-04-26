@@ -108,13 +108,6 @@ define('TABLE_MAIN_ACCESS_URL_REL_ADMIN', 'access_url_rel_admin');
 // Global calendar
 define('TABLE_MAIN_SYSTEM_CALENDAR', 'sys_calendar');
 
-// Reservation System
-define('TABLE_MAIN_RESERVATION_ITEM', 'reservation_item');
-define('TABLE_MAIN_RESERVATION_RESERVATION', 'reservation_main');
-define('TABLE_MAIN_RESERVATION_SUBSCRIBTION', 'reservation_subscription');
-define('TABLE_MAIN_RESERVATION_CATEGORY', 'reservation_category');
-define('TABLE_MAIN_RESERVATION_ITEM_RIGHTS', 'reservation_item_rights');
-
 // Social networking
 define('TABLE_MAIN_USER_REL_USER', 'user_rel_user');
 define('TABLE_MAIN_USER_FRIEND_RELATION_TYPE', 'user_friend_relation_type');

@@ -249,11 +249,6 @@ if (api_is_platform_admin()) {
                 }
 
 
-
-                /* if (api_get_setting('allow_reservation')=='true') {
-                  echo '<li><a href="../reservation/m_category.php">'.get_lang('BookingSystem').'</a></li>';
-                  } */
-
                 if (api_get_setting('allow_terms_conditions') == 'true') {
                     echo '<li><a href="legal_add.php">' . get_lang('TermsAndConditions') . '</a></li>';
                 }

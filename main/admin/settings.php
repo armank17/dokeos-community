@@ -39,7 +39,7 @@ if ($access_url_id< 0) {
 $pro_category_settings = array('Templates', 'CAS', 'Ecommerce');
 $pro_variable_settings = array('show_quizcategory', 'allow_terms_conditions', 'mindmap_converter_activated', 'calendar_export_all', 'show_catalogue');
 if ((api_get_setting('enable_document_templates') !== 'true' && (isset($_GET['category']) && $_GET['category'] == 'Templates')) || 
-        (api_get_setting('enable_pro_settings') !== 'true' && (isset($_GET['category']) && in_array($_GET['category'], $pro_category_settings))) ) {
+        (isset($_GET['category']) && in_array($_GET['category'], $pro_category_settings)) ) {
     header('Location: '.api_get_path(WEB_CODE_PATH).'admin/index.php');
     exit;
 }
@@ -154,35 +154,14 @@ if (!empty($_GET['category']) && !in_array($_GET['category'], array('Plugins', '
             'allow_user_edit_agenda', 
             'number_of_announcements', 
             'calendar_export_all', 
-            'display_context_help',
-            'allow_reservation',            
+            'display_context_help',         
             'groupscenariofield',
             'show_navigation_menu',
             'allow_terms_conditions',
             'show_toolshortcuts'
         );
 	foreach($settings as $row) {
-                // Set enable pro settings by default, so you could see all tools in course home
-                api_set_setting('enable_pro_settings', 'true');
-		if (
-                    in_array($row['variable'], $hidden_variables) || 
-                    ($row['variable'] =='search_enabled' && $_GET['category'] <> 'PRO')  || 
-                    ($rowkeys['variable'] == 'course_create_active_tools' && $rowkeys['subkey'] == 'enable_search') || 
-                    ($rowkeys['variable'] == 'show_tabs' && $rowkeys['subkey'] == 'search') ||
-                    ($row['variable'] == 'enable_pro_settings')
-                    || ($row['variable'] =='show_tabs')
-                    || ($row['variable'] =='show_quizcategory')
-                ) {
-			continue;
-		}
-               
-                if (api_get_setting('enable_pro_settings') !== 'true' && in_array($row['variable'], $pro_variable_settings)) {
-                    continue;
-                }
-                
-//                if($row['variable']=="allow_terms_conditions")
-//					continue;
-                
+
 		$anchor_name = $row['variable'].(!empty($row['subkey']) ? '_'.$row['subkey'] : '');
 		$form->addElement('html',"\n<a name=\"$anchor_name\"></a>\n");
 

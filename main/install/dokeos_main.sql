@@ -946,7 +946,6 @@ VALUES
 ('course_create_active_tools', 'glossary', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Glossary', 1),
 ('course_create_active_tools', 'notebook', 'checkbox', 'Tools', 'true', 'CourseCreateActiveToolsTitle', 'CourseCreateActiveToolsComment', NULL, 'Notebook', 1),
 ('advanced_filemanager', NULL, 'radio', 'Advanced', 'false', 'AdvancedFileManagerTitle', 'AdvancedFileManagerComment', NULL, NULL, 1),
-('allow_reservation', NULL, 'radio', 'Advanced', 'false', 'AllowReservationTitle', 'AllowReservationComment', NULL, NULL, 1),
 ('profile', 'apikeys', 'checkbox', 'User', 'false', 'ProfileChangesTitle', 'ProfileChangesComment', NULL, 'ApiKeys', 1),
 ('allow_message_tool', NULL, 'radio', 'Advanced', 'true', 'AllowMessageToolTitle', 'AllowMessageToolComment', NULL, NULL, 1),
 ('allow_students_to_browse_courses', NULL, 'radio', 'Platform', 'true', 'AllowStudentsToBrowseCoursesTitle', 'AllowStudentsToBrowseCoursesComment', NULL, NULL, 1),
@@ -1166,8 +1165,6 @@ VALUES
 ('allow_users_to_create_courses','false','No'),
 ('advanced_filemanager','true','Yes'),
 ('advanced_filemanager','false','No'),
-('allow_reservation', 'true', 'Yes'),
-('allow_reservation', 'false', 'No'),
 ('allow_message_tool', 'true', 'Yes'),
 ('allow_message_tool', 'false', 'No'),
 ('allow_students_to_browse_courses','true','Yes'),
@@ -1749,111 +1746,6 @@ INSERT INTO email_template (id, title, description, image, language, content) VA
 (30,	'User Registration to Course',	'UserRegistrationToCourse',	'emailtemplate.png',	'english',	'Dear: {tutorFirstNameTutorLastName},<br />\r\n<br />\r\nThere is a new user in the course: {nameCourse}<br />\r\n<br />\r\n Login: {userName}<br />\r\n<br />\r\n First name: {userFirstName}<br />\r\n<br />\r\n Last name: {userLastName}<br />\r\n<br />\r\n E-mail: {userEmail}'),
 (31,	'Message to user in user registration to course','MessageToUserInUserRegistrationToCourse','emailtemplate.png','english','Dear: {userFirstNameUserLastName},<br />Have been registered in the course: {nameCourse}<br />Login: {userName}<br />First name: {userFirstName}<br />Last name: {userLastName}<br />E-mail: {userEmail}'),
 (32,	'Message to user in user registration to session','MessageToUserInUserRegistrationToSession','emailtemplate.png','english','Dear: {userFirstNameUserLastName},<br />You have Added The Session: {nameSession}<br />nLogin: {userName}<br />First name: {userFirstName}<br />Last name: {userLastName}<br />E-mail: {userEmail}');
---
--- --------------------------------------------------------
---
--- Tables for reservation
---
-
-
---
--- Table structure for table reservation category
---
-
-CREATE TABLE reservation_category (
-   id  int unsigned NOT NULL auto_increment,
-   parent_id  int NOT NULL default 0,
-   name  varchar(128) NOT NULL default '',
-  PRIMARY KEY  ( id )
-)ENGINE = MyISAM;
-
--- --------------------------------------------------------
-
---
--- Table structure for table reservation category_rights
---
-
-CREATE TABLE  reservation_category_rights  (
-   category_id  int NOT NULL default 0,
-   class_id  int NOT NULL default 0,
-   m_items  tinyint NOT NULL default 0
-)ENGINE = MyISAM;
-
--- --------------------------------------------------------
-
---
--- Table structure for table  item reservation
---
-
-CREATE TABLE  reservation_item  (
-   id  int unsigned NOT NULL auto_increment,
-   category_id  int unsigned NOT NULL default 0,
-   course_code  varchar(40) NOT NULL default '',
-   name  varchar(128) NOT NULL default '',
-   description  text NOT NULL,
-   blackout  tinyint NOT NULL default 0,
-   creator  int unsigned NOT NULL default 0,
-   always_available TINYINT NOT NULL default 0,
-  PRIMARY KEY  ( id )
-)ENGINE = MyISAM;
-
--- --------------------------------------------------------
-
---
--- Table structure for table reservation item_rights
---
-
-CREATE TABLE  reservation_item_rights  (
-   item_id  int unsigned NOT NULL default 0,
-   class_id  int unsigned NOT NULL default 0,
-   edit_right  tinyint unsigned NOT NULL default 0,
-   delete_right  tinyint unsigned NOT NULL default 0,
-   m_reservation  tinyint unsigned NOT NULL default 0,
-   view_right  tinyint NOT NULL default 0,
-  PRIMARY KEY  ( item_id , class_id )
-)ENGINE = MyISAM;
-
--- --------------------------------------------------------
-
---
--- Table structure for main reservation table
---
-
-CREATE TABLE  reservation_main  (
-   id  int unsigned NOT NULL auto_increment,
-   subid  int unsigned NOT NULL default 0,
-   item_id  int unsigned NOT NULL default 0,
-   auto_accept  tinyint unsigned NOT NULL default 0,
-   max_users  int unsigned NOT NULL default 1,
-   start_at  datetime NOT NULL default '0000-00-00 00:00:00',
-   end_at  datetime NOT NULL default '0000-00-00 00:00:00',
-   subscribe_from  datetime NOT NULL default '0000-00-00 00:00:00',
-   subscribe_until  datetime NOT NULL default '0000-00-00 00:00:00',
-   subscribers  int unsigned NOT NULL default 0,
-   notes  text NOT NULL,
-   timepicker  tinyint NOT NULL default 0,
-   timepicker_min  int NOT NULL default 0,
-   timepicker_max  int NOT NULL default 0,
-  PRIMARY KEY  ( id )
-)ENGINE = MyISAM;
-
--- --------------------------------------------------------
-
---
--- Table structure for reservation subscription table
---
-
-CREATE TABLE  reservation_subscription  (
-   dummy  int unsigned NOT NULL auto_increment,
-   user_id  int unsigned NOT NULL default 0,
-   reservation_id  int unsigned NOT NULL default 0,
-   accepted  tinyint unsigned NOT NULL default 0,
-   start_at  datetime NOT NULL default '0000-00-00 00:00:00',
-   end_at  datetime NOT NULL default '0000-00-00 00:00:00',
-  PRIMARY KEY  ( dummy )
-)ENGINE = MyISAM;
-
--- ---------------------------------------------------------
 
 --
 -- Table structure for table user_friend will be rename to user_rel_user
