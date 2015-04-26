@@ -21,7 +21,7 @@ header {
     border-radius: 5px 5px 5px 5px !important;
     -moz-border-radius: 5px 5px 5px 5px !important;
     -webkit-border-radius: 5px 5px 5px 5px !important;
-    border: 1px solid #C5C5C5 !important;
+    /*border: 1px solid #C5C5C5 !important;*/
     padding-top: 10px !important;
     min-height: 850px !important;
     background-color: #FFFFFF;

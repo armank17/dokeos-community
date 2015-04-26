@@ -1,0 +1,21 @@
+body {
+    font-family: "Raleway";
+    
+}
+
+.navbar-bgcolor {
+    background:#fafafa !important;
+    box-shadow:none
+}
+
+header {
+    background:#fafafa !important;
+    border-bottom:1px solid #eaeaea;
+}
+
+body {
+    background:#ffffff !important;
+}
+.navbar-default {
+    border:0px !important;
+}
