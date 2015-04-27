@@ -9,13 +9,22 @@ main {
     background-color: #000000 !important;
 }
 .navbar-bgcolor {
-    background: #A0A0A0 !important;
+    background: #E6E6E6 !important;
 }
 #navbar ul li a {
         color: #000000 !important;
 }
+#navbar ul li a:hover {
+        color: #418785 !important;
+}
+#navbar ul li.active {
+    background: #EAEAEA !important;
+}
+#navbar ul li.active a span {
+    color: #418785 !important;
+}
 header {
-    background: #EDEDED !important;
+    background: #EEEEEE !important;
 }
 #wrap {
     border-radius: 5px 5px 5px 5px !important;
@@ -25,4 +34,7 @@ header {
     padding-top: 10px !important;
     min-height: 850px !important;
     background-color: #FFFFFF;
+}
+.separator {
+    color: #B0B5B4;
 }
