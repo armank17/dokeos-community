@@ -1,15 +1,15 @@
 body {
     font-family: "Raleway";
-    
+
 }
 
 .navbar-bgcolor {
-    background:#fafafa !important;
+    background:#EBEBEB !important;
     box-shadow:none
 }
 
 header {
-    background:#fafafa !important;
+    background:#EBEBEB !important;
     border-bottom:1px solid #eaeaea;
 }
 
@@ -18,4 +18,94 @@ body {
 }
 .navbar-default {
     border:0px !important;
+}
+
+.LinkTop {
+    border: 1px solid #16aeb1;
+    color: #16aeb1;
+    margin-top: -3px;
+    padding: 5px 6px;
+}
+
+a {
+    /*text-transform: none;*/ 
+    text-decoration: none !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+    background-image:none !important;
+    box-shadow: none !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background:none !important;
+    color:#16AEB1 !important;
+}
+
+.SideLeft h1, SideRight h1{
+    font-size:18px;
+    color:#16AEB1;
+}
+
+.SideLeft a, SideRight a {
+    color:#16AEB1;
+}
+.SideLeft ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+.SideLeft li {
+    border:1px solid #16AEB1;
+    padding:10px;
+    margin-bottom: 5px;
+}
+
+
+
+/*
+.DivEffect {
+    position:relative;
+    border:15px solid transparent;
+    padding:5px;
+    display:block;
+}
+.HoverEffect {
+    border:1px solid #fff;
+    padding:10px;
+    position:absolute;
+    display:block;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0; 
+    opacity:0.1;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+}
+.HoverEffect:hover {
+    bottom:-15px;
+    left:-15px;
+    right:-15px;
+    top:-15px;display:block;
+    opacity:1;
+    position:absolute;
+    border:1px solid #d8d8d8;
+}*/
+
+.NewButtonSearch {
+    background: none repeat scroll 0 0 #16aeb1;
+    border: 0 none;
+    border-radius: 0;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-shadow: none;
+}
+
+.NewButtonSearch:hover, .NewButtonSearch:active, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open > .dropdown-toggle.btn-default {
+    background:#098C8E;
+    color:#ffffff;
 }
